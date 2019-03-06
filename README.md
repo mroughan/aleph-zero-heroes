@@ -1,2 +1,2 @@
-# aleph-zero-heros
+# aleph-zero-heroes
 Web log site

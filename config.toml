@@ -1,4 +1,5 @@
-baseURL = "http://aleph-zero-heroes.netlify.com"
+baseURL = ""
+# baseURL = "http://aleph-zero-heroes.netlify.com"
 # baseURL = "http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/"
 title = "Aleph-Zero-Heroes"
 theme = "dream-plus"

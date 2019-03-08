@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Comic on Aleph-Zero-Heros</title>
+    <link>http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/categories/comic/</link>
+    <description>Recent content in Comic on Aleph-Zero-Heros</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 25 Feb 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/categories/comic/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Doctor Strange and the Golden Spiral</title>
+      <link>http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/posts/dr_strange/</link>
+      <pubDate>Mon, 25 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/posts/dr_strange/</guid>
+      <description>The comic Doctor Strange was somewhat unique. Instead of super-powers the eponymous Doctor has magic.
+Back in the day, it was also well know for a somewhat more exploratory art style than some others.
+So we might think that the suposedly ubiquitous Golden ration and its friend the Golden spiral would crop up there. Does they?
+More generally, there are entire books written about the Golden ratio, and how important it is both in nature and art.</description>
+    </item>
+    
+  </channel>
+</rss>

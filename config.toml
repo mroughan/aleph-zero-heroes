@@ -1,0 +1,73 @@
+baseURL = "http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/"
+title = "Aleph-Zero-Heroes"
+theme = "dream-plus"
+paginate = 6
+enableRobotsTXT = true
+# disqusShortname = "dream-plus"
+canonifyurls = true # fix them all relative to the base for deplyment
+googleAnalytics = "UA-96845987-1"
+dateFormat = "02 Jan 2006, 15:04"
+
+#Skip building these files
+ignoreFiles = ["content/404.md", "content/about.md", "content/cards/\\.*"]
+
+#Syntax highlighting
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+# pygmentsStyle = "monokai" # https://help.farbox.com/pygments.html
+# pygmentsStyle = "perldoc" # https://help.farbox.com/pygments.html
+# pygmentsStyle = "vim" # https://help.farbox.com/pygments.html
+# pygmentsStyle = "native" # https://help.farbox.com/pygments.html
+pygmentsOptions = "linenos=inline,linenostart=1"
+
+#Enable Hugo Emoji Conversion
+enableEmoji=true 
+
+[params]
+	#Favicon for site
+	favicon = "/img/defaultFav.ico"
+
+	#Set whether you're hosting "cards" or "post"
+	contentType = "posts"
+	
+	siteStartYear = 2019
+
+	brand = "-aleph-zero-heroes-" 
+	description = "A blog about the mathematics of large-scale hybrid narratives" 
+
+        [params.author]
+		name = "Matt Roughan"
+		description = "Something should go here but it doesn't seem to get printed anywhere"
+		avatar = "/img/aleph0.svg"
+		motto = "A blog about the mathematics of large-scale hybrid narratives"
+ 
+	[params.features]
+		#Enable Twitter Emoji 
+		twitterEmoji = true
+		#Enable Table of Contents
+		toc = false
+		#Enable share card 
+		shareCard = true 
+		#Use custom CSS
+		# customCSS = ["https://cdn.rawgit.com/UtkarshVerma/hugo-dream-plus/ae11561d/exampleSite/static/css/highlight.css"]
+		customCSS = ["/css/syntax.css"]
+		
+	[params.background]
+		# colorBG = true
+		bgImage = "img/cyanotype_bg_tile.png"
+
+	#Tags settings
+	[params.tags]
+		enabled = true
+		tagLimit = 28
+
+	#Categories settings
+	[params.categories]
+		enabled = false
+
+[social]
+	# email = "matthew.roughan@adelaide.edu.au"
+	github = "mroughan/AlephZeroHeroesData"
+	# stackoverflow = "9271608/utkarsh-verma"
+	# medium = "UtkarshVerma_"
+	twitter = "AlephZeroHeroes"

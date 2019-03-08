@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tv on Aleph-Zero-Heros</title>
+    <link>http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/categories/tv/</link>
+    <description>Recent content in Tv on Aleph-Zero-Heros</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 25 Feb 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/categories/tv/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Firefly</title>
+      <link>http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/posts/firefly/</link>
+      <pubDate>Mon, 25 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/posts/firefly/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Buffy</title>
+      <link>http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/posts/post_buffy/</link>
+      <pubDate>Sat, 23 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/posts/post_buffy/</guid>
+      <description>Buffy is brilliant
+ 6 season on TV (plus one slightly off movie) 5 seasons of Angel 3 seasons on comics, plus others, plus Angle, Spike, &amp;hellip; reboot novels  Joss Whedon too
+strong female leads &amp;ndash; that was kind of the point
+But this is just a shot-out to book that, in some ways inspired this blog
+Multi-scale, self-similarity Joss master of the + monster of the week + the season long plot &amp;ndash; the &amp;ldquo;big bad&amp;rdquo; + the hints and easter eggs hinting at a longer plot, almost as long as the series</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,7 @@
+{{ $.Scratch.Set "number" (.Get 0 | int)  }}
+
+<div id="fn{{ $.Scratch.Get "number" | safeURL }}" style="background-color:LightCyan;display:inline-block">
+  {{ $.Scratch.Get "number" }}.
+  {{ .Inner }}
+   <a href="#ref{{ $.Scratch.Get "number" | safeURL }}" title="Jump back to footnote {{ $.Scratch.Get "number" }} in the text.">↩</a>
+</div> 

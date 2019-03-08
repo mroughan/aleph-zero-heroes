@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<title>
+	The Coolness of the MCU
+</title>
+		
+		<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+	
+	
+	
+	<meta name="author" content="Matt Roughan" />
+	<meta name="description" content="Why should you (as a mathematician, statistician or data scientist) care about the Marvel Cinematic Universe?" />
+
+
+
+<meta name="generator" content="Hugo 0.54.0" />
+
+
+<link rel="shortcut icon" href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/img/defaultFav.ico">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+  
+  
+
+
+  
+
+		
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+<script
+	src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+
+ <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Inconsolata" rel="stylesheet"> 
+ <link href="https://fonts.googleapis.com/css?family=Abel|Alegreya+Sans+SC|Allura|Amarante|Amatic+SC|Antic+Didone|Artifika|Audiowide|Averia+Libre|Bangers|Baumans|Bellefair|Bubbler+One|Calligraffitti|Charm|Cherry+Swash|Chonburi|Cinzel|Cinzel+Decorative|Clicker+Script|Combo|Cormorant+Infant|Cormorant+Unicase|Courgette|Dancing+Script|Della+Respira|Eagle+Lake|Elsie|Expletus+Sans|Felipa|Fondamento|GFS+Didot|GFS+Neohellenic|Great+Vibes|Gruppo|Habibi|IM+Fell+DW+Pica|IM+Fell+DW+Pica+SC|IM+Fell+English+SC|IM+Fell+French+Canon|IM+Fell+Great+Primer|IM+Fell+Great+Primer+SC|Indie+Flower|Inknut+Antiqua|Italianno|Julius+Sans+One|Kaushan+Script|Kavivanar|Lancelot|Libre+Barcode+128|Libre+Barcode+128+Text|Libre+Barcode+39+Extended|Libre+Barcode+39+Extended+Text|Libre+Barcode+39+Text|Libre+Baskerville|Life+Savers|Lobster|Lobster+Two|Londrina+Outline|Lovers+Quarrel|Macondo|Mallanna|Mandali|Marck+Script|Mate+SC|Megrim|Raleway|Mirza|Miss+Fajardose|Molle:400i|Monoton|Montserrat|Montserrat+Subrayada|Mrs+Saint+Delafield|Oleo+Script|Orbitron|Pacifico|Paprika|Petit+Formal+Script|Petrona|Pinyon+Script|Raleway|Raleway+Dots|Redressed|Righteous|Rosarivo|Rouge+Script|Ruslan+Display|Rye|Sacramento|Satisfy|Sigmar+One|Source+Code+Pro|Special+Elite|Spectral+SC|Srisakdi|Suez+One|Suranna|Syncopate|Tangerine|Uncial+Antiqua|UnifrakturMaguntia|Wire+One|Work+Sans" rel="stylesheet"> 
+
+
+
+<link rel="stylesheet" type="text/css" href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/css/site.css">
+
+
+
+
+
+
+	
+		<link rel="stylesheet" type="text/css" href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/css/syntax.css">
+	
+
+<style>
+        body {
+	       display: block;
+	
+	       background-image: url("http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/img/cyanotype_bg_tile.png");
+	       background-color: #ecedef; 
+	       background-repeat: repeat;
+	
+        }
+
+	body, body.pushable {
+	  	background-attachment: fixed;
+	  	background-size: cover !important;
+	}
+</style>
+
+
+
+<script>
+	var colorBG =  null 
+	
+	var isMobile = ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+	console.log("The client device is a "+(isMobile?"mobile":"PC")+".")
+</script>
+
+	</head>
+
+	<body>
+		<script>
+var prevBgIndex = 0;
+var bodyBgSwitchIndex = 0;
+
+
+
+
+
+ 
+       
+
+
+	function getRandomInt(min, max) {
+	  min = Math.ceil(min);
+	  max = Math.floor(max);
+	  var random;
+	  while (1) {
+	    random = Math.floor(Math.random() * (max - min)) + min;
+	    if (random !== prevBgIndex) {
+	      prevBgIndex = random;
+	      break;
+	    }
+	  }
+	  return random;
+	}
+
+	function connect(arr) {
+	  var str = '';
+	  for (var i = 0; i < arr.length; i++) {
+	    if (i !== arr.length - 1) {
+	      str += arr[i] + ', ';
+	    } else {
+	      str += arr[i];
+	    }
+	  }
+	  return str;
+	}
+</script>
+
+
+
+	<div class="blur-overlay"></div>
+
+
+		<div id="sidebar" class="ui sidebar inverted vertical menu">
+	
+	<section id="site" class="ui top attached center aligned inverted segment">
+		
+<div class="ui small circular image">
+	
+		<a href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/"><img src="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/img/aleph0.svg"></a>
+	
+</div>
+
+
+<h3 class="ui header">
+	-aleph-zero-heroes-
+	<div class="sub header">A blog about the mathematics of large-scale hybrid narratives</div>
+</h3>
+ 
+	</section>
+
+	
+	
+		<section class="ui attached center aligned inverted segment sidebar-dream-tags">
+			
+			
+			
+			
+
+
+
+
+	
+	
+		
+			
+			<a class="ui label pink " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/tags/marvel" title="marvel">marvel</a>
+		
+			
+			<a class="ui label brown " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/tags/mcu" title="mcu">mcu</a>
+		
+			
+			<a class="ui label green " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/tags/about" title="about">about</a>
+		
+			
+			<a class="ui label red " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/tags/julia" title="julia">julia</a>
+		
+			
+			<a class="ui label olive " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/tags/narrative-chart" title="narrative-chart">narrative-chart</a>
+		
+			
+			<a class="ui label teal " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/tags/networks" title="networks">networks</a>
+		
+			
+			<a class="ui label olive " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/tags/timelines" title="timelines">timelines</a>
+		
+	
+
+
+		</section>
+	
+
+	
+	
+
+	
+	<section id="footer" class="ui bottom attached center aligned inverted segment">
+		
+
+	<p>© 2019 Matt Roughan</p>
+ 
+
+<p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a>
+  <br>
+  with <a href="https://github.com/UtkarshVerma/hugo-dream-plus" target="_blank">Dream Plus</a> ++ theme.</p> 
+
+	</section>
+</div>
+
+
+		<div class="pusher">
+			<div class="flipper">
+				<div class="front">
+					
+	<nav class="ui top menu bar">
+	
+	<div class="item">
+		<i class="inverted big link bullseye icon dream-flip-toggle" title="About This Web Page"></i>
+	</div>
+	<div class="item">
+	  <a href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/"><i class="inverted big link home icon" title="Home"></i></a></div>
+	<div class="item">
+	  <a href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/posts"><i class="inverted big link archive icon" title="Archive"></i></a></div>
+	<div class="item">
+	  <a href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/tags"><i class="inverted big link tags icon" title="All Tags"></i></a></div>
+	<div class="item">
+	  <a href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/categories"><i class="inverted big link cubes icon" title="All Categories"></i></a></div>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<div class="title">
+	  -aleph-zero-heroes-
+	  	
+	  
+	  <div class="sub header"></div>
+    	</div>
+
+	
+	
+		
+	
+	
+		<div class="item right">
+			<a href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/posts/index.xml">
+				<i class="inverted big link rss icon" title="RSS Feed"></i>
+			</a>
+		</div>
+	
+</nav>
+
+
+	<div class="ui centered grid">
+		
+		<div class="sixteen wide mobile only column">
+				<div class="ui inverted accordion">
+	<div id="header" class="ui inverted segment column box">		
+		
+		<header id="author" class="ui top attached center aligned inverted segment">
+			
+<div class="ui small circular image">
+	
+		<a href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/"><img src="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/img/aleph0.svg"></a>
+	
+</div>
+
+
+<h3 class="ui header">
+	-aleph-zero-heroes-
+	<div class="sub header">A blog about the mathematics of large-scale hybrid narratives</div>
+</h3>
+
+		</header> 
+
+		
+		<div class=" title header-title">
+			
+				<div id="tag-category-pop" class="ui red right corner label">
+					<i class="hand point icon down" title="Show/hide tags and categories"></i>
+				</div>
+			
+		</div>
+		
+		
+		<div id="tag-category" class=" content">
+			
+				<section class="ui attached center aligned inverted segment dream-tags none flexbox">
+					
+					
+					
+
+
+
+
+	
+	
+		
+			
+			<a class="ui label brown " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/tags/marvel" title="marvel">marvel</a>
+		
+			
+			<a class="ui label purple " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/tags/mcu" title="mcu">mcu</a>
+		
+			
+			<a class="ui label blue " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/tags/about" title="about">about</a>
+		
+			
+			<a class="ui label teal " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/tags/julia" title="julia">julia</a>
+		
+			
+			<a class="ui label teal " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/tags/narrative-chart" title="narrative-chart">narrative-chart</a>
+		
+			
+			<a class="ui label blue " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/tags/networks" title="networks">networks</a>
+		
+			
+			<a class="ui label olive " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/tags/timelines" title="timelines">timelines</a>
+		
+	
+
+
+				</section>
+			
+
+			
+		</div>
+
+		
+		<footer class="ui bottom attached center aligned inverted segment">
+			
+
+	<p>© 2019 Matt Roughan</p>
+ 
+
+<p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a>
+  <br>
+  with <a href="https://github.com/UtkarshVerma/hugo-dream-plus" target="_blank">Dream Plus</a> ++ theme.</p> 
+
+		</footer>
+	</div>
+</div>
+
+		</div>
+
+		<div class="sixteen wide mobile fifteen wide tablet twelve wide computer column post-list">
+			
+			<section class="ui secondary top attached black segment post-head">
+				<h1 class="post-title">
+					The Coolness of the MCU
+				</h1>
+				<h3 class="post-subtitle">
+				  Why should you (as a mathematician, statistician or data scientist) care about the Marvel Cinematic Universe?
+				<h3>
+
+				    <img class="featured-image" src="http://i.annihil.us/u/prod/marvel/i/mg/a/10/528d369de3e4f/landscape_incredible.jpg"
+				       alt=": Spider-Girl, provided by Marvel ©">  
+
+				<div class="sub header">
+					<div><span><i class="calendar outline icon"></i>Feb 17, 2019</span></div>
+					
+					<div><span><i class="clock outline icon"></i>9 min read</span></div>
+					<div><span><i class="angle double up icon"></i>Last updated on Feb 17, 2019</span></div>
+				</div>
+				<hr>
+				
+				
+
+				<article class="post-content twemoji">
+					
+
+<h1 id="intro">Intro&nbsp;<a class="anchor" href="#intro"><i class="small linkify icon"></i></a> </h1>
+
+<p>This is a blog about data science and superheroes.  I think there is
+some serious data science hidden in the pages of comics, and that&rsquo;s
+what we&rsquo;re here to discuss.</p>
+
+<p>I also think math and stats are the under-represented underpinnings of
+good data science.  <a href="http://drewconway.com/">Drew Conway&rsquo;s</a>
+data-science Venn diagram expresses that best I think.</p>
+
+<div style="width:40%;text-align:center;margin-left:auto;margin-right:auto;display:block;" >
+<a href="http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram">
+    <img src="https://static1.squarespace.com/static/5150aec6e4b0e340ec52710a/t/51525c33e4b0b3e0d10f77ab/1364352052403/Data_Science_VD.png" alt="data-science Venn Diagram" >
+ </a>
+</div>
+ 
+
+<p>Hacking and domain knowledge without mathematics is Drew&rsquo;s <em>Danger Zone</em>.</p>
+
+<p>I&rsquo;ve read and watched superhero comics and movies for years, so I have
+just a little domain expertise. I&rsquo;m going to do some coding here &ndash;
+mostly in <a href="https://julialang.org/">Julia</a> &ndash; you can decide if it
+counts as hacking skills.</p>
+
+<p>The third crucial part is the math component, which leads to my
+title: <a href="https://en.wikipedia.org/wiki/Aleph_number">aleph zero</a> is
+(mathematically speaking) the cardinality of the set of natural
+numbers, which is a pretty mathsy way of saying &ldquo;infinity&rdquo;. So the
+name, aleph-zero-heroes, loosely translates as <em>infinite heroes</em>, a
+named inspired by my first topic, the Marvel Cinematic Universe (MCU)
+and its six infinity gems. And the symbol we use for infinite
+cardinalities is the Hebrew letter aleph, so aleph-zero is written
+\(\displaystyle \aleph_0.\)
+</p>
+
+<p>Why superheroes? I&rsquo;ll give some more background in the
+<a href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/posts/description/">&ldquo;about page&rdquo;</a> of the blog, but broadly speaking, stories,
+legends, myths, and fictions form a key part of the human experience,
+and so understanding these better will never be wasted time. The
+Marvel Universe is particularly interesting because of it vast scope.</p>
+
+<p>In honour of the six infinity gems, I plan to get started with some
+pieces about Marvel&rsquo;s <em>Cinematic</em> Universe (a tiny fraction of all
+that Marvel have published).  The authors of this cinematic franchise
+have wrought something remarkable both in the superhero genre, and
+movies in general. And whether its underlying structure was unconscious
+or deliberate, it&rsquo;s also mathematically interesting. Or maybe it is so
+successful <em>because</em> it is mathematically interesting.</p>
+
+<h1 id="the-marvel-cinematic-universe-mcu">The Marvel Cinematic Universe (MCU)&nbsp;<a class="anchor" href="#the-marvel-cinematic-universe-mcu"><i class="small linkify icon"></i></a> </h1>
+
+<p>First the basics: the core of the MCU is the the series of 20 movies
+(as of Feb 2019), starting with Iron Man in 2008, and ending in The
+Avengers: Infinity War. There are more movies planned for the
+immediate future though. The full list is given below. If you&rsquo;re a fan
+you probably don&rsquo;t need me to tell you the list, but I will
+<a href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/posts/post_julia1/">discuss the code for extracting this info from OMDb in my next post</a>,
+and provide the data there for those who want it. And you can look up details of their financial
+success of the movies at
+<a href="https://www.the-numbers.com/movies/franchise/Marvel-Cinematic-Universe#tab=summary">Box Office History for Marvel Cinematic Universe Movies</a>.</p>
+
+
+<div align=center> 
+<table> 
+<thead><tr><th class="rowid">#</th><th style="text-align:left;">Title</th><th align="center">Release Year<sup><a href="#fn1" id="ref1">1</a></sup></th><th>Phase</th><th>Runtime (mins)</th><th>IMDb Rating</th><th>Metascore</th></tr></thead>
+<tbody>
+<tr><td class="rowid">1</td><td style="text-align:left;">Iron Man</td><td>2008</td><td>1</td><td>126</td><td>7.9</td><td>79</td></tr>
+<tr><td class="rowid">2</td><td style="text-align:left;">Iron Man 2</td><td>2010</td><td>1</td><td>124</td><td>7.0</td><td>57</td></tr>
+<tr><td class="rowid">3</td><td style="text-align:left;">The Incredible Hulk</td><td>2008</td><td>1</td><td>112</td><td>6.8</td><td>61</td></tr>
+<tr><td class="rowid">4</td><td style="text-align:left;">Thor</td><td>2011</td><td>1</td><td>115</td><td>7.0</td><td>57</td></tr>
+<tr><td class="rowid">5</td><td style="text-align:left;">Captain America: The First Avenger</td><td>2011</td><td>1</td><td>124</td><td>6.9</td><td>66</td></tr>
+<tr><td class="rowid">6</td><td style="text-align:left;">The Avengers</td><td>2012</td><td>1</td><td>143</td><td>8.1</td><td>69</td></tr>
+<tr><td class="rowid">7</td><td style="text-align:left;">Iron Man 3</td><td>2013</td><td>2</td><td>130</td><td>7.2</td><td>62</td></tr>
+<tr><td class="rowid">8</td><td style="text-align:left;">Thor: The Dark World</td><td>2013</td><td>2</td><td>112</td><td>7.0</td><td>54</td></tr>
+<tr><td class="rowid">9</td><td style="text-align:left;">Captain America: The Winter Soldier</td><td>2014</td><td>2</td><td>136</td><td>7.8</td><td>70</td></tr>
+<tr><td class="rowid">10</td><td style="text-align:left;">Guardians of the Galaxy</td><td>2014</td><td>2</td><td>121</td><td>8.1</td><td>76</td></tr>
+<tr><td class="rowid">11</td><td style="text-align:left;">Guardians of the Galaxy Vol. 2</td><td>2017</td><td>3</td><td>136</td><td>7.7</td><td>67</td></tr>
+<tr><td class="rowid">12</td><td style="text-align:left;">Avengers: Age of Ultron</td><td>2015</td><td>2</td><td>141</td><td>7.4</td><td>66</td></tr>
+<tr><td class="rowid">13</td><td style="text-align:left;">Ant-Man</td><td>2015</td><td>2</td><td>117</td><td>7.3</td><td>64</td></tr>
+<tr><td class="rowid">14</td><td style="text-align:left;">Captain America: Civil War</td><td>2016</td><td>3</td><td>147</td><td>7.8</td><td>75</td></tr>
+<tr><td class="rowid">15</td><td style="text-align:left;">Black Panther</td><td>2018</td><td>3</td><td>134</td><td>7.4</td><td>88</td></tr>
+<tr><td class="rowid">16</td><td style="text-align:left;">Spider-Man: Homecoming</td><td>2017</td><td>3</td><td>133</td><td>7.5</td><td>73</td></tr>
+<tr><td class="rowid">17</td><td style="text-align:left;">Doctor Strange</td><td>2016</td><td>3</td><td>115</td><td>7.5</td><td>72</td></tr>
+<tr><td class="rowid">18</td><td style="text-align:left;">Thor: Ragnarok</td><td>2017</td><td>3</td><td>130</td><td>7.9</td><td>74</td></tr>
+<tr><td class="rowid">19</td><td style="text-align:left;">Avengers: Infinity War</td><td>2018</td><td>3</td><td>149</td><td>8.5</td><td>68</td></tr>
+<tr><td class="rowid">20</td><td style="text-align:left;">Ant-Man and the Wasp</td><td>2018</td><td>3</td><td>118</td><td>7.1</td><td>70</td></tr>
+<tr><td class="rowid">21</td><td style="text-align:left;">Captain Marvel<sup><a href="#fn2" id="ref2">2</a></sup></td><td>2019</td><td>4</td><td>128</td><td class="likemissing"></td><td class="likemissing"></td></tr>
+<tr><td class="rowid">22</td><td style="text-align:left;">Avengers: Endgame<sup><a href="#fn2" id="ref2">2</a></sup></td><td>2019</td><td>4</td><td class="likemissing"></td><td class="likemissing"></td><td class="likemissing"></td></tr>
+<tr><td class="rowid">23</td><td style="text-align:left;">Spider-Man: Far From Home<sup><a href="#fn2" id="ref2">2</a></sup></td><td>2019</td><td>4</td><td class="likemissing"></td><td class="likemissing"></td><td class="likemissing"></td></tr>
+</tbody>
+<tfoot><tr><th class="rowid"></th><th>Total/Average</th><th></th><th></th><th>2691</th><th>7.5</th><th>68</th></tr></tfoot>
+</table>
+</div>
+
+
+
+<p>The movies are already the
+<a href="http://mentalfloss.com/article/70920/10-highest-grossing-movie-franchises-all-time">most successful movie franchise ever</a>. They
+have almost grossed more than the two next most successful
+franchises (<em>Harry Potter</em> and <em>Star Wars</em>) combined. the only other
+franchise with more films is <em>James Bond</em>, which has 26 movies (and
+comes 4th in the revenue list), but they have been making Bond movies
+since 1962, and the MCU dates only from 2008. The rate of production
+of movies in the MCU has been more than five times that of the Bond
+series. And three more movies will be released this year, followed by
+(most likely) another three in 2020 so Bond won&rsquo;t keep his spot for
+long. The franchise has been so successful that I expect there will be
+another decade at least to come, so maybe another 30 movies. Can you
+imagine a movie franchise of 50 movies?</p>
+
+<p>So the MCU is successful, who cares?  Why look at what are often
+considered just escapist ephemera? I talk about this in more detail in
+this blog&rsquo;s <a href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/posts/description/">&ldquo;about page&rdquo;</a>, but to summarise: it is
+cogently argued in Harari&rsquo;s book <em>Sapiens</em> that the modern Home
+Sapiens is set apart from our cousins by the ability to tell
+stories. Stories, myths, legends, narratives, or fictions &ndash; whatever
+names you use &ndash; allow us to build social constructs larger than
+<a href="https://en.wikipedia.org/wiki/Dunbar%27s_number">Dunbar&rsquo;s number</a>
+(around 150). Stories allow us to change and adapt as a species more
+quickly than our genes possible could. Stories let us plan ahead, and consider
+hypothetical situations &ndash; fictions.</p>
+
+<p>Stories have made us the dominant species on the planet in the blink
+of an eye (on evolutionary time scales). So, to follow the reasoning
+further, it is not just the cleverness, or intellectual value of a
+story that it important, but also its reach. Popular fiction, often
+ignored by serious academics, is vastly more important than serious
+thinkers would have you believe. And what is the most popular fiction
+on the planet at this point? Well, we could argue that the MCU fits
+that bill.</p>
+
+<p>The MCU also extends far beyond this set of movies to a truly amazing
+set of media including:</p>
+
+<ul>
+<li><p>Graphic novels (the films are based on a large corpus of such, but
+there are also direct
+<a href="https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe_tie-in_comics">tie ins</a>
+that specifically link to the movies &ndash; often preludes to the
+movies).</p></li>
+
+<li><p>Novelisations of the movies, tie-in novels and guidebooks.</p></li>
+
+<li><p>Short films: <a href="https://en.wikipedia.org/wiki/Marvel_One-Shots">the Marvel one-shots</a>, e.g., &ldquo;The Consultant&rdquo;, &hellip;.</p></li>
+
+<li><p><a href="https://en.wikipedia.org/wiki/List_of_Marvel_Cinematic_Universe_television_series">TV series:</a>
+e.g., &ldquo;The Defenders&rdquo; (a series of 5 interwoven sub-series),
+&ldquo;Agents of SHIELD&rdquo;, &ldquo;Agent Peggy Carter&rdquo;, &ldquo;Cloak and Dagger&rdquo;, &hellip;</p></li>
+
+<li><p>Theme park exhibits.</p></li>
+
+<li><p>Video and board games.</p></li>
+
+<li><p>The usual merchandising, e.g., toys, posters, and so on.</p></li>
+</ul>
+
+<p>The MCU involves countless <em>(aleph-one for those who care)</em> writers
+and artists, all connecting into one universe of interconnected plot
+lines.</p>
+
+<p>And this doesn&rsquo;t even include other Marvel movies and content, e.g.,
+the X-Men series, and the series of previous Spider-Man movies, both
+notable successes in their own right.</p>
+
+<p>The MCU is remarkable both for its scope, but also because despite
+obsessive attention from dedicated fans, there are relatively few
+consistency gaffs<sup><a href="#fn3" id="ref3">3</a></sup>, though there are a few:</p>
+
+<ul>
+<li>The technology of the tapes Quill has (from his Mum) predate his
+abduction by Yondu (in 1988).</li>
+<li>They fluff the
+<a href="https://screenrant.com/avengers-spider-man-homecoming-time-jump-director/">notional timing of Spider-Man: Homecoming</a>
+relative to the other movies.</li>
+<li>Captain America&rsquo;s shield does a cameo in Iron Man 2, at the same
+time as it is supposedly frozen in the ice.</li>
+</ul>
+
+<p>Plus a few more. But I can&rsquo;t imagine doing better myself.</p>
+
+<h1 id="mcu-literature">MCU Literature&nbsp;<a class="anchor" href="#mcu-literature"><i class="small linkify icon"></i></a> </h1>
+
+<p>There is also a vast literature written about the MCU by journalists,
+fans and even academics, up to an including one
+<a href="http://www.ubalt.edu/news/news-releases.cfm?id=2086">university course</a>
+at the University of Baltimore. I&rsquo;ve read a lot, but definitely not
+everything. Here&rsquo;s a quick list of links to other people&rsquo;s analysis of
+the MCU and comics in general.</p>
+
+<ul>
+<li><a href="https://towardsdatascience.com/i-analyzed-marvel-movie-scripts-to-learn-what-each-avenger-says-most-2e5e7b6105bf">What each Avenger says the most</a></li>
+<li><a href="https://gvsufeministvoices.wordpress.com/2017/04/23/marvelous-hypocrites-sexism-in-the-marvel-cinematic-universe/">Marvellous Hypocrites: Sexism in the Marvel Cinematic Universe</a></li>
+<li><a href="https://pudding.cool/2017/07/comics/?ex_cid=SigDig">Gender and comics</a></li>
+<li><a href="https://www.forbes.com/sites/anharkarim/2018/10/10/the-marvel-cinematic-universe-is-61-white-but-does-that-matter/#565b3f1c4482">Race and the MCU</a></li>
+<li><a href="https://www.vox.com/culture/2018/4/23/17224988/avengers-infinity-war-marvel-cinematic-universe-mcu-explained">Avengers: Infinity War represents the past, present, and future of the Marvel Cinematic Universe</a></li>
+<li><a href="https://www.vanityfair.com/hollywood/2017/11/marvel-cover-story">Secrets of the Marvel Universe</a></li>
+<li><a href="https://arxiv.org/abs/cond-mat/0202174">Marvel Universe looks almost like a real social network</a></li>
+</ul>
+
+<h1 id="why-just-the-mcu">Why JUST the MCU?&nbsp;<a class="anchor" href="#why-just-the-mcu"><i class="small linkify icon"></i></a> </h1>
+
+<p>There is no need to tell me that the picture at the start of this
+article &ndash; Spider-Girl &ndash; doesn&rsquo;t come from the MCU, but from the
+larger Marvel Universe. Given the number of commentaries on gender
+bias in comics and the MCU, maybe there should be a Spider-Girl
+movie. I&rsquo;d definitely watch it.</p>
+
+<p>Regardless, I&rsquo;m going to start with the MCU. And what&rsquo;s more, I&rsquo;m
+looking at the movies (the &ldquo;cinematic&rdquo; part of the universe). I&rsquo;d like
+to look at more, but there is so much stuff out there that even
+cataloguing it isn&rsquo;t easy. And as part of this work I&rsquo;m going to have
+to sit down and watch everything again. Not that I mind that, but the
+current movies alone represent more than 44 hours of viewing. If I
+tried to add in, even just <em>Agents of SHIELD</em> I wouldn&rsquo;t have time to
+sleep. (That&rsquo;s a joke. Who has time to sleep anymore?)  But maybe we
+can make some side-trips, for a good cause later on.</p>
+
+<p>I guess that isn&rsquo;t a good enough excuse though, and I will look at the
+whole corpus of Marvel or DC or something else at some point, but the
+MCU is appealing scientifically because it avoids some of the problems
+of the wider &lsquo;verse, for instance:</p>
+
+<ul>
+<li><p>The same person may adopt multiple hero personas over time (Julia
+Carter is first Spider-Woman and then Arachne).</p></li>
+
+<li><p>The same hero persona may be embodied in different people who take
+on the mask and the mantle of that hero (Captain America was given
+life by Steve Rogers, William Naslund and Jeff Mace).</p></li>
+
+<li><p>Reboots: stories, origins, and events have been rewritten by various
+authors to update them for current audiences, take account of
+technological developments in the real world, or allow authors to
+express their artistic, social or ethical ideas. But reboots create
+huge problems in, for instance, constructing timelines. One approach
+adopted is to say events happen in parallel universes, but this
+really doesn&rsquo;t help analysis. And sometimes universes cross-over as well.</p></li>
+
+<li><p>Time travel, a common theme of many sci-fi and comics stories can
+lead to very complex relationships.</p></li>
+
+<li><p>Although datasets exist for many comics, these are often very coarse
+grained, for instance the
+<a href="http://www.chronologyproject.com/">Marvel Chronology Project</a>
+records which characters appear in which comics, but little else.</p></li>
+</ul>
+
+<p>All of these issues are (so far) mostly absent from the MCU. Not
+that it is trivial to analyse the MCU, even so.</p>
+
+<h1 id="summary">Summary&nbsp;<a class="anchor" href="#summary"><i class="small linkify icon"></i></a> </h1>
+
+<p>So that&rsquo;s the quick version of what I want to do with this blog, and
+why I think the MCU is an interesting starting point. No maths
+today. More later, though I am not planning to dump anything too hard
+on you.</p>
+
+<p>Next week, I plan to work on a timeline of the MCU, but with a twist,
+so stay tuned.</p>
+
+<hr />
+
+<p>Footnotes:</p>
+
+<ol>
+<li><div id="fn1" class="footnote">
+
+  The items in the table are not in "release year" order. They are in the
+  order they are set in the MCU timeline (more on this next week).
+  
+  <a href="#ref1" title="Jump back to footnote 1 in the text.">↩</a></div>
+  
+</li>
+
+<li><div id="fn2" class="footnote">
+  
+  Not released at the time of writing.
+  
+  <a href="#ref2" title="Jump back to footnote 2  in the text.">↩</a></div>
+  
+</li>
+
+<li><div id="fn3" class="footnote">
+  
+  There are plenty of physics/chemistry/biology mistakes in comics and
+  the MCU. Let's not go down that road. It doesn't go anywhere I want
+  to go.
+  
+  <a href="#ref3" title="Jump back to footnote 3 in the text.">↩</a></div> 
+  
+</li>
+</ol>
+
+				</article>				
+			</section>
+
+			
+			<section class="ui secondary attached segment dream-tags">
+				
+					
+
+
+
+
+	
+		<a class="ui label olive " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/tags/marvel" title="Marvel">Marvel</a>
+	
+		<a class="ui label violet " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/tags/mcu" title="MCU">MCU</a>
+	
+
+
+				
+			</section>
+
+			
+			
+				<section class="ui secondary bottom attached segment share row box">
+					
+
+
+
+
+
+
+
+
+<div class="author">
+	
+	<a href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/"><img class="avatar" src="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/img/aleph0.svg"></a>
+	
+</div>
+<div class="info grow flexbox">
+	<a href="https://twitter.com/AlephZeroHeroes">
+	<p class="name">Matt Roughan</p>
+	</a>
+	<p class="desc"> </p>
+</div>
+
+
+<section class="buttons row box">
+	<div class="facebook none flexbox" href="#" onclick="window.open(
+			'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+			'facebook-share-dialog',
+			'width=626,height=436'); return false;">
+		<button class="ui facebook button"><i class="facebook icon"></i>Share</button>
+	</div>
+	<div class="twitter none flexbox" onclick="window.open('https://twitter.com/intent/tweet?text=Read &quot;The Coolness of the MCU &quot; by @AlephZeroHeroes http:\/\/bandicoot.maths.adelaide.edu.au\/public\/aleph-zero-heroes\/posts\/post_mcu1\/','_self')">
+		<button class="ui twitter button"><i class="twitter icon"></i>Tweet</button>
+	</div>
+</section>
+
+				</section>
+			
+
+			
+			
+			
+
+			
+			
+		</div>
+	</div>
+
+				</div>
+				<div class="back">
+					
+<nav class="ui top secondary menu bar">
+	<div class="item">
+		<i class="inverted big link bullseye icon dream-flip-toggle" title="About This Web Page"></i>
+	</div>
+	
+		
+	
+		
+	
+
+	
+	
+	
+	
+	
+	
+	
+		
+		
+			<div class="item">
+				<a href="https://github.com/mroughan/AlephZeroHeroesData" target="	_blank">
+					<i id="ico" class="inverted big link github icon" title="GitHub"></i>
+				</a>
+			</div>
+		
+	
+		
+		
+	
+		
+		
+			<div class="item">
+				<a href="https://twitter.com/AlephZeroHeroes" target="	_blank">
+					<i id="ico" class="inverted big link twitter icon" title="Twitter"></i>
+				</a>
+			</div>
+		
+	
+		
+		
+	
+		
+		
+	
+		
+		
+	
+		
+		
+	
+		
+		
+	
+		
+		
+	
+</nav>
+
+
+
+<div class="ui centered grid about">
+	<div class="sixteen wide mobile fifteen wide tablet fifteen wide computer column about">
+		<section class="ui stacked segments">
+			<div class="ui inverted segment">
+				<article class="twemoji">
+					<h1 id="aleph-zero-heros">Aleph-Zero-Heros</h1>
+
+<p><strong>This is a blog about (mathematical) data science of large-scale hybrid
+narratives and superheros in particular.</strong></p>
+
+<p>The title of the blog comes from a, perhaps obscure, piece of
+mathematics: <a href="https://en.wikipedia.org/wiki/Aleph_number">aleph zero</a> is
+(mathematically speaking) the cardinality of the set of natural
+numbers, which is a pretty mathsy way of saying &ldquo;infinity&rdquo;. So the
+name, aleph-zero-heros, loosely translates as <em>infinity</em>. And the blog
+is going to be focused on superhero narratives, hence the title &mdash;
+read it as <strong>infinite heros</strong>.</p>
+
+<p>A hybrid narrative (to me) is a story (fiction or non-fiction) that
+involves multiple forms of media. We can get an idea by considering
+simple examples of old-school hybrids</p>
+
+<ul>
+<li>picture books and graphic novels</li>
+<li>choose your own adventure books, which combine games with prose</li>
+</ul>
+
+<p>and so on, or the modern mash-ups that the web has made so easy to
+augmented reality systems.</p>
+
+<p>But technology today has allowed artists and writers to build much
+larger joint constructs, and that is what I am interested in here.</p>
+
+<p>I&rsquo;ve gone into much more detail in <a href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/posts/description/">this post</a>.</p>
+
+				</article>
+			</div>
+		</section>
+	</div>
+</div>
+
+				</div>
+			</div>
+		</div>
+		
+		
+	
+	
+
+		
+
+<script src="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/js/site.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+
+
+	<script src="https://twemoji.maxcdn.com/2/twemoji.min.js?2.6"></script>
+
+
+
+
+
+
+
+
+	
+	<script>
+		window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+		ga('create', 'UA-96845987-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+		
+
+
+		
+
+	<script>
+		(function () {
+		  console.log("Twemoji up and making stuff colourful!");
+		  for (var b = document.getElementsByClassName("twemoji"), a = 0; a < b.length; a++) {
+			twemoji.parse(b[a]);
+		  }
+		})();
+	</script>
+
+
+	</body>
+</html>

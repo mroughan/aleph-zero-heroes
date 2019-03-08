@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Aleph-Zero-Heroes</title>
+    <link>http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/posts/</link>
+    <description>Recent content in Posts on Aleph-Zero-Heroes</description>
+    <meta name="generator" content="Hugo 0.54.0" />
+    <lastBuildDate>Fri, 08 Mar 2019 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>MCU Timeline Part I</title>
+      <link>http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/posts/post_mcu_timeline1/</link>
+      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/posts/post_mcu_timeline1/</guid>
+      <description>Building a Timeline for the Marvel Cinematic Universe: paths, graphs and automobiles</description>
+    </item>
+    
+    <item>
+      <title>Julia (Part I): Web APIs</title>
+      <link>http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/posts/post_julia1/</link>
+      <pubDate>Mon, 25 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/posts/post_julia1/</guid>
+      <description>Getting data into Julia from the web</description>
+    </item>
+    
+    <item>
+      <title>The Coolness of the MCU</title>
+      <link>http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/posts/post_mcu1/</link>
+      <pubDate>Sun, 17 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/posts/post_mcu1/</guid>
+      <description>Why should you (as a mathematician, statistician or data scientist) care about the Marvel Cinematic Universe?</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/posts/description/</link>
+      <pubDate>Sun, 10 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/posts/description/</guid>
+      <description>In this blog I plan to explore using data science on large-scale hybrid narratives, in particular narratives about superheroes.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,38 @@
+{{ if .Get "src"}}
+   {{- $src := .Get "src" -}}
+   {{ if (fileExists $src) -}}
+<div align=center>
+<table class="table">
+  {{ $sep := "," }}
+  {{ $csv :=  getCSV $sep $src }} 
+    {{ range $i, $r := (first 1 $csv) }} 
+      <thead><tr>
+        <th style="text-align:left;">{{ humanize (index $r 0) }}</th>
+        <th style="text-align:left;">{{ humanize (index $r 1) }}</th>
+        <th style="text-align:left;">{{ humanize (index $r 2) }}</th>
+        <th style="text-align:left;">{{ humanize (index $r 3) }}</th>
+        <th style="text-align:left;">{{ humanize (index $r 4) }}</th>
+        <th style="text-align:left;">{{ humanize (index $r 5) }}</th>
+      </tr> </thead>
+    {{ end }}
+    {{ range $i, $r := (after 1 $csv) }} 
+      <tbody><tr>
+        <td>{{ index $r 0 }}</td>
+        <td>{{ index $r 1 }}</td>
+        <td>{{ index $r 2 }}</td>
+        <td>{{ index $r 3 }}</td>
+        <td style="text-align:left;">{{ index $r 4 }}</td>
+        <td style="text-align:left;">{{ index $r 5 }}</td>
+      </tr> </tbody>
+    {{ end }}
+</table>
+</div>
+   {{- end }}
+{{ else }}
+   no parameter SRC
+{{ end }}
+
+
+
+
+

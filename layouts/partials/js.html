@@ -1,0 +1,17 @@
+{{/*Load basic JS*/}}
+<script src="/js/site.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+{{/*twemoji JS*/}}
+{{ with $.Site.Params.features.twitterEmoji }}
+	<script src="https://twemoji.maxcdn.com/2/twemoji.min.js?2.6"></script>
+{{ end }}
+
+{{/*Load custom JS*/}}
+{{ range $val := $.Site.Params.features.customJS }}
+	{{ if gt (len $val) 0 }}
+		<script src="{{ $val }}"></script>
+	{{ end }}
+{{ end }}

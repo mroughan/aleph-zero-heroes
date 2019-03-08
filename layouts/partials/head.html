@@ -1,0 +1,37 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+{{ if eq .Section "posts" }}
+	{{/*Page Author & Description*/}}
+	{{ $authorName := .Params.author.name | default $.Site.Params.author.name }}
+	{{ $description := .Params.description | default (.Summary | plainify) }}
+	<meta name="author" content="{{ $authorName }}" />
+	<meta name="description" content="{{ $description }}" />
+{{ else }}
+	{{/*Site Author & Description*/}}
+	<meta name="author" content="{{ $.Site.Params.author.name }}" />
+	<meta name="description" content="{{ $.Site.Params.description }}" />
+{{ end }}
+
+{{/*Site generator*/}}
+{{ .Hugo.Generator }}
+
+{{/*Favicon*/}}
+<link rel="shortcut icon" href="{{ if $.Site.Params.favicon }}{{ $.Site.Params.favicon }}{{- else }}/img/defaultFav.ico{{ end }}">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+  
+  <!-- Permalink & RSSlink -->
+{{ range .AlternativeOutputFormats }}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+{{ end }}
+
+  {{ if isset $.Site.Params.background "bgImage" -}}
+  <style>
+    body {
+      background: #ecedef url("{{ $.Site.Params.background.bgImage | absURL | safeCSS }}") repeat;
+    }
+  </style>
+  {{- end }}

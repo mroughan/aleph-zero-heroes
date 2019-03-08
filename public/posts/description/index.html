@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<title>
+	About
+</title>
+		
+		<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+	
+	
+	
+	<meta name="author" content="Matt Roughan" />
+	<meta name="description" content="In this blog I plan to explore using data science on large-scale hybrid narratives, in particular narratives about superheroes." />
+
+
+
+<meta name="generator" content="Hugo 0.54.0" />
+
+
+<link rel="shortcut icon" href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/img/defaultFav.ico">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+  
+  
+
+
+  
+
+		
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+<script
+	src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+
+ <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Inconsolata" rel="stylesheet"> 
+ <link href="https://fonts.googleapis.com/css?family=Abel|Alegreya+Sans+SC|Allura|Amarante|Amatic+SC|Antic+Didone|Artifika|Audiowide|Averia+Libre|Bangers|Baumans|Bellefair|Bubbler+One|Calligraffitti|Charm|Cherry+Swash|Chonburi|Cinzel|Cinzel+Decorative|Clicker+Script|Combo|Cormorant+Infant|Cormorant+Unicase|Courgette|Dancing+Script|Della+Respira|Eagle+Lake|Elsie|Expletus+Sans|Felipa|Fondamento|GFS+Didot|GFS+Neohellenic|Great+Vibes|Gruppo|Habibi|IM+Fell+DW+Pica|IM+Fell+DW+Pica+SC|IM+Fell+English+SC|IM+Fell+French+Canon|IM+Fell+Great+Primer|IM+Fell+Great+Primer+SC|Indie+Flower|Inknut+Antiqua|Italianno|Julius+Sans+One|Kaushan+Script|Kavivanar|Lancelot|Libre+Barcode+128|Libre+Barcode+128+Text|Libre+Barcode+39+Extended|Libre+Barcode+39+Extended+Text|Libre+Barcode+39+Text|Libre+Baskerville|Life+Savers|Lobster|Lobster+Two|Londrina+Outline|Lovers+Quarrel|Macondo|Mallanna|Mandali|Marck+Script|Mate+SC|Megrim|Raleway|Mirza|Miss+Fajardose|Molle:400i|Monoton|Montserrat|Montserrat+Subrayada|Mrs+Saint+Delafield|Oleo+Script|Orbitron|Pacifico|Paprika|Petit+Formal+Script|Petrona|Pinyon+Script|Raleway|Raleway+Dots|Redressed|Righteous|Rosarivo|Rouge+Script|Ruslan+Display|Rye|Sacramento|Satisfy|Sigmar+One|Source+Code+Pro|Special+Elite|Spectral+SC|Srisakdi|Suez+One|Suranna|Syncopate|Tangerine|Uncial+Antiqua|UnifrakturMaguntia|Wire+One|Work+Sans" rel="stylesheet"> 
+
+
+
+<link rel="stylesheet" type="text/css" href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/css/site.css">
+
+
+
+
+
+
+	
+		<link rel="stylesheet" type="text/css" href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/css/syntax.css">
+	
+
+<style>
+        body {
+	       display: block;
+	
+	       background-image: url("http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/img/cyanotype_bg_tile.png");
+	       background-color: #ecedef; 
+	       background-repeat: repeat;
+	
+        }
+
+	body, body.pushable {
+	  	background-attachment: fixed;
+	  	background-size: cover !important;
+	}
+</style>
+
+
+
+<script>
+	var colorBG =  null 
+	
+	var isMobile = ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+	console.log("The client device is a "+(isMobile?"mobile":"PC")+".")
+</script>
+
+	</head>
+
+	<body>
+		<script>
+var prevBgIndex = 0;
+var bodyBgSwitchIndex = 0;
+
+
+
+
+
+ 
+       
+
+
+	function getRandomInt(min, max) {
+	  min = Math.ceil(min);
+	  max = Math.floor(max);
+	  var random;
+	  while (1) {
+	    random = Math.floor(Math.random() * (max - min)) + min;
+	    if (random !== prevBgIndex) {
+	      prevBgIndex = random;
+	      break;
+	    }
+	  }
+	  return random;
+	}
+
+	function connect(arr) {
+	  var str = '';
+	  for (var i = 0; i < arr.length; i++) {
+	    if (i !== arr.length - 1) {
+	      str += arr[i] + ', ';
+	    } else {
+	      str += arr[i];
+	    }
+	  }
+	  return str;
+	}
+</script>
+
+
+
+	<div class="blur-overlay"></div>
+
+
+		<div id="sidebar" class="ui sidebar inverted vertical menu">
+	
+	<section id="site" class="ui top attached center aligned inverted segment">
+		
+<div class="ui small circular image">
+	
+		<a href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/"><img src="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/img/aleph0.svg"></a>
+	
+</div>
+
+
+<h3 class="ui header">
+	-aleph-zero-heroes-
+	<div class="sub header">A blog about the mathematics of large-scale hybrid narratives</div>
+</h3>
+ 
+	</section>
+
+	
+	
+		<section class="ui attached center aligned inverted segment sidebar-dream-tags">
+			
+			
+			
+			
+
+
+
+
+	
+	
+		
+			
+			<a class="ui label olive " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/tags/marvel" title="marvel">marvel</a>
+		
+			
+			<a class="ui label orange " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/tags/mcu" title="mcu">mcu</a>
+		
+			
+			<a class="ui label red " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/tags/about" title="about">about</a>
+		
+			
+			<a class="ui label green " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/tags/julia" title="julia">julia</a>
+		
+			
+			<a class="ui label teal " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/tags/narrative-chart" title="narrative-chart">narrative-chart</a>
+		
+			
+			<a class="ui label yellow " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/tags/networks" title="networks">networks</a>
+		
+			
+			<a class="ui label brown " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/tags/timelines" title="timelines">timelines</a>
+		
+	
+
+
+		</section>
+	
+
+	
+	
+
+	
+	<section id="footer" class="ui bottom attached center aligned inverted segment">
+		
+
+	<p>© 2019 Matt Roughan</p>
+ 
+
+<p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a>
+  <br>
+  with <a href="https://github.com/UtkarshVerma/hugo-dream-plus" target="_blank">Dream Plus</a> ++ theme.</p> 
+
+	</section>
+</div>
+
+
+		<div class="pusher">
+			<div class="flipper">
+				<div class="front">
+					
+	<nav class="ui top menu bar">
+	
+	<div class="item">
+		<i class="inverted big link bullseye icon dream-flip-toggle" title="About This Web Page"></i>
+	</div>
+	<div class="item">
+	  <a href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/"><i class="inverted big link home icon" title="Home"></i></a></div>
+	<div class="item">
+	  <a href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/posts"><i class="inverted big link archive icon" title="Archive"></i></a></div>
+	<div class="item">
+	  <a href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/tags"><i class="inverted big link tags icon" title="All Tags"></i></a></div>
+	<div class="item">
+	  <a href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/categories"><i class="inverted big link cubes icon" title="All Categories"></i></a></div>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<div class="title">
+	  -aleph-zero-heroes-
+	  	
+	  
+	  <div class="sub header"></div>
+    	</div>
+
+	
+	
+		
+	
+	
+		<div class="item right">
+			<a href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/posts/index.xml">
+				<i class="inverted big link rss icon" title="RSS Feed"></i>
+			</a>
+		</div>
+	
+</nav>
+
+
+	<div class="ui centered grid">
+		
+		<div class="sixteen wide mobile only column">
+				<div class="ui inverted accordion">
+	<div id="header" class="ui inverted segment column box">		
+		
+		<header id="author" class="ui top attached center aligned inverted segment">
+			
+<div class="ui small circular image">
+	
+		<a href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/"><img src="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/img/aleph0.svg"></a>
+	
+</div>
+
+
+<h3 class="ui header">
+	-aleph-zero-heroes-
+	<div class="sub header">A blog about the mathematics of large-scale hybrid narratives</div>
+</h3>
+
+		</header> 
+
+		
+		<div class=" title header-title">
+			
+				<div id="tag-category-pop" class="ui red right corner label">
+					<i class="hand point icon down" title="Show/hide tags and categories"></i>
+				</div>
+			
+		</div>
+		
+		
+		<div id="tag-category" class=" content">
+			
+				<section class="ui attached center aligned inverted segment dream-tags none flexbox">
+					
+					
+					
+
+
+
+
+	
+	
+		
+			
+			<a class="ui label green " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/tags/marvel" title="marvel">marvel</a>
+		
+			
+			<a class="ui label blue " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/tags/mcu" title="mcu">mcu</a>
+		
+			
+			<a class="ui label purple " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/tags/about" title="about">about</a>
+		
+			
+			<a class="ui label brown " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/tags/julia" title="julia">julia</a>
+		
+			
+			<a class="ui label violet " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/tags/narrative-chart" title="narrative-chart">narrative-chart</a>
+		
+			
+			<a class="ui label teal " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/tags/networks" title="networks">networks</a>
+		
+			
+			<a class="ui label purple " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/tags/timelines" title="timelines">timelines</a>
+		
+	
+
+
+				</section>
+			
+
+			
+		</div>
+
+		
+		<footer class="ui bottom attached center aligned inverted segment">
+			
+
+	<p>© 2019 Matt Roughan</p>
+ 
+
+<p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a>
+  <br>
+  with <a href="https://github.com/UtkarshVerma/hugo-dream-plus" target="_blank">Dream Plus</a> ++ theme.</p> 
+
+		</footer>
+	</div>
+</div>
+
+		</div>
+
+		<div class="sixteen wide mobile fifteen wide tablet twelve wide computer column post-list">
+			
+			<section class="ui secondary top attached black segment post-head">
+				<h1 class="post-title">
+					About
+				</h1>
+				<h3 class="post-subtitle">
+				  In this blog I plan to explore using data science on large-scale hybrid narratives, in particular narratives about superheroes.
+				<h3>
+
+				    <img class="featured-image" src="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/img/about.svg.png"
+				       alt=": Aleph is Unicode: 2135">  
+
+				<div class="sub header">
+					<div><span><i class="calendar outline icon"></i>Feb 10, 2019</span></div>
+					
+					<div><span><i class="clock outline icon"></i>10 min read</span></div>
+					<div><span><i class="angle double up icon"></i>Last updated on Feb 10, 2019</span></div>
+				</div>
+				<hr>
+				
+				
+
+				<article class="post-content twemoji">
+					
+
+<h1 id="aleph-zero-heroes">Aleph-Zero-Heroes&nbsp;<a class="anchor" href="#aleph-zero-heroes"><i class="small linkify icon"></i></a> </h1>
+
+<p>The title of the blog comes from a, perhaps obscure, piece of
+mathematics. Mathematically speaking <a href="https://en.wikipedia.org/wiki/Aleph_number" target="_blank">aleph zero</a>
+&ndash; which we
+write \(\displaystyle \aleph_0\)
+ &ndash; is the
+cardinality of the set of natural numbers, which is a pretty mathsy
+way of saying &ldquo;infinity&rdquo;. So the name, aleph-zero-heroes, loosely
+translates as <strong>infinite heroes</strong>.</p>
+
+<p>I don&rsquo;t just care about superheroes &ndash; more broadly they are a
+archetype that comes up frequently in the context of hybrid
+narratives, and that is what I want to tap into.</p>
+
+<p>To explain what, why and so on of all this, see below.</p>
+
+<ul>
+<li><a href="#why">Why</a></li>
+<li><a href="#what">What</a></li>
+<li><a href="#how">How</a></li>
+<li><a href="#when">When</a></li>
+<li><a href="#where">Where</a></li>
+<li><a href="#where">Who</a></li>
+</ul>
+
+<hr />
+
+<h2 id="why">Why?&nbsp;<a class="anchor" href="#why"><i class="small linkify icon"></i></a> </h2>
+
+<p>The capacity that sets humans apart from the animal kingdom is not our
+ability to use tools (there are animals, even birds that also use
+tools); or our ability to communicate (many animals speak to each
+other); or our ability to form complex social bonds (some animals bond
+for life). Human&rsquo;s are unique in our
+ability and <em>desire</em> to tell stories.</p>
+
+<p>Myths, legends, narratives, and fictions allow us to build larger
+social constructs than
+<a href="https://en.wikipedia.org/wiki/Dunbar%27s_number" target="_blank">Dunbar&rsquo;s number</a>
+(around 150). Stories are part of how we plan ahead. Stories allow us
+to change and adapt as a species more quickly than our the genetic
+heritage of most species. Stories have made us the dominant species on
+the planet is the blink of an eye (on evolutionary time scales).</p>
+
+<p>So if stories are what make us who we are, then they are worth
+studying. I&rsquo;m a mathematician by training, but a data scientist in
+practice, so that&rsquo;s the approach to the analysis of stories that I am
+inevitably going to adopt, and there is an increasing amount of effort
+going into &ldquo;narrative analysis&rdquo; both of fiction and non-fiction (e.g.,
+<a
+href="https://www.nytimes.com/2011/06/26/books/review/the-mechanic-muse-what-is-distant-reading.html"
+target="_blank">distant reading</a> of historical source
+materials). Mathematics, statistics and computer science &ndash; the basis
+of data science &ndash; are crucial to that analysis.</p>
+
+<p>I could look at any sort of stories, why focus on superheroes? Because
+I&rsquo;m interested in a particular phenomena &mdash; large-scale hybrids.
+I&rsquo;ll describe them in more detail below, but we could have chosen to
+do Harry Potter, so why superheroes in particular? I guess that
+reflects my personal biases, but also superheroes are a big part of
+modern popular culture and have been for longer than Harry Potter. The
+idea behind superheroes isn&rsquo;t really a new thing at all, so I see them
+as a richer, and more evolved phenomena.</p>
+
+<p>Formally, we might trace the idea back to Nietzsche, but the modern
+comic superhero really dates from Jerry Siegel and Joe Shuster in the
+30s, right around the time of the invention of the comic book
+<a href="https://en.wikipedia.org/wiki/Action_Comics_1" target="_blank">(Superman, Action Comics #1)</a>. The
+two things were synergistic.</p>
+
+<p>However, the superhero is just a modernisation of the hero of any
+number of myths and legends. Classical mythology is replete with
+heroes with special powers. They may not have been &ldquo;mutants&rdquo;, but they
+usually got their powers through good genes &mdash; a typical hero was
+often a descendent of a God (or two).</p>
+
+<p>Many comics books take inspiration directly from mythology (Wonder
+Woman, Thor, Thanos, &hellip;).  Others create an all-new story (a
+radioactive spider bite couldn&rsquo;t be a thing until we had radiation);
+even when they arise independently they often evolve towards common
+story elements.</p>
+
+<ul>
+<li><p>The hero, goes through a journey, usually hits some nadir, and then
+is reborn. And he takes what he learns in the journey towards his
+eventual victory &ndash; sounds like Iron Man 1 to me?</p></li>
+
+<li><p>Villains of classical mythology are too often victims of their own
+hubris. That sounds like many a mad scientist to me.</p></li>
+
+<li><p>A hero seeks revenge for a murdered father. Is that Batman or
+Orestes?  Of course, Bruce Wayne didn&rsquo;t need to extend his revenge
+to his mother as well. So he was lucky. Really.</p></li>
+</ul>
+
+<p>Other parallels include:</p>
+
+<ul>
+<li><p>Superman has his Achilles heel.</p></li>
+
+<li><p>Achilles warriors were called Myrmidons = Ant-men.</p></li>
+
+<li><p>Gilgamesh, a demi-god and initially an arrogant king or prince of
+his city state (Thor?) meets a wild-man Enkidu (The Hulk), and
+after fighting each other to a stand still they bond and have
+adventures together.</p></li>
+
+<li><p>Deadpool &ndash; a cosmic fool if ever there was.</p></li>
+
+<li><p>Arthur and his round table = the Justice League?</p></li>
+
+<li><p>And Superman was found in a reed basket on a river bank, or was that
+Moses?</p></li>
+</ul>
+
+<p>More important than the parallels of particular characters or stories
+is the fact that comics-book heroes serve many of the same functions
+as the characters from legend. They provide a shared cultural
+experience, important parts of which are aimed at forming common
+cultural concepts such as morality by providing super-real role models
+and assigning them dilemmas that we can all understand.</p>
+
+<p>And some of the stories are deadly serious. Watchman is Alan Moore&rsquo;s
+magnum opus, and a modern <em>1984</em>. It&rsquo;s a brilliant story about human
+frailty, and the evils of good intentions, and the horror of war, all
+wrapped around a satire on caped crusaders.</p>
+
+<!-- A lot of mythology was explanitory -- "where did that earthquake come -->
+
+<!-- from?" and the like. But many more were about the human experience. We -->
+
+<!-- can see that in our language, so much of which evolved from classical -->
+
+<!-- mythological origins. These days they same thing is happening. Popular -->
+
+<!-- culture coins new terms every day, but who doesn't know "Hulk Smash" -->
+
+<!-- ... -->
+
+<p>I don&rsquo;t know if he ever read comics, but I think
+<a href="https://en.wikipedia.org/wiki/Joseph_Campbell" target="_blank">Joseph Campbell</a> would have been at home there. He
+understood the parallels between the hero myths of different
+cultures. He would have understood the modern parallels as well.</p>
+
+<p>Given their connection to cultural norms comics also form a barometer
+for our culture. That might be worrying: comics are well-known to have
+strong gender and racial biases (though the situation is improving I
+think).</p>
+
+<p>Or the barometer might be encouraging: a common theme in many comics is a
+(perhaps guarded) optimism about the future.</p>
+
+<p>And in between there are some interesting cultural quirks: there was a
+lot more sex in classical mythology than in the mainstream comics and
+their associated movies. Modern heroes are often chaste, or at least
+sex happens behind closed doors.  That is perhaps another reflection
+of the mix of new puritanism that is a strong undercurrent of the
+modern West.</p>
+
+<p>So don&rsquo;t write superheroes off as &ldquo;escapist&rdquo;. And even if
+that&rsquo;s what you want to call &lsquo;em, then listen to Neil Gaiman:</p>
+
+<blockquote>
+<p>&hellip;escapist fiction is just that: fiction that opens a door, shows the sunlight outside, gives you a place to go where you are in control, are with people you want to be with (and books are real places, make no mistake about that); and more importantly, during your escape, books can also give you knowledge about the world and your predicament, give you weapons, give you armour: real things you can take back into your prison. Skills and knowledge and tools you can use to escape for real.</p>
+
+<p>As JRR Tolkien reminded us, the only people who inveigh against escape are jailers.”
+― Neil Gaiman, The View from the Cheap Seats: Selected Nonfiction</p>
+</blockquote>
+
+<p>However, I don&rsquo;t plan to restrict myself unduly. If I see something
+interesting that I think is related, I&rsquo;m going to look at that,
+regardless of lack of superhero content. <em>Firefly</em> isn&rsquo;t a series
+about superheroes, but if I can, I definitely want to look there. And
+there are some non-fiction texts I want to get to eventually, but I
+don&rsquo;t want to spoil the surprise.</p>
+
+<p>Finally, I don&rsquo;t know enough of this stuff. I don&rsquo;t know enough about
+writing. I don&rsquo;t know enough social science or digital humanities, and
+although I was brought up with the Greeks and Romans in my house (and
+the Norse next door) there are whole swathes of world mythology I know
+only peripherally.  If nothing else, this blog is a chance for me to
+learn more.</p>
+
+<!-- https://blogs.tip.duke.edu/insights/2017/05/15/superheroes-and-greek-myths/ -->
+
+<!-- http://johnromaniello.com/modern-mythology-superheroes/ -->
+
+<!-- https://www.theguardian.com/books/2016/may/27/comic-book-superheroes-the-gods-of-modern-mythology -->
+
+<!-- http://www.bbc.com/culture/story/20150819-before-marvel-and-dc-superheroes-of-the-ancient-world -->
+
+<!-- https://www.britannica.com/topic/Orestes-Greek-mythology -->
+
+<!-- https://en.wikipedia.org/wiki/Gilgamesh -->
+
+<!-- http://www.idildergisi.com/makale/pdf/1485861373.pdf -->
+
+<h2 id="what">What is that thing you said earlier?&nbsp;<a class="anchor" href="#what"><i class="small linkify icon"></i></a> </h2>
+
+<p>A story is the sequence of events. A narrative is how you tell
+it. Traditional narratives took the form of oral tellings, written
+works, theatre, and so on.</p>
+
+<p>A hybrid narrative involves multiple forms of story telling blended
+together. We can get an idea by considering simple examples of
+old-school hybrids</p>
+
+<ul>
+<li>picture books and graphic novels, which combine art and text</li>
+<li>choose your own adventure books, which combine games with prose</li>
+</ul>
+
+<p>The relatively low-cost, &ldquo;pulp&rdquo; nature of comics allowed their authors
+and artists to do new things, to experiment. Comics then folded back
+into other forms of story telling, the superhero movie genre being the
+most obvious. And the web has made it easy to create other hybrids,
+increasing the pace of innovation.</p>
+
+<p>Why <em>large-scale</em> hybrid narratives? It&rsquo;s only recently that it&rsquo;s been
+possible to create these. Logistical, technical and economic
+constraints have prevented really large-scale hybrids in the
+past. Stories this large, that reach millions of people, must be an
+interesting reflection on our world.  So in this blog, we are not just
+interested in simple hybrid texts, for example a graphic novel. We are
+interested in the massive hybrids created in response to popular
+demand, and facilitated by technology.</p>
+
+<p>For instance, graphic novels have inspired a new genre of movies &ndash;
+superhero movies &ndash; and these have become massively popular. But where
+once these were single, throw-away movies, now they form their own
+ecosystems of movies and other classes of media and don&rsquo;t forget
+the vast amounts of fan fiction and commentary. The Marvel Cinematic
+Universe (MCU) is a great example of this.</p>
+
+<p>In these ecosystems, novels or graphic novels inspire movies, which in
+turn spin off games, and TV series, and traditional novels, and new
+graphic novels. The MCU might be the best example, but DC is following
+close behind and we can think about the Star Wars or Harry Potter
+franchises in the same way. And don&rsquo;t be surprised to see more
+following suit. These franchises are worth a <em>lot</em> of money. The MCU
+movies alone have generated nearly $20 billion. I&rsquo;m not sure anyone
+outside of Marvel knows what the whole franchise is worth.</p>
+
+<p>It would be careless to then write these off as simple action movies
+without thinking a little more deeply about how they mirror our
+society, and in turn affect it.</p>
+
+<hr />
+
+<h2 id="how">How&nbsp;<a class="anchor" href="#how"><i class="small linkify icon"></i></a> </h2>
+
+<p>I work mostly on networks, so that&rsquo;s the type of analysis you will see
+a bit of here, but networks touch on everything so there&rsquo;s going to be
+bits and pieces from everywhere.</p>
+
+<p>If you want to see some examples of what people are doing with
+networks, have a look at the following:</p>
+
+<ul>
+<li><p><a href="https://arxiv.org/abs/cond-mat/0202174" target="_blank">&ldquo;Marvel Universe looks almost like a real social network&rdquo;</a>
+in which the authors argue that the network created by linking
+characters who share a comic has many of the characteristics of
+real-life, human social networks.</p></li>
+
+<li><p><a href="https://iopscience.iop.org/article/10.1088/1742-5468/2007/09/P09020/meta" target="_blank">&ldquo;How to become a superhero&rdquo;</a>
+is similar, but goes a little further.</p></li>
+
+<li><p><a href="https://link.springer.com/article/10.1140/epjb/e2013-40583-3" target="_blank">&ldquo;Network analysis of the Íslendinga sögur – the Sagas of Icelanders&rdquo;</a>
+in which the authors examine the network of characters in the
+Icelandic sagas, again comparing them to real social networks.</p></li>
+
+<li><p><a href="https://iopscience.iop.org/article/10.1209/0295-5075/99/28002" target="_blank">&ldquo;Universal properties of mythological networks&rdquo;</a>
+in which the authors compare the networks of characters in a set of
+mythology texts (<em>Beowulf</em>, the <em>Iliad</em> and the <em>Táin Bó
+Cuailnge</em>. Again they find parallels.  These authors have a nice
+<a href="https://yosej.github.io/Ossian_Full_Network/" target="_blank">visualisation</a>
+of one
+of the networks they are dealing with.</p></li>
+
+<li><p>And <em>Game of Thrones</em> is featured in
+<a href="https://networkofthrones.wordpress.com/the-novels/a-game-of-thrones/" target="_blank">&ldquo;Network of Thrones&rdquo;</a>
+and <a href="https://shirinsplayground.netlify.com/2018/03/got_network/" target="_blank">&ldquo;Another Game of Thrones network analysis&rdquo;</a>
+is perhaps the best known example, because of the popularity of
+<em>Game of Thrones</em>, but also because
+<a href="https://www.kaggle.com/mylesoneill/game-of-thrones" target="_blank">Kaggle released a dataset</a>.</p></li>
+</ul>
+
+<p>The finding of universal properties in our narratives is a big part of
+what motivates this blog, but network analyses are often focused on
+empirical measurements of network features, and I am hoping to go a
+little further.</p>
+
+<p>At the same time there is increasing interest in getting to these
+corpora without messing around manually: e.g.,</p>
+
+<ul>
+<li><a href="https://aclanthology.info/papers/I13-1171/i13-1171" target="_blank">&ldquo;Automatic Extraction of Social Networks from Literary Text: A Case Study on <em>Alice in Wonderland</em>&ldquo;</a></li>
+</ul>
+
+<p>and our own recent effort</p>
+
+<ul>
+<li><a href="https://arxiv.org/abs/1811.01467" target="_blank">&ldquo;The one comparing narrative social network extraction techniques&rdquo;</a></li>
+</ul>
+
+<p>I&rsquo;m learning <a href="https://julialang.org/" target="_blank">Julia</a> these days, so I thought there was an
+opportunity to use this as a project to learn Julia, so expect lots of
+this, though some Python or Perl may creep in at some point. If you
+don&rsquo;t know anything about Julia then look it up. It&rsquo;s cool!</p>
+
+<p>And I&rsquo;m a mathematician by training, so there will be some emphasis on
+math as we progress, but it&rsquo;s going to take a little while to build,
+so we&rsquo;ll start with code and data.</p>
+
+<hr />
+
+<h2 id="when">When&nbsp;<a class="anchor" href="#when"><i class="small linkify icon"></i></a> </h2>
+
+<p>Every couple of weeks, though it may start fast and slow down as a
+realise how much work is involved :)</p>
+
+<hr />
+
+<h2 id="where">Where&nbsp;<a class="anchor" href="#where"><i class="small linkify icon"></i></a> </h2>
+
+<p>Your friendly neighbourhood web browser. And you can follow on 
+<a href="https://twitter.com/AlephZeroHeroes">Twitter</a>
+  or get a standard
+<a href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/posts/index.xml">RSS</a> feed.</p>
+
+<hr />
+
+<h2 id="who">Who&nbsp;<a class="anchor" href="#who"><i class="small linkify icon"></i></a> </h2>
+
+<p>I&rsquo;m a Prof at the University of Adelaide<sup><a href="#fn1"
+id="ref1">1</a></sup> (in Adelaide, South Australia), and a Chief
+Investigator in <a href="https://acems.org.au/home" target="_blank">
+ACEMS (The Australian Research Council Centre of
+Excellence for Mathematical and Statistical Frontiers).</a></p>
+
+<hr />
+
+<p>Footnotes:</p>
+
+<ol>
+<li><div id="fn1" class="footnote">
+
+ Don't tell them I have a web page -- they'll replace it with a marketing video.
+
+  <a href="#ref1" title="Jump back to footnote 1 in the text.">↩</a></div></li>
+</ol>
+
+				</article>				
+			</section>
+
+			
+			<section class="ui secondary attached segment dream-tags">
+				
+					
+
+
+
+
+	
+		<a class="ui label pink " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/tags/about" title="about">about</a>
+	
+
+
+				
+			</section>
+
+			
+			
+				<section class="ui secondary bottom attached segment share row box">
+					
+
+
+
+
+
+
+
+
+<div class="author">
+	
+	<a href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/"><img class="avatar" src="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/img/aleph0.svg"></a>
+	
+</div>
+<div class="info grow flexbox">
+	<a href="https://twitter.com/AlephZeroHeroes">
+	<p class="name">Matt Roughan</p>
+	</a>
+	<p class="desc"> </p>
+</div>
+
+
+<section class="buttons row box">
+	<div class="facebook none flexbox" href="#" onclick="window.open(
+			'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+			'facebook-share-dialog',
+			'width=626,height=436'); return false;">
+		<button class="ui facebook button"><i class="facebook icon"></i>Share</button>
+	</div>
+	<div class="twitter none flexbox" onclick="window.open('https://twitter.com/intent/tweet?text=Read &quot;About &quot; by @AlephZeroHeroes http:\/\/bandicoot.maths.adelaide.edu.au\/public\/aleph-zero-heroes\/posts\/description\/','_self')">
+		<button class="ui twitter button"><i class="twitter icon"></i>Tweet</button>
+	</div>
+</section>
+
+				</section>
+			
+
+			
+			
+			
+
+			
+			
+		</div>
+	</div>
+
+				</div>
+				<div class="back">
+					
+<nav class="ui top secondary menu bar">
+	<div class="item">
+		<i class="inverted big link bullseye icon dream-flip-toggle" title="About This Web Page"></i>
+	</div>
+	
+		
+	
+		
+	
+
+	
+	
+	
+	
+	
+	
+	
+		
+		
+			<div class="item">
+				<a href="https://github.com/mroughan/AlephZeroHeroesData" target="	_blank">
+					<i id="ico" class="inverted big link github icon" title="GitHub"></i>
+				</a>
+			</div>
+		
+	
+		
+		
+	
+		
+		
+			<div class="item">
+				<a href="https://twitter.com/AlephZeroHeroes" target="	_blank">
+					<i id="ico" class="inverted big link twitter icon" title="Twitter"></i>
+				</a>
+			</div>
+		
+	
+		
+		
+	
+		
+		
+	
+		
+		
+	
+		
+		
+	
+		
+		
+	
+		
+		
+	
+</nav>
+
+
+
+<div class="ui centered grid about">
+	<div class="sixteen wide mobile fifteen wide tablet fifteen wide computer column about">
+		<section class="ui stacked segments">
+			<div class="ui inverted segment">
+				<article class="twemoji">
+					<h1 id="aleph-zero-heros">Aleph-Zero-Heros</h1>
+
+<p><strong>This is a blog about (mathematical) data science of large-scale hybrid
+narratives and superheros in particular.</strong></p>
+
+<p>The title of the blog comes from a, perhaps obscure, piece of
+mathematics: <a href="https://en.wikipedia.org/wiki/Aleph_number">aleph zero</a> is
+(mathematically speaking) the cardinality of the set of natural
+numbers, which is a pretty mathsy way of saying &ldquo;infinity&rdquo;. So the
+name, aleph-zero-heros, loosely translates as <em>infinity</em>. And the blog
+is going to be focused on superhero narratives, hence the title &mdash;
+read it as <strong>infinite heros</strong>.</p>
+
+<p>A hybrid narrative (to me) is a story (fiction or non-fiction) that
+involves multiple forms of media. We can get an idea by considering
+simple examples of old-school hybrids</p>
+
+<ul>
+<li>picture books and graphic novels</li>
+<li>choose your own adventure books, which combine games with prose</li>
+</ul>
+
+<p>and so on, or the modern mash-ups that the web has made so easy to
+augmented reality systems.</p>
+
+<p>But technology today has allowed artists and writers to build much
+larger joint constructs, and that is what I am interested in here.</p>
+
+<p>I&rsquo;ve gone into much more detail in <a href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/posts/description/">this post</a>.</p>
+
+				</article>
+			</div>
+		</section>
+	</div>
+</div>
+
+				</div>
+			</div>
+		</div>
+		
+		
+	
+	
+
+		
+
+<script src="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/js/site.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+
+
+	<script src="https://twemoji.maxcdn.com/2/twemoji.min.js?2.6"></script>
+
+
+
+
+
+
+
+
+	
+	<script>
+		window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+		ga('create', 'UA-96845987-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+		
+
+
+		
+
+	<script>
+		(function () {
+		  console.log("Twemoji up and making stuff colourful!");
+		  for (var b = document.getElementsByClassName("twemoji"), a = 0; a < b.length; a++) {
+			twemoji.parse(b[a]);
+		  }
+		})();
+	</script>
+
+
+	</body>
+</html>

@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<title>
+	Alan Moore and Watchmen
+</title>
+		
+		<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+	
+	
+	
+	<meta name="author" content="Matt Roughan" />
+	<meta name="description" content="The mathematics of redefining a genre, or symmetry in comics" />
+
+
+
+<meta name="generator" content="Hugo 0.54.0" />
+
+
+<link rel="shortcut icon" href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/img/defaultFav.ico">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+  
+  
+
+
+  
+
+		
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+<script
+	src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+
+ <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Inconsolata" rel="stylesheet"> 
+ <link href="https://fonts.googleapis.com/css?family=Abel|Alegreya+Sans+SC|Allura|Amarante|Amatic+SC|Antic+Didone|Artifika|Audiowide|Averia+Libre|Bangers|Baumans|Bellefair|Bubbler+One|Calligraffitti|Charm|Cherry+Swash|Chonburi|Cinzel|Cinzel+Decorative|Clicker+Script|Combo|Cormorant+Infant|Cormorant+Unicase|Courgette|Dancing+Script|Della+Respira|Eagle+Lake|Elsie|Expletus+Sans|Felipa|Fondamento|GFS+Didot|GFS+Neohellenic|Great+Vibes|Gruppo|Habibi|IM+Fell+DW+Pica|IM+Fell+DW+Pica+SC|IM+Fell+English+SC|IM+Fell+French+Canon|IM+Fell+Great+Primer|IM+Fell+Great+Primer+SC|Indie+Flower|Inknut+Antiqua|Italianno|Julius+Sans+One|Kaushan+Script|Kavivanar|Lancelot|Libre+Barcode+128|Libre+Barcode+128+Text|Libre+Barcode+39+Extended|Libre+Barcode+39+Extended+Text|Libre+Barcode+39+Text|Libre+Baskerville|Life+Savers|Lobster|Lobster+Two|Londrina+Outline|Lovers+Quarrel|Macondo|Mallanna|Mandali|Marck+Script|Mate+SC|Megrim|Raleway|Mirza|Miss+Fajardose|Molle:400i|Monoton|Montserrat|Montserrat+Subrayada|Mrs+Saint+Delafield|Oleo+Script|Orbitron|Pacifico|Paprika|Petit+Formal+Script|Petrona|Pinyon+Script|Raleway|Raleway+Dots|Redressed|Righteous|Rosarivo|Rouge+Script|Ruslan+Display|Rye|Sacramento|Satisfy|Sigmar+One|Source+Code+Pro|Special+Elite|Spectral+SC|Srisakdi|Suez+One|Suranna|Syncopate|Tangerine|Uncial+Antiqua|UnifrakturMaguntia|Wire+One|Work+Sans" rel="stylesheet"> 
+
+
+
+<link rel="stylesheet" type="text/css" href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/css/site.css">
+
+
+
+
+
+
+	
+		<link rel="stylesheet" type="text/css" href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/css/syntax.css">
+	
+
+<style>
+        body {
+	       display: block;
+	
+	       background-image: url("http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/img/cyanotype_bg_tile.png");
+	       background-color: #ecedef; 
+	       background-repeat: repeat;
+	
+        }
+
+	body, body.pushable {
+	  	background-attachment: fixed;
+	  	background-size: cover !important;
+	}
+</style>
+
+
+
+<script>
+	var colorBG =  null 
+	
+	var isMobile = ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+	console.log("The client device is a "+(isMobile?"mobile":"PC")+".")
+</script>
+
+	</head>
+
+	<body>
+		<script>
+var prevBgIndex = 0;
+var bodyBgSwitchIndex = 0;
+
+
+
+
+
+ 
+       
+
+
+	function getRandomInt(min, max) {
+	  min = Math.ceil(min);
+	  max = Math.floor(max);
+	  var random;
+	  while (1) {
+	    random = Math.floor(Math.random() * (max - min)) + min;
+	    if (random !== prevBgIndex) {
+	      prevBgIndex = random;
+	      break;
+	    }
+	  }
+	  return random;
+	}
+
+	function connect(arr) {
+	  var str = '';
+	  for (var i = 0; i < arr.length; i++) {
+	    if (i !== arr.length - 1) {
+	      str += arr[i] + ', ';
+	    } else {
+	      str += arr[i];
+	    }
+	  }
+	  return str;
+	}
+</script>
+
+
+
+	<div class="blur-overlay"></div>
+
+
+		<div id="sidebar" class="ui sidebar inverted vertical menu">
+	
+	<section id="site" class="ui top attached center aligned inverted segment">
+		
+<div class="ui small circular image">
+	
+		<a href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/"><img src="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/img/aleph0.svg"></a>
+	
+</div>
+
+
+<h3 class="ui header">
+	-aleph-zero-heros-
+	<div class="sub header">A blog about the mathematics of large-scale hybrid narratives</div>
+</h3>
+ 
+	</section>
+
+	
+	
+		<section class="ui attached center aligned inverted segment sidebar-dream-tags">
+			
+			
+			
+			
+
+
+
+
+	
+	
+		
+			
+			<a class="ui label purple " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/tags/marvel" title="marvel">marvel</a>
+		
+			
+			<a class="ui label red " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/tags/mcu" title="mcu">mcu</a>
+		
+			
+			<a class="ui label brown " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/tags/timelines" title="timelines">timelines</a>
+		
+			
+			<a class="ui label olive " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/tags/julia" title="julia">julia</a>
+		
+			
+			<a class="ui label blue " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/tags/networks" title="networks">networks</a>
+		
+			
+			<a class="ui label yellow " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/tags/conflict" title="conflict">conflict</a>
+		
+			
+			<a class="ui label yellow " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/tags/joss-whedon" title="joss-whedon">joss-whedon</a>
+		
+			
+			<a class="ui label blue " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/tags/about" title="about">about</a>
+		
+			
+			<a class="ui label orange " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/tags/alan-moore" title="alan-moore">alan-moore</a>
+		
+			
+			<a class="ui label olive " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/tags/buffy" title="buffy">buffy</a>
+		
+			
+			<a class="ui label orange " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/tags/doctor-strange" title="doctor-strange">doctor-strange</a>
+		
+			
+			<a class="ui label orange " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/tags/elo" title="elo">elo</a>
+		
+			
+			<a class="ui label yellow " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/tags/firefly" title="firefly">firefly</a>
+		
+			
+			<a class="ui label teal " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/tags/golden-spiral" title="golden-spiral">golden-spiral</a>
+		
+			
+			<a class="ui label purple " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/tags/hugo" title="hugo">hugo</a>
+		
+			
+			<a class="ui label violet " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/tags/neil-gaiman" title="neil-gaiman">neil-gaiman</a>
+		
+			
+			<a class="ui label violet " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/tags/sandman" title="sandman">sandman</a>
+		
+			
+			<a class="ui label violet " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/tags/watchment" title="watchment">watchment</a>
+		
+	
+
+
+		</section>
+	
+
+	
+	
+
+	
+	<section id="footer" class="ui bottom attached center aligned inverted segment">
+		
+
+	<p>© 2019 Matt Roughan</p>
+ 
+
+<p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a>
+  <br>
+  with <a href="https://github.com/UtkarshVerma/hugo-dream-plus" target="_blank">Dream Plus</a> ++ theme.</p> 
+
+	</section>
+</div>
+
+
+		<div class="pusher">
+			<div class="flipper">
+				<div class="front">
+					
+	<nav class="ui top menu bar">
+	
+	<div class="item">
+		<i class="inverted big link bullseye icon dream-flip-toggle" title="About This Web Page"></i>
+	</div>
+	<div class="item">
+	  <a href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/"><i class="inverted big link home icon" title="Home"></i></a></div>
+	<div class="item">
+	  <a href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/posts"><i class="inverted big link archive icon" title="Archive"></i></a></div>
+	<div class="item">
+	  <a href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/tags"><i class="inverted big link tags icon" title="All Tags"></i></a></div>
+	<div class="item">
+	  <a href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/categories"><i class="inverted big link cubes icon" title="All Categories"></i></a></div>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<div class="title">
+  	  -aleph-zero-heros- 	
+	  <div class="sub header"></div>
+    	</div>
+
+	
+	
+		
+	
+	
+		<div class="item right">
+			<a href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/posts/index.xml">
+				<i class="inverted big link rss icon" title="RSS Feed"></i>
+			</a>
+		</div>
+	
+</nav>
+
+
+	<div class="ui centered grid">
+		
+		<div class="sixteen wide mobile only column">
+				<div class="ui inverted accordion">
+	<div id="header" class="ui inverted segment column box">		
+		
+		<header id="author" class="ui top attached center aligned inverted segment">
+			
+<div class="ui small circular image">
+	
+		<a href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/"><img src="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/img/aleph0.svg"></a>
+	
+</div>
+
+
+<h3 class="ui header">
+	-aleph-zero-heros-
+	<div class="sub header">A blog about the mathematics of large-scale hybrid narratives</div>
+</h3>
+
+		</header> 
+
+		
+		<div class=" title header-title">
+			
+				<div id="tag-category-pop" class="ui red right corner label">
+					<i class="hand point icon down" title="Show/hide tags and categories"></i>
+				</div>
+			
+		</div>
+		
+		
+		<div id="tag-category" class=" content">
+			
+				<section class="ui attached center aligned inverted segment dream-tags none flexbox">
+					
+					
+					
+
+
+
+
+	
+	
+		
+			
+			<a class="ui label blue " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/tags/marvel" title="marvel">marvel</a>
+		
+			
+			<a class="ui label orange " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/tags/mcu" title="mcu">mcu</a>
+		
+			
+			<a class="ui label teal " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/tags/timelines" title="timelines">timelines</a>
+		
+			
+			<a class="ui label violet " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/tags/julia" title="julia">julia</a>
+		
+			
+			<a class="ui label blue " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/tags/networks" title="networks">networks</a>
+		
+			
+			<a class="ui label purple " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/tags/conflict" title="conflict">conflict</a>
+		
+			
+			<a class="ui label violet " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/tags/joss-whedon" title="joss-whedon">joss-whedon</a>
+		
+			
+			<a class="ui label blue " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/tags/about" title="about">about</a>
+		
+			
+			<a class="ui label violet " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/tags/alan-moore" title="alan-moore">alan-moore</a>
+		
+			
+			<a class="ui label pink " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/tags/buffy" title="buffy">buffy</a>
+		
+			
+			<a class="ui label orange " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/tags/doctor-strange" title="doctor-strange">doctor-strange</a>
+		
+			
+			<a class="ui label green " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/tags/elo" title="elo">elo</a>
+		
+			
+			<a class="ui label violet " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/tags/firefly" title="firefly">firefly</a>
+		
+			
+			<a class="ui label pink " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/tags/golden-spiral" title="golden-spiral">golden-spiral</a>
+		
+			
+			<a class="ui label pink " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/tags/hugo" title="hugo">hugo</a>
+		
+			
+			<a class="ui label brown " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/tags/neil-gaiman" title="neil-gaiman">neil-gaiman</a>
+		
+			
+			<a class="ui label purple " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/tags/sandman" title="sandman">sandman</a>
+		
+			
+			<a class="ui label teal " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/tags/watchment" title="watchment">watchment</a>
+		
+	
+
+
+				</section>
+			
+
+			
+		</div>
+
+		
+		<footer class="ui bottom attached center aligned inverted segment">
+			
+
+	<p>© 2019 Matt Roughan</p>
+ 
+
+<p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a>
+  <br>
+  with <a href="https://github.com/UtkarshVerma/hugo-dream-plus" target="_blank">Dream Plus</a> ++ theme.</p> 
+
+		</footer>
+	</div>
+</div>
+
+		</div>
+
+		<div class="sixteen wide mobile fifteen wide tablet twelve wide computer column post-list">
+			
+			<section class="ui secondary top attached black segment post-head">
+				<h1 class="post-title">
+					Alan Moore and Watchmen
+				</h1>
+				<h3 class="post-subtitle">
+				  The mathematics of redefining a genre, or symmetry in comics
+				<h3>
+
+				    <img class="featured-image" src="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/img/Rorschach_blot_01.jpg"
+				       alt=", the first Rorschach inkblot test">  
+
+				<div class="sub header">
+					<div><span><i class="calendar outline icon"></i>Feb 23, 2019</span></div>
+					
+					<div><span><i class="clock outline icon"></i>5 min read</span></div>
+					<div><span><i class="angle double up icon"></i>Last updated on Feb 23, 2019</span></div>
+				</div>
+				<hr>
+				
+				
+
+				<article class="post-content twemoji">
+					
+
+<h3 id="quis-custodiet-ipsos-custodes"><em>Quis custodiet ipsos custodes</em>&nbsp;<a class="anchor" href="#quis-custodiet-ipsos-custodes"><i class="small linkify icon"></i></a> </h3>
+
+<p>If you don&rsquo;t know why I selected a Rorschach inkblot test as the
+featured art for today, you <strong>need</strong> to read Alan Moore&rsquo;s <em>Watchmen</em>.</p>
+
+<p><em>Watchmen</em> redefined comics for me.</p>
+
+<p>It took something I liked, and showed me it could be important as
+well, all the time viciously satirising its own genre. And rebuilding
+that genre into something better.</p>
+
+<p>And it counts in the space I care about: there is a movie, and on-line
+&hellip; It&rsquo;s not as big as the MCU but in many ways the comic was just as
+important. I don&rsquo;t think modern graphic novel authors would have dug
+as deep without <em>Watchmen</em> watching over their shoulders.</p>
+
+<p>So I have to work on this &ldquo;comic&rdquo; at least once as part of this blog.</p>
+
+<h3 id="on-comics">On Comics&nbsp;<a class="anchor" href="#on-comics"><i class="small linkify icon"></i></a> </h3>
+
+<p>Maybe we should start this with a more serious discussion of graphic novels.</p>
+
+<p>Turns out it isn&rsquo;t that easy a medium to define.</p>
+
+<p>It&rsquo;s been used as an experiemental medium for marginalised authors and
+artists for so long that almost anything and everything has been
+done. And yet, there is lots of art that isn&rsquo;t a graphic novel or a
+comic. They range from the trivial (I never liked Charlie Brown much)
+to the humerous (I like Larson and Dilbert) to the pulp comics that
+made superheros famous (Action Comics #1), to the French new wave
+which feature simply stunning art, to &ldquo;children&rsquo;s books&rdquo; (I grew up
+with Asterix and Tin Tin, I love the former, and am more ambivalent
+about the latter), to Japanese Manga, to what is IMHO serious
+literature, for instance, the subject of this very post.</p>
+
+<p>And the quality of art ranges from simple line drawings (I love the
+minimalism of XKCD), to very serious art (I can spend a day looking at
+many covers, and the inside of some of the <em>Sandman</em> comics is
+glorious). And there are very few places where artists have
+collaborated in such large numbers, or sos consistently on visions of
+the same underlying (fictional) people, places and themes. How many
+images of Gotham are there in a world that doesn&rsquo;t actually have a
+Gotham?</p>
+
+<p>Some comics are a single frame. Others a triptic. Others a book. And
+others an entire series.</p>
+
+<p>Scott McCloud&rsquo;s definition is</p>
+
+<blockquote>
+<p><strong>com-ics n.</strong> plural in form, used with a singular verb. <strong>1.</strong>
+   Juxtaposed pictorial and other images in deliberate sequence,
+   intended to convey information and/or to produce an aesthetic
+   reponse in the viewer.</p>
+</blockquote>
+
+<p>But defers to Eisener&rsquo;s &ldquo;Sequential art&rdquo; for every-day use. But I like
+McCloud&rsquo;s definition, and his resoning.</p>
+
+<p>Comics use space in the same way movies use time. They juxtapose
+sequences of images in space, rather than flash them on a screen over
+time. That&rsquo;s an important difference. Images flashed on a screen blru
+together, and engage our eyes and brains mechnisms to turn that
+directly into a movie. Images in space require our deeper thought
+processes to turn them into meaning.</p>
+
+<p>And the use of space is my topic for today.</p>
+
+<p>&hellip;</p>
+
+<h3 id="watchmen">Watchmen&nbsp;<a class="anchor" href="#watchmen"><i class="small linkify icon"></i></a> </h3>
+
+<p>So Moore steps into this history with <em>Watchmen</em> not his first, or
+last contribution. Arguably his best.</p>
+
+<p>&hellip;</p>
+
+<p>Originally, most people (at least today) access it in the compiled form &hellip;</p>
+
+<h3 id="data-give-me-bricks">Data, give me bricks&nbsp;<a class="anchor" href="#data-give-me-bricks"><i class="small linkify icon"></i></a> </h3>
+
+<p>So what can we say, quantitatively about the book?</p>
+
+<h3 id="symetry">Symetry&nbsp;<a class="anchor" href="#symetry"><i class="small linkify icon"></i></a> </h3>
+
+<p>So &hellip; does <em>Watchmen</em> have any maths behind it?</p>
+
+<p>Undoubtedly! But what.</p>
+
+<p>Instead of trying to analyse it, which has been done ad nauseum, I
+thought I would just focus on the picture at the start &mdash; the first
+Rorschach inkblot test<sup><a href="#fn1" id="ref1">1</a></sup>.</p>
+
+<p>One of the key characters in <em>Watchmen</em> is called Rorschach (we only
+learn late in the piece his real name). He starts as an idealistic
+vigilante using a high-tech face mask that dynamically displays images
+similar to Rorschach tests<sup><a href="#fn2" id="ref2">2</a>&lt;/sup.</p>
+
+<p>All I want to do today is look at why this is such a compelling type
+of image. An class of image that is somehow random, and yet not
+completely. That is so compelling that it soaked out of psychology
+into mainstream thought as an emblem of that science. And it is
+somehow hypnotic as a mask for a character. Moore&rsquo;s use of this to
+replace a face is disturbing, but we quickly become used to it. How is
+that possible?</p>
+
+<p>I think the underlying truth is that we seek symmetry. But not too
+much symmetry.</p>
+
+<p>PATTERN FORMATION</p>
+
+<p>Symmetry is a critical piece of the graphic novel, and maybe that is
+what Moore recognised. The construction of a page uses panels. &hellip;</p>
+
+<p>But it is rare today to see perfect symmetry</p>
+
+<p>how we break symmetry is almost more interesting than how we use it.</p>
+
+<h3 id="hybrid-forms-of-watchmen">Hybrid forms of <em>Watchmen</em>&nbsp;<a class="anchor" href="#hybrid-forms-of-watchmen"><i class="small linkify icon"></i></a> </h3>
+
+<p>I am interested in the overlap in media (in this blog). <em>Watchmen</em> did
+that. There is a movie. Apparently Alan Moore disliked it enough to
+distance himself from the movie. He isn&rsquo;t even credited.</p>
+
+<p>As far as I can tell Alan Moore hasn&rsquo;t like anything done with his
+work (V for Vendetta was also made into a movie, and &hellip;)</p>
+
+<p>So what an you say when the pieces of the puzzle diverge like that?
+When the author distances themselves, and considers the</p>
+
+<p>I guess we should think of art like our children. We bring them into
+the world, but they are not our possessions (whatever intellectual
+property laws say). Eventually, they become something beyond what we
+intended. This is a good thing, though many people rail against it.</p>
+
+<p>Vitruvian man &hellip;</p>
+
+<h3 id="summary">Summary&nbsp;<a class="anchor" href="#summary"><i class="small linkify icon"></i></a> </h3>
+
+<hr />
+
+<p>Footnotes:</p>
+
+<ol>
+<li> <div id="fn1">
+
+     It looks like a butterfly to me.
+
+     <a href="#ref1" title="Jump back to footnote 1 in the text.">↩</a></div> 
+</li>
+
+<li> <div id="fn1">
+
+     When we meet Rorschach, he is dissillusioned to the point of
+     psychosis, and ultra-violent as a result. But he is still a
+     sympathetic character, and you might consider him to be the
+     protagonist of the story, though Moore is *very* good at bluring
+     the lines between protagnoist and antagonist. It's one of the
+     aspects of *Watchmen* that makes it so much deeper than many of
+     its contemperay comics.
+
+     <a href="#ref1" title="Jump back to footnote 1 in the text.">↩</a></div> 
+</li>
+</ol>
+
+				</article>				
+			</section>
+
+			
+			<section class="ui secondary attached segment dream-tags">
+				
+					
+
+
+
+
+	
+		<a class="ui label brown " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/tags/watchment" title="Watchment">Watchment</a>
+	
+		<a class="ui label pink " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/tags/alan-moore" title="Alan Moore">Alan Moore</a>
+	
+
+
+				
+			</section>
+
+			
+			
+				<section class="ui secondary bottom attached segment share row box">
+					
+
+
+
+
+
+
+
+
+<div class="author">
+	
+	<a href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/"><img class="avatar" src="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/img/aleph0.svg"></a>
+	
+</div>
+<div class="info grow flexbox">
+	<a href="https://twitter.com/AlephHeros">
+	<p class="name">Matt Roughan</p>
+	</a>
+	<p class="desc"> </p>
+</div>
+
+
+<section class="buttons row box">
+	<div class="facebook none flexbox" href="#" onclick="window.open(
+			'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+			'facebook-share-dialog',
+			'width=626,height=436'); return false;">
+		<button class="ui facebook button"><i class="facebook icon"></i>Share</button>
+	</div>
+	<div class="twitter none flexbox" onclick="window.open('https://twitter.com/intent/tweet?text=Read &quot;Alan Moore and Watchmen &quot; by @AlephHeros http:\/\/bandicoot.maths.adelaide.edu.au\/public\/aleph-zero-heros\/posts\/post_moore\/','_self')">
+		<button class="ui twitter button"><i class="twitter icon"></i>Tweet</button>
+	</div>
+</section>
+
+				</section>
+			
+
+			
+			
+			
+
+			
+			
+		</div>
+	</div>
+
+				</div>
+				<div class="back">
+					
+<nav class="ui top secondary menu bar">
+	<div class="item">
+		<i class="inverted big link bullseye icon dream-flip-toggle" title="About This Web Page"></i>
+	</div>
+	
+		
+	
+		
+	
+
+	
+	
+	
+	
+	
+	
+	
+		
+		
+			<div class="item">
+				<a href="https://github.com/mroughan" target="	_blank">
+					<i id="ico" class="inverted big link github icon" title="GitHub"></i>
+				</a>
+			</div>
+		
+	
+		
+		
+	
+		
+		
+			<div class="item">
+				<a href="https://twitter.com/AlephHeros" target="	_blank">
+					<i id="ico" class="inverted big link twitter icon" title="Twitter"></i>
+				</a>
+			</div>
+		
+	
+		
+		
+	
+		
+		
+	
+		
+		
+	
+		
+		
+	
+		
+		
+	
+		
+		
+	
+</nav>
+
+
+
+<div class="ui centered grid about">
+	<div class="sixteen wide mobile fifteen wide tablet fifteen wide computer column about">
+		<section class="ui stacked segments">
+			<div class="ui inverted segment">
+				<article class="twemoji">
+					<h1 id="aleph-zero-heros">Aleph-Zero-Heros</h1>
+
+<p><strong>This is a blog about (mathematical) data science of large-scale hybrid
+narratives and superheros in particular.</strong></p>
+
+<p>The title of the blog comes from a, perhaps obscure, piece of
+mathematics: <a href="https://en.wikipedia.org/wiki/Aleph_number">aleph zero</a> is
+(mathematically speaking) the cardinality of the set of natural
+numbers, which is a pretty mathsy way of saying &ldquo;infinity&rdquo;. So the
+name, aleph-zero-heros, loosely translates as <em>infinity</em>. And the blog
+is going to be focused on superhero narratives, hence the title &mdash;
+read it as <strong>infinite heros</strong>.</p>
+
+<p>A hybrid narrative (to me) is a story (fiction or non-fiction) that
+involves multiple forms of media. We can get an idea by considering
+simple examples of old-school hybrids</p>
+
+<ul>
+<li>picture books and graphic novels</li>
+<li>choose your own adventure books, which combine games with prose</li>
+</ul>
+
+<p>and so on, or the modern mash-ups that the web has made so easy to
+augmented reality systems.</p>
+
+<p>But technology today has allowed artists and writers to build much
+larger joint constructs, and that is what I am interested in here.</p>
+
+<p>I&rsquo;ve gone into much more detail in <a href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/posts/description/">this post</a>.</p>
+
+				</article>
+			</div>
+		</section>
+	</div>
+</div>
+
+				</div>
+			</div>
+		</div>
+		
+	
+	
+
+		
+
+<script src="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/js/site.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+
+
+	<script src="https://twemoji.maxcdn.com/2/twemoji.min.js?2.6"></script>
+
+
+
+
+
+
+
+
+	
+	<script>
+		window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+		ga('create', 'UA-96845987-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+		
+
+
+		
+
+	<script>
+		(function () {
+		  console.log("Twemoji up and making stuff colourful!");
+		  for (var b = document.getElementsByClassName("twemoji"), a = 0; a < b.length; a++) {
+			twemoji.parse(b[a]);
+		  }
+		})();
+	</script>
+
+
+	</body>
+</html>

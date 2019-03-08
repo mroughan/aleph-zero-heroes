@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<title>
+	Julia (Part II): Data Structures for Data Science
+</title>
+		
+		<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+	
+	
+	
+	<meta name="author" content="Matt Roughan" />
+	<meta name="description" content="Julia dictionaries, data frames and how to read CSV data files into these data structures." />
+
+
+
+<meta name="generator" content="Hugo 0.54.0" />
+
+
+<link rel="shortcut icon" href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/img/defaultFav.ico">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+  
+  
+
+
+  
+
+		
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+<script
+	src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+
+ <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Inconsolata" rel="stylesheet"> 
+ <link href="https://fonts.googleapis.com/css?family=Abel|Alegreya+Sans+SC|Allura|Amarante|Amatic+SC|Antic+Didone|Artifika|Audiowide|Averia+Libre|Bangers|Baumans|Bellefair|Bubbler+One|Calligraffitti|Charm|Cherry+Swash|Chonburi|Cinzel|Cinzel+Decorative|Clicker+Script|Combo|Cormorant+Infant|Cormorant+Unicase|Courgette|Dancing+Script|Della+Respira|Eagle+Lake|Elsie|Expletus+Sans|Felipa|Fondamento|GFS+Didot|GFS+Neohellenic|Great+Vibes|Gruppo|Habibi|IM+Fell+DW+Pica|IM+Fell+DW+Pica+SC|IM+Fell+English+SC|IM+Fell+French+Canon|IM+Fell+Great+Primer|IM+Fell+Great+Primer+SC|Indie+Flower|Inknut+Antiqua|Italianno|Julius+Sans+One|Kaushan+Script|Kavivanar|Lancelot|Libre+Barcode+128|Libre+Barcode+128+Text|Libre+Barcode+39+Extended|Libre+Barcode+39+Extended+Text|Libre+Barcode+39+Text|Libre+Baskerville|Life+Savers|Lobster|Lobster+Two|Londrina+Outline|Lovers+Quarrel|Macondo|Mallanna|Mandali|Marck+Script|Mate+SC|Megrim|Raleway|Mirza|Miss+Fajardose|Molle:400i|Monoton|Montserrat|Montserrat+Subrayada|Mrs+Saint+Delafield|Oleo+Script|Orbitron|Pacifico|Paprika|Petit+Formal+Script|Petrona|Pinyon+Script|Raleway|Raleway+Dots|Redressed|Righteous|Rosarivo|Rouge+Script|Ruslan+Display|Rye|Sacramento|Satisfy|Sigmar+One|Source+Code+Pro|Special+Elite|Spectral+SC|Srisakdi|Suez+One|Suranna|Syncopate|Tangerine|Uncial+Antiqua|UnifrakturMaguntia|Wire+One|Work+Sans" rel="stylesheet"> 
+
+
+
+<link rel="stylesheet" type="text/css" href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/css/site.css">
+
+
+
+
+
+
+	
+		<link rel="stylesheet" type="text/css" href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/css/syntax.css">
+	
+
+<style>
+        body {
+	       display: block;
+	
+	       background-image: url("http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/img/cyanotype_bg_tile.png");
+	       background-color: #ecedef; 
+	       background-repeat: repeat;
+	
+        }
+
+	body, body.pushable {
+	  	background-attachment: fixed;
+	  	background-size: cover !important;
+	}
+</style>
+
+
+
+<script>
+	var colorBG =  null 
+	
+	var isMobile = ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+	console.log("The client device is a "+(isMobile?"mobile":"PC")+".")
+</script>
+
+	</head>
+
+	<body>
+		<script>
+var prevBgIndex = 0;
+var bodyBgSwitchIndex = 0;
+
+
+
+
+
+ 
+       
+
+
+	function getRandomInt(min, max) {
+	  min = Math.ceil(min);
+	  max = Math.floor(max);
+	  var random;
+	  while (1) {
+	    random = Math.floor(Math.random() * (max - min)) + min;
+	    if (random !== prevBgIndex) {
+	      prevBgIndex = random;
+	      break;
+	    }
+	  }
+	  return random;
+	}
+
+	function connect(arr) {
+	  var str = '';
+	  for (var i = 0; i < arr.length; i++) {
+	    if (i !== arr.length - 1) {
+	      str += arr[i] + ', ';
+	    } else {
+	      str += arr[i];
+	    }
+	  }
+	  return str;
+	}
+</script>
+
+
+
+	<div class="blur-overlay"></div>
+
+
+		<div id="sidebar" class="ui sidebar inverted vertical menu">
+	
+	<section id="site" class="ui top attached center aligned inverted segment">
+		
+<div class="ui small circular image">
+	
+		<a href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/"><img src="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/img/aleph0.svg"></a>
+	
+</div>
+
+
+<h3 class="ui header">
+	-aleph-zero-heros-
+	<div class="sub header">A blog about the mathematics of large-scale hybrid narratives</div>
+</h3>
+ 
+	</section>
+
+	
+	
+		<section class="ui attached center aligned inverted segment sidebar-dream-tags">
+			
+			
+			
+			
+
+
+
+
+	
+	
+		
+			
+			<a class="ui label purple " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/tags/marvel" title="marvel">marvel</a>
+		
+			
+			<a class="ui label teal " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/tags/mcu" title="mcu">mcu</a>
+		
+			
+			<a class="ui label pink " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/tags/julia" title="julia">julia</a>
+		
+			
+			<a class="ui label teal " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/tags/networks" title="networks">networks</a>
+		
+			
+			<a class="ui label purple " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/tags/timelines" title="timelines">timelines</a>
+		
+			
+			<a class="ui label yellow " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/tags/about" title="about">about</a>
+		
+			
+			<a class="ui label blue " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/tags/narrative-chart" title="narrative-chart">narrative-chart</a>
+		
+	
+
+
+		</section>
+	
+
+	
+	
+
+	
+	<section id="footer" class="ui bottom attached center aligned inverted segment">
+		
+
+	<p>© 2019 Matt Roughan</p>
+ 
+
+<p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a>
+  <br>
+  with <a href="https://github.com/UtkarshVerma/hugo-dream-plus" target="_blank">Dream Plus</a> ++ theme.</p> 
+
+	</section>
+</div>
+
+
+		<div class="pusher">
+			<div class="flipper">
+				<div class="front">
+					
+	<nav class="ui top menu bar">
+	
+	<div class="item">
+		<i class="inverted big link bullseye icon dream-flip-toggle" title="About This Web Page"></i>
+	</div>
+	<div class="item">
+	  <a href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/"><i class="inverted big link home icon" title="Home"></i></a></div>
+	<div class="item">
+	  <a href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/posts"><i class="inverted big link archive icon" title="Archive"></i></a></div>
+	<div class="item">
+	  <a href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/tags"><i class="inverted big link tags icon" title="All Tags"></i></a></div>
+	<div class="item">
+	  <a href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/categories"><i class="inverted big link cubes icon" title="All Categories"></i></a></div>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<div class="title">
+  	  -aleph-zero-heros- 	
+	  <div class="sub header"></div>
+    	</div>
+
+	
+	
+		
+	
+	
+		<div class="item right">
+			<a href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/posts/index.xml">
+				<i class="inverted big link rss icon" title="RSS Feed"></i>
+			</a>
+		</div>
+	
+</nav>
+
+
+	<div class="ui centered grid">
+		
+		<div class="sixteen wide mobile only column">
+				<div class="ui inverted accordion">
+	<div id="header" class="ui inverted segment column box">		
+		
+		<header id="author" class="ui top attached center aligned inverted segment">
+			
+<div class="ui small circular image">
+	
+		<a href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/"><img src="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/img/aleph0.svg"></a>
+	
+</div>
+
+
+<h3 class="ui header">
+	-aleph-zero-heros-
+	<div class="sub header">A blog about the mathematics of large-scale hybrid narratives</div>
+</h3>
+
+		</header> 
+
+		
+		<div class=" title header-title">
+			
+				<div id="tag-category-pop" class="ui red right corner label">
+					<i class="hand point icon down" title="Show/hide tags and categories"></i>
+				</div>
+			
+		</div>
+		
+		
+		<div id="tag-category" class=" content">
+			
+				<section class="ui attached center aligned inverted segment dream-tags none flexbox">
+					
+					
+					
+
+
+
+
+	
+	
+		
+			
+			<a class="ui label teal " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/tags/marvel" title="marvel">marvel</a>
+		
+			
+			<a class="ui label orange " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/tags/mcu" title="mcu">mcu</a>
+		
+			
+			<a class="ui label pink " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/tags/julia" title="julia">julia</a>
+		
+			
+			<a class="ui label violet " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/tags/networks" title="networks">networks</a>
+		
+			
+			<a class="ui label yellow " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/tags/timelines" title="timelines">timelines</a>
+		
+			
+			<a class="ui label green " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/tags/about" title="about">about</a>
+		
+			
+			<a class="ui label green " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/tags/narrative-chart" title="narrative-chart">narrative-chart</a>
+		
+	
+
+
+				</section>
+			
+
+			
+		</div>
+
+		
+		<footer class="ui bottom attached center aligned inverted segment">
+			
+
+	<p>© 2019 Matt Roughan</p>
+ 
+
+<p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a>
+  <br>
+  with <a href="https://github.com/UtkarshVerma/hugo-dream-plus" target="_blank">Dream Plus</a> ++ theme.</p> 
+
+		</footer>
+	</div>
+</div>
+
+		</div>
+
+		<div class="sixteen wide mobile fifteen wide tablet twelve wide computer column post-list">
+			
+			<section class="ui secondary top attached black segment post-head">
+				<h1 class="post-title">
+					Julia (Part II): Data Structures for Data Science
+				</h1>
+				<h3 class="post-subtitle">
+				  Julia dictionaries, data frames and how to read CSV data files into these data structures.
+				<h3>
+
+				    <img class="featured-image" src="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/img/julia_logo.svg"
+				       alt=", &lt;a href=&#34;https://julialang.org/v2/img/logo.svg&#34;&gt;the Julia programming language.&lt;/a&gt;">  
+
+				<div class="sub header">
+					<div><span><i class="calendar outline icon"></i>Feb 28, 2019</span></div>
+					
+					<div><span><i class="clock outline icon"></i>11 min read</span></div>
+					<div><span><i class="angle double up icon"></i>Last updated on Feb 28, 2019</span></div>
+				</div>
+				<hr>
+				
+				
+
+				<article class="post-content twemoji">
+					
+
+<h1 id="intro">Intro&nbsp;<a class="anchor" href="#intro"><i class="small linkify icon"></i></a> </h1>
+
+<p>I mentioned in my <a href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/posts/post_julia1/">last post</a> on
+<a href="https://julialang.org/">Julia</a> that dictionaries are incredibly
+useful data structures for data science. I thought that warranted a
+little more discussion. And it leads to another data structure that we
+use a lot: Data Frames, so I wanted to talk about both here.</p>
+
+<h1 id="dictionaries">Dictionaries&nbsp;<a class="anchor" href="#dictionaries"><i class="small linkify icon"></i></a> </h1>
+
+<p>A <em>dictionary</em> (in computer programming) is much like am English
+dictionary. It takes a set of objects (the <em>keys</em>) and maps them to
+something else (the <em>values</em>). Iin an English dictionary the
+object/keys are <em>words</em> and they are mapped to values called
+<em>definitions</em>, but in programming the objects could be any type of
+data.</p>
+
+<p>Dictionaries are also called
+<a href="https://en.wikipedia.org/wiki/Associative_array"><em>associative arrays</em></a>
+because we can conceptualise them as a generalisation of a standard
+array. In a standard array the <em>indexes</em> a integers (usually starting
+at either 0 or 1). In a dictionary, we can think of the indexes as
+being anything we like. So a dictionary <em>associates</em> the key/index
+with the value.</p>
+
+<p>In Perl, dictionaries are called <em>hashes</em> because a common underlying
+data structure used to implement many dictionaries is a <em>hash table</em>
+but this terminology is confusing. The term hash get&rsquo;s used for way
+too many thing already. And this isn&rsquo;t the only way to implement a dictionary.</p>
+
+<p>Julia has a data type called a
+<a href="https://en.wikibooks.org/wiki/Introducing_Julia/Dictionaries_and_sets">Dict</a>. Critical
+things to know are</p>
+
+<ul>
+<li><p>That the keys and values of a Dict can be almost anything but keys have
+to have an associated hash function so if you create a new data type, you may need to define this.</p></li>
+
+<li><p>If we restrict the types of the entries we can make the dictionary
+much more efficient, so it usually better to have some control, not
+just blurt stuff into it.</p></li>
+
+<li><p>Dictionary elements are not sorted (there is a sorted version of the
+dictionary, but that has an associated computational cost to keeping
+things in order).</p></li>
+</ul>
+
+<p>The operations we need to learn for a dictionary are</p>
+
+<ul>
+<li>Creation of a new dictionary:</li>
+</ul>
+<div class="highlight"><pre class="chroma"><code class="language-julia" data-lang="julia"><span class="ln">1</span><span class="n">julia</span><span class="o">&gt;</span> <span class="n">D</span> <span class="o">=</span> <span class="kt">Dict</span><span class="p">{</span><span class="n">String</span><span class="p">,</span> <span class="kt">Int</span><span class="p">}()</span> <span class="c"># call the constructor to create an empty dictionary</span>
+<span class="ln">2</span><span class="n">julia</span><span class="o">&gt;</span> <span class="n">D</span> <span class="o">=</span> <span class="kt">Dict</span><span class="p">(</span><span class="s">&#34;a&#34;</span> <span class="o">=&gt;</span> <span class="mi">1</span><span class="p">,</span> <span class="s">&#34;b&#34;</span> <span class="o">=&gt;</span> <span class="mi">2</span><span class="p">,</span> <span class="s">&#34;c&#34;</span> <span class="o">=&gt;</span> <span class="mi">3</span><span class="p">)</span> <span class="c"># start the dictionary with some pairs</span>
+<span class="ln">3</span><span class="n">julia</span><span class="o">&gt;</span> <span class="n">dict</span> <span class="o">=</span> <span class="kt">Dict</span><span class="p">(</span><span class="n">string</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="n">sind</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">:</span><span class="mi">5</span><span class="o">:</span><span class="mi">360</span><span class="p">)</span></code></pre></div>
+<ul>
+<li>Addition of a <code>(key,value)</code> pair:</li>
+</ul>
+<div class="highlight"><pre class="chroma"><code class="language-julia" data-lang="julia"><span class="ln">1</span><span class="n">julia</span><span class="o">&gt;</span> <span class="n">D</span><span class="p">[</span><span class="s">&#34;d&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">59</span> </code></pre></div>
+<ul>
+<li>Removal of a <code>(key,value)</code> pair:</li>
+</ul>
+<div class="highlight"><pre class="chroma"><code class="language-julia" data-lang="julia"><span class="ln">1</span><span class="n">julia</span><span class="o">&gt;</span> <span class="n">delete!</span><span class="p">(</span><span class="n">D</span><span class="p">,</span> <span class="s">&#34;d&#34;</span><span class="p">)</span></code></pre></div>
+<ul>
+<li>Lookup the <code>value</code> associated with a <code>key</code>:</li>
+</ul>
+<div class="highlight"><pre class="chroma"><code class="language-julia" data-lang="julia"><span class="ln">1</span><span class="n">julia</span><span class="o">&gt;</span> <span class="n">D</span><span class="p">[</span><span class="s">&#34;a&#34;</span><span class="p">]</span>
+<span class="ln">2</span><span class="n">julia</span><span class="o">&gt;</span> <span class="n">haskey</span><span class="p">(</span><span class="n">D</span><span class="p">,</span> <span class="s">&#34;a&#34;</span><span class="p">)</span> <span class="c"># check if the key &#34;a&#34; is in the dictionary</span>
+<span class="ln">3</span><span class="n">julia</span><span class="o">&gt;</span> <span class="n">get</span><span class="p">(</span><span class="n">D</span><span class="p">,</span> <span class="s">&#34;a&#34;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="c"># look up key &#34;a&#34;, with fallback value of 0 it if is absent</span></code></pre></div>
+<ul>
+<li>Update of the value associated with a key. Often programming
+languages combine the update and insertion operations, as does Julia.</li>
+</ul>
+
+<p>Other useful functions are</p>
+
+<ul>
+<li><p><code>keys</code> and <code>values</code> which return an iterator over their respective
+element (use <code>collect</code> to get an array from the iterator).</p></li>
+
+<li><p>Set operations such as <code>union</code>, <code>setdiff</code> and <code>intersection</code> should
+also work, but return an array of pairs, not a dictionary. They have
+to because the keys in the two dictionaries might not have a unique
+set of keys, and the non-unique keys might be associated to
+different values.</p></li>
+
+<li><p><code>map</code> and <code>filter</code> can also be used, though I think that is a whole other post.</p></li>
+</ul>
+
+<p>Dictionaries are not sorted, so one snippet of code I find often
+useful is to print the dictionary elements in some order. It&rsquo;s not too
+hard if you want to print them in the order of the keys, but printing
+them in order of the values (assuming these have an ordering) is
+slightly more complicated. You do it easily enough with a loop, but I
+like the following.</p>
+<div class="highlight"><pre class="chroma"><code class="language-julia" data-lang="julia"><span class="ln">1</span><span class="n">julia</span><span class="o">&gt;</span> <span class="n">sort</span><span class="p">(</span><span class="n">collect</span><span class="p">(</span><span class="n">D</span><span class="p">),</span> <span class="n">by</span> <span class="o">=</span> <span class="n">tuple</span> <span class="o">-&gt;</span> <span class="n">last</span><span class="p">(</span><span class="n">tuple</span><span class="p">),</span> <span class="n">rev</span><span class="o">=</span><span class="kc">true</span><span class="p">)</span></code></pre></div>
+<p>Before we move on, I wanted to give a real example of how I use
+dictionaries here. I mentioned <a href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/posts/post_mcu_timeline1/">earlier</a>
+that I constructed an <a href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/csv/alias_list.csv">aliases file</a>. It is a CSV
+file with two columns, one of canonical character names, and the other
+a list of aliases.  Here&rsquo;s the first few entries:</p>
+
+
+   
+
+  
+
+   
+
+  
+<a href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/csv/alias_list.csv">
+<div align=center>   
+<table class="table">
+  
+   
+     
+    <thead><tr>
+       
+        <th style="text-align:left;">Character</th>
+       
+        <th style="text-align:left;">Aliases</th>
+       
+    </tr> </thead>
+    
+    
+       <tr>
+       
+          <td style="text-align:left"> Abomination </td>
+       
+          <td style="text-align:left"> Abomination, The Abomination, Emil Blonsky, Blonsky </td>
+        
+       </tr> 
+    
+       <tr>
+       
+          <td style="text-align:left"> Agent 13 </td>
+       
+          <td style="text-align:left"> Agent 13, Kate / Agent 13, Sharon Carter </td>
+        
+       </tr> 
+    
+       <tr>
+       
+          <td style="text-align:left"> Aldrich Killian </td>
+       
+          <td style="text-align:left"> Aldrich Killian, Killian </td>
+        
+       </tr> 
+    
+       <tr>
+       
+          <td style="text-align:left"> Ant-Man </td>
+       
+          <td style="text-align:left"> Ant-Man, Scott Lang, Scott Lang / Ant-Man </td>
+        
+       </tr> 
+    
+       <tr>
+       
+          <td style="text-align:left"> Alexander Pierce </td>
+       
+          <td style="text-align:left"> Alexander Pierce </td>
+        
+       </tr> 
+    
+       <tr>
+       
+          <td style="text-align:left"> Black Panther </td>
+       
+          <td style="text-align:left"> Black Panther, T&#39;Challa, T&#39;Challa / Black Panther </td>
+        
+       </tr> 
+    
+       <tr>
+       
+          <td style="text-align:left"> Black Widow </td>
+       
+          <td style="text-align:left"> Black Widow, Agent Romanoff, Natasha Romanoff, Natasha Romanoff / Black Widow, Natalie Rushman / Natasha Romanoff, Natalie Rushman </td>
+        
+       </tr> 
+          
+</table>
+</div>
+</a>
+
+
+
+
+
+
+
+
+<p>Converting the cast lists from IMDb requires us to read the aliases
+in, and generate a
+<a href="https://en.wikibooks.org/wiki/Introducing_Julia/Dictionaries_and_sets">dictionary</a>
+with a mapping from each alias to the unique name we are going to use
+for each character.</p>
+<div class="highlight"><pre class="chroma"><code class="language-julia" data-lang="julia"><span class="ln"> 1</span><span class="k">using</span> <span class="n">DataFrames</span>
+<span class="ln"> 2</span><span class="k">using</span> <span class="n">CSV</span>
+<span class="ln"> 3</span><span class="k">function</span> <span class="n">read_aliases</span><span class="p">(</span> <span class="n">file</span><span class="o">::</span><span class="n">String</span> <span class="o">=</span> <span class="s">&#34;../Data/alias_list.csv&#34;</span><span class="p">)</span>
+<span class="ln"> 4</span>    <span class="n">aliases</span> <span class="o">=</span> <span class="n">CSV</span><span class="o">.</span><span class="n">read</span><span class="p">(</span> <span class="n">file</span><span class="p">;</span> <span class="n">comment</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="p">)</span>
+<span class="ln"> 5</span>    <span class="n">Aliases</span> <span class="o">=</span> <span class="kt">Dict</span><span class="p">{</span><span class="n">String</span><span class="p">,</span> <span class="n">String</span><span class="p">}()</span>
+<span class="ln"> 6</span>    <span class="k">for</span> <span class="n">r</span> <span class="kp">in</span> <span class="n">eachrow</span><span class="p">(</span><span class="n">aliases</span><span class="p">)</span>
+<span class="ln"> 7</span>        <span class="n">c</span> <span class="o">=</span> <span class="n">strip</span><span class="p">(</span> <span class="n">r</span><span class="p">[</span><span class="o">:</span><span class="n">Character</span><span class="p">]</span> <span class="p">)</span>
+<span class="ln"> 8</span>        <span class="k">for</span> <span class="n">a</span> <span class="kp">in</span> <span class="n">split</span><span class="p">(</span> <span class="n">r</span><span class="p">[</span><span class="o">:</span><span class="n">Aliases</span><span class="p">],</span> <span class="s">&#34;,&#34;</span> <span class="p">)</span>
+<span class="ln"> 9</span>            <span class="n">Aliases</span><span class="p">[</span> <span class="n">lowercase</span><span class="p">(</span><span class="n">strip</span><span class="p">(</span><span class="n">a</span><span class="p">))</span> <span class="p">]</span> <span class="o">=</span> <span class="n">c</span>
+<span class="ln">10</span>        <span class="k">end</span>
+<span class="ln">11</span>    <span class="k">end</span>
+<span class="ln">12</span>    <span class="k">return</span> <span class="n">Aliases</span>
+<span class="ln">13</span><span class="k">end</span></code></pre></div>
+<p>The dictionary I want is returned as <code>Aliases</code> but there are other
+useful pieces in this function:</p>
+
+<ul>
+<li><p><code>'aliases</code> is a DataFrame with two columns, the first is a
+list of character names, and the second contains a list of
+comma-separated lists of aliases. We&rsquo;ll talk more about these in just a second.</p></li>
+
+<li><p>The <code>strip</code> function removes leading and trailing spaces from a
+string &ndash; usually a good idea for this type of thing.</p></li>
+
+<li><p>I convert all the aliases to lowercase, so I don&rsquo;t need equivalent
+lower case versions.</p></li>
+
+<li><p>The <code>split</code> function splits a string according to some delimiter, in
+this case a comma, and returns a vector.</p></li>
+</ul>
+
+<h1 id="data-frames">Data Frames&nbsp;<a class="anchor" href="#data-frames"><i class="small linkify icon"></i></a> </h1>
+
+<p>I just mentioned Data Frames, so I had better explain myself.</p>
+
+<p>Dictionaries are a built-in data type in Julia. They map a key to a
+value. What is the value is a column of data? If all of the columns of
+data are the same length, then we have a table. An increasingly common
+way to store such tables is in a Data Frame. In one sense they are
+really just advanced tables. Think of each column as a <em>variable</em> and
+the rows as <em>observations</em> of those variables.</p>
+
+<p>But Data Frames are a little cleverer than a simple 2D array of data.</p>
+
+<ul>
+<li><p>They can contain different types of data in different columns.</p></li>
+
+<li><p>Unlike a simple 2D array, they have column headings (the <code>keys</code>),
+and data can be indexed by these, which means adding a column to a
+dataset is easy, and often doesn&rsquo;t require changes to code.</p></li>
+
+<li><p>They naturally map to the way we often store data (e.g., in CSV or
+spreadsheet files), so input and output are easy.</p></li>
+
+<li><p>They allow for missing data, which is endemic in real datasets, in a
+natural and (hopefully) efficient manner.</p></li>
+
+<li><p>We can perform joins across them.</p></li>
+
+<li><p>Data Frames match naturally to the philosophy of
+<a href="https://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html"><em>Tidy
+Data</em></a></p></li>
+</ul>
+
+<p>Julia has a package called, naturally enough <code>DataFrames</code>, and in
+conjunction with a few other bits and pieces (in particular the <code>CSV</code>
+package) it&rsquo;s very powerful. So here&rsquo;s a few steps to using it. BTW, I
+assume you guys can read the docs and install a package. Sound fair?</p>
+
+<p>Included below is a simple set of code I&rsquo;ve been using to learn how to use Data
+Frames in
+Julia. <a href="http://adv-r.had.co.nz/Data-structures.html#data-frames">Data Frames</a>
+are an idea that comes from the programming language
+<a href="https://www.r-project.org/">R</a>.</p>
+
+<p>With the <code>CSV</code> package it is very easy to read in a CSV file into a
+Data Frame. For instance, download the file
+<a href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/csv/movie_sequence.csv">movie_sequence.csv</a>, and try this</p>
+<div class="highlight"><pre class="chroma"><code class="language-julia" data-lang="julia"><span class="ln">1</span><span class="n">julia</span><span class="o">&gt;</span> <span class="k">using</span> <span class="n">DataFrames</span>
+<span class="ln">2</span><span class="n">julia</span><span class="o">&gt;</span> <span class="k">using</span> <span class="n">CSV</span>
+<span class="ln">3</span><span class="n">julia</span><span class="o">&gt;</span> <span class="n">file</span> <span class="o">=</span> <span class="s">&#34;movie_sequence.csv&#34;</span>
+<span class="ln">4</span><span class="n">julia</span><span class="o">&gt;</span> <span class="n">movies</span> <span class="o">=</span> <span class="n">CSV</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">file</span><span class="p">)</span></code></pre></div>
+<p>It should display a table of showing the contents of the CSV file. Now
+we can play with this data in many ways. For instance, we can extract
+a set of columns using</p>
+<div class="highlight"><pre class="chroma"><code class="language-julia" data-lang="julia"><span class="ln">1</span><span class="n">julia</span><span class="o">&gt;</span> <span class="n">movies</span><span class="p">[</span> <span class="p">[</span><span class="o">:</span><span class="n">Title</span><span class="p">,</span> <span class="o">:</span><span class="n">Phase</span><span class="p">]</span> <span class="p">]</span></code></pre></div>
+<p>will output just the two selected columns (also in a Data Frame).</p>
+
+<p>And we can do all the standard things you would like to do. Have a
+look at the
+<a href="https://juliadata.github.io/DataFrames.jl/stable/index.html">DataFrames</a>
+documentation for many more examples and
+<a href="https://jcharistech.wordpress.com/julia-dataframes-cheat-sheets/">here is a handy cheat sheet</a>.</p>
+
+<p>The most important thing to grasp is that the data types of the
+columns are unions of a standard type, and <code>Missing</code>. And each column
+is (in some sense) a separate array (each of the same length). So, we
+a column of integers might be of type</p>
+<div class="highlight"><pre class="chroma"><code class="language-julia" data-lang="julia"><span class="ln">1</span>	<span class="kt">Array</span><span class="p">{</span><span class="kt">Union</span><span class="p">{</span><span class="n">Missing</span><span class="p">,</span> <span class="kt">Int64</span><span class="p">},</span><span class="mi">1</span><span class="p">}</span></code></pre></div>
+<p>That is, and 1-D array of elements of type <code>Union{Missing,
+Int64}</code>. This is important, as it sometimes means we are a bit clumsy
+working on these. Julia has many functions defined, for instance, for
+integers, but they won&rsquo;t work out of the box on a Union because Julia
+uses <em>multiple dispatch</em> to select which function is called. It
+matches up the types of the arguments to the input parameters, and if
+it can&rsquo;t find a matching function there will be an error. I wrote a
+few (slightly painful looking) pieces of code to cope with this. For
+instance, the following lines strip leading and trailing spaces from
+<code>String</code> elements, and replace <code>Missing</code> elements with an empty
+string.</p>
+<div class="highlight"><pre class="chroma"><code class="language-julia" data-lang="julia"><span class="ln">1</span><span class="k">function</span> <span class="n">replace_missing!</span><span class="p">(</span> <span class="n">DF</span><span class="o">::</span><span class="n">DataFrame</span><span class="p">)</span>
+<span class="ln">2</span>    <span class="c"># replace all of the missing strings with blanks, and get rid of leading or trailing spaces</span>
+<span class="ln">3</span>    <span class="k">for</span> <span class="p">(</span><span class="n">k</span><span class="p">,</span><span class="n">s</span><span class="p">)</span> <span class="kp">in</span> <span class="n">eachcol</span><span class="p">(</span><span class="n">DF</span><span class="p">,</span> <span class="kc">true</span><span class="p">)</span>
+<span class="ln">4</span>        <span class="k">if</span> <span class="n">eltype</span><span class="p">(</span><span class="n">DF</span><span class="p">[</span><span class="n">k</span><span class="p">])</span> <span class="o">==</span> <span class="kt">Union</span><span class="p">{</span><span class="n">Missing</span><span class="p">,</span> <span class="n">String</span><span class="p">}</span>
+<span class="ln">5</span>            <span class="n">DF</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="kt">Array</span><span class="p">{</span><span class="kt">Union</span><span class="p">{</span><span class="n">Missing</span><span class="p">,</span> <span class="n">String</span><span class="p">},</span><span class="mi">1</span><span class="p">}(</span><span class="n">String</span><span class="o">.</span><span class="p">(</span><span class="n">strip</span><span class="o">.</span><span class="p">(</span><span class="n">coalesce</span><span class="o">.</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="s">&#34;&#34;</span><span class="p">))))</span>
+<span class="ln">6</span>        <span class="k">end</span> 
+<span class="ln">7</span>    <span class="k">end</span>
+<span class="ln">8</span><span class="k">end</span></code></pre></div>
+<p>I&rsquo;m guessing the Julia aficionados have a better way of doing the
+same, but this is illustrative. breaking it down:</p>
+
+<ul>
+<li><code>eachcol</code> iterates through each column of DF returning the key <code>k</code>
+and <code>s</code> data of the column.</li>
+<li><code>eltype</code> returns the type and we only both with <code>Strings</code>, though
+note we match against <code>Union{Missing, String}</code>.</li>
+<li><code>coalesce(value, &quot;&quot;)</code> replaces <code>Missing</code> values with the empty
+string. But note we use a standard Julia trick here. If you have a
+function <code>coalesce</code> function defined for a type X, then <code>coalesce.</code>
+will iterate it over the whole array.</li>
+<li><code>strip.</code> removes leading and trailing spaces, and we use the &ldquo;.&rdquo;
+trick again to apply it to the whole array.</li>
+<li><code>String</code> converts the output from a <code>SubString</code> back to
+<code>String</code>. Substrings contain a reference to the original, and I
+don&rsquo;t want to hang onto that.</li>
+<li><code>Array{Union{Missing, String},1}</code> then maps this back into an array
+of unions (not just an array of strings).</li>
+</ul>
+
+<p>I&rsquo;m sure the whole thing could be done more easily, probably with a
+loop or two, but this seems to illustrate what we are working with
+here.</p>
+
+<p>The real value of Data Frames comes when we want to manipulate and
+play with the data.</p>
+
+<p>I want to use this information to construct the paths for each
+character, but first I need to get information about who is who. To do
+so, I start with the <a href="http://www.omdbapi.com/">OMDb</a> data I
+<a href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/posts/post_julia1/">explained in the last Julia post</a>, but this data
+doesn&rsquo;t include the cast list. It does, however, include the IMDb ID
+of the movie. Now IMDb doesn&rsquo;t seem to have a nice API for downloading
+data, but there is a nice Python package
+<a href="https://imdbpy.sourceforge.io/">IMDbPY</a> that will do the job I
+need. I have a tiny little Python script that uses this package to
+download the cast information for each movie.  The data needs a good
+deal of cleaning: the most obvious problems are that Superheros come
+with aliases. And they are used inconsistently between movies. So I
+have a little <a href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/csv/alias_list.csv">full of aliases</a>, and in the text
+above I described how to read it into first into a Data Frame, and
+thence to a dictionary that maps aliases to their canonical name.</p>
+
+<p>Given that dictionary, I next read in the cast files (once again as
+Data Frames), convert the aliases to the canonical character names,
+and create a new dictionary mapping each character name to a list (I
+don&rsquo;t care how you store the list) containing the titles of the
+movies. Then I go through this dictionary and output each character
+name, and a sorted version of the list of movies that character is
+in. I&rsquo;d go into more detail, but this is already getting a little
+longer than I intended.</p>
+
+<p>There is one problem with this. You <strong>always</strong> need to spend time
+cleaning your data. I mentioned these issues in some detail in my
+<a href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/posts/post_mcu_timeline1/">earlier post</a> so I won&rsquo;t again here.</p>
+
+<p>The final step is to write this out to a new file. I expect there is a
+clever way to do that using <code>CSV.write</code> but I just iterated over a
+cast list, and printed it out line by line. Nothing very clever or
+instructive there I&rsquo;m afraid.  The first few are listed below, and the
+file is <a href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/csv/cast_path.csv">here</a>.</p>
+
+
+   
+
+  
+
+   
+
+  
+<a href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/csv/cast_path.csv">
+<div align=center>   
+<table class="table">
+  
+   
+     
+    <thead><tr>
+       
+        <th style="text-align:left;">Character</th>
+       
+        <th style="text-align:left;">Titles</th>
+       
+        <th style="text-align:left;">Codes</th>
+       
+    </tr> </thead>
+    
+    
+       <tr>
+       
+          <td style="text-align:left;"> Abomination </td>
+       
+          <td style="text-align:left;"> The Incredible Hulk </td>
+       
+          <td style="text-align:left;">  c </td>
+        
+       </tr> 
+    
+       <tr>
+       
+          <td style="text-align:left;"> Agent 13 </td>
+       
+          <td style="text-align:left;"> Captain America: The Winter Soldier, Captain America: Civil War </td>
+       
+          <td style="text-align:left;">  in </td>
+        
+       </tr> 
+    
+       <tr>
+       
+          <td style="text-align:left;"> Aldrich Killian </td>
+       
+          <td style="text-align:left;"> Iron Man 3 </td>
+       
+          <td style="text-align:left;">  g </td>
+        
+       </tr> 
+    
+       <tr>
+       
+          <td style="text-align:left;"> Alexander Pierce </td>
+       
+          <td style="text-align:left;"> Captain America: The Winter Soldier </td>
+       
+          <td style="text-align:left;">  i </td>
+        
+       </tr> 
+    
+       <tr>
+       
+          <td style="text-align:left;"> Ant-Man </td>
+       
+          <td style="text-align:left;"> Ant-Man, Captain America: Civil War, Ant-Man and the Wasp, Avengers: Endgame </td>
+       
+          <td style="text-align:left;">  mntv </td>
+        
+       </tr> 
+    
+       <tr>
+       
+          <td style="text-align:left;"> Betty Ross </td>
+       
+          <td style="text-align:left;"> The Incredible Hulk </td>
+       
+          <td style="text-align:left;">  c </td>
+        
+       </tr> 
+    
+       <tr>
+       
+          <td style="text-align:left;"> Black Panther </td>
+       
+          <td style="text-align:left;"> Captain America: Civil War, Black Panther, Avengers: Infinity War, Avengers: Endgame </td>
+       
+          <td style="text-align:left;">  nosv </td>
+        
+       </tr> 
+          
+</table>
+</div>
+</a>
+
+
+
+
+
+
+
+
+<p>The &ldquo;codes&rdquo; column is a mapping of the movies to the codes I gave in
+the sequence listing of the movies. It&rsquo;s a key to allow sorting of the
+movies in sequential order, but the strings formed by listing the
+codes of the movies in the path will be useful to us when we start to
+learn more about these paths, the next time we come back to them.</p>
+
+				</article>				
+			</section>
+
+			
+			<section class="ui secondary attached segment dream-tags">
+				
+					
+
+
+
+
+	
+		<a class="ui label violet " href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/tags/julia" title="Julia">Julia</a>
+	
+
+
+				
+			</section>
+
+			
+			
+				<section class="ui secondary bottom attached segment share row box">
+					
+
+
+
+
+
+
+
+
+<div class="author">
+	
+	<a href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/"><img class="avatar" src="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/img/aleph0.svg"></a>
+	
+</div>
+<div class="info grow flexbox">
+	<a href="https://twitter.com/AlephHeros">
+	<p class="name">Matt Roughan</p>
+	</a>
+	<p class="desc"> </p>
+</div>
+
+
+<section class="buttons row box">
+	<div class="facebook none flexbox" href="#" onclick="window.open(
+			'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+			'facebook-share-dialog',
+			'width=626,height=436'); return false;">
+		<button class="ui facebook button"><i class="facebook icon"></i>Share</button>
+	</div>
+	<div class="twitter none flexbox" onclick="window.open('https://twitter.com/intent/tweet?text=Read &quot;Julia (Part II): Data Structures for Data Science &quot; by @AlephHeros http:\/\/bandicoot.maths.adelaide.edu.au\/public\/aleph-zero-heros\/posts\/post_julia2\/','_self')">
+		<button class="ui twitter button"><i class="twitter icon"></i>Tweet</button>
+	</div>
+</section>
+
+				</section>
+			
+
+			
+			
+			
+
+			
+			
+		</div>
+	</div>
+
+				</div>
+				<div class="back">
+					
+<nav class="ui top secondary menu bar">
+	<div class="item">
+		<i class="inverted big link bullseye icon dream-flip-toggle" title="About This Web Page"></i>
+	</div>
+	
+		
+	
+		
+	
+
+	
+	
+	
+	
+	
+	
+	
+		
+		
+			<div class="item">
+				<a href="https://github.com/mroughan" target="	_blank">
+					<i id="ico" class="inverted big link github icon" title="GitHub"></i>
+				</a>
+			</div>
+		
+	
+		
+		
+	
+		
+		
+			<div class="item">
+				<a href="https://twitter.com/AlephHeros" target="	_blank">
+					<i id="ico" class="inverted big link twitter icon" title="Twitter"></i>
+				</a>
+			</div>
+		
+	
+		
+		
+	
+		
+		
+	
+		
+		
+	
+		
+		
+	
+		
+		
+	
+		
+		
+	
+</nav>
+
+
+
+<div class="ui centered grid about">
+	<div class="sixteen wide mobile fifteen wide tablet fifteen wide computer column about">
+		<section class="ui stacked segments">
+			<div class="ui inverted segment">
+				<article class="twemoji">
+					<h1 id="aleph-zero-heros">Aleph-Zero-Heros</h1>
+
+<p><strong>This is a blog about (mathematical) data science of large-scale hybrid
+narratives and superheros in particular.</strong></p>
+
+<p>The title of the blog comes from a, perhaps obscure, piece of
+mathematics: <a href="https://en.wikipedia.org/wiki/Aleph_number">aleph zero</a> is
+(mathematically speaking) the cardinality of the set of natural
+numbers, which is a pretty mathsy way of saying &ldquo;infinity&rdquo;. So the
+name, aleph-zero-heros, loosely translates as <em>infinity</em>. And the blog
+is going to be focused on superhero narratives, hence the title &mdash;
+read it as <strong>infinite heros</strong>.</p>
+
+<p>A hybrid narrative (to me) is a story (fiction or non-fiction) that
+involves multiple forms of media. We can get an idea by considering
+simple examples of old-school hybrids</p>
+
+<ul>
+<li>picture books and graphic novels</li>
+<li>choose your own adventure books, which combine games with prose</li>
+</ul>
+
+<p>and so on, or the modern mash-ups that the web has made so easy to
+augmented reality systems.</p>
+
+<p>But technology today has allowed artists and writers to build much
+larger joint constructs, and that is what I am interested in here.</p>
+
+<p>I&rsquo;ve gone into much more detail in <a href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/posts/description/">this post</a>.</p>
+
+				</article>
+			</div>
+		</section>
+	</div>
+</div>
+
+				</div>
+			</div>
+		</div>
+		
+	
+	
+
+		
+
+<script src="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/js/site.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+
+
+	<script src="https://twemoji.maxcdn.com/2/twemoji.min.js?2.6"></script>
+
+
+
+
+
+
+
+
+	
+	<script>
+		window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+		ga('create', 'UA-96845987-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+		
+
+
+		
+
+	<script>
+		(function () {
+		  console.log("Twemoji up and making stuff colourful!");
+		  for (var b = document.getElementsByClassName("twemoji"), a = 0; a < b.length; a++) {
+			twemoji.parse(b[a]);
+		  }
+		})();
+	</script>
+
+
+	</body>
+</html>

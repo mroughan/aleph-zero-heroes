@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>About on Aleph-Zero-Heroes</title>
+    <link>http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/categories/about/</link>
+    <description>Recent content in About on Aleph-Zero-Heroes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 10 Feb 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/categories/about/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/posts/description/</link>
+      <pubDate>Sun, 10 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/posts/description/</guid>
+      <description>Aleph-Zero-Heroes The title of the blog comes from a, perhaps obscure, piece of mathematics. Mathematically speaking aleph zero &amp;ndash; which we write \(\displaystyle \aleph_0\) &amp;ndash; is the cardinality of the set of natural numbers, which is a pretty mathsy way of saying &amp;ldquo;infinity&amp;rdquo;. So the name, aleph-zero-heroes, loosely translates as infinite heroes.
+I don&amp;rsquo;t just care about superheroes &amp;ndash; more broadly they are a archetype that comes up frequently in the context of hybrid narratives, and that is what I want to tap into.</description>
+    </item>
+    
+  </channel>
+</rss>

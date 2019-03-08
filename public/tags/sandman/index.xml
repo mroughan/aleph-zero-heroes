@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sandman on Aleph-Zero-Heros</title>
+    <link>http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/tags/sandman/</link>
+    <description>Recent content in Sandman on Aleph-Zero-Heros</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 23 Feb 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/tags/sandman/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Sandman</title>
+      <link>http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/posts/post_sandman/</link>
+      <pubDate>Sat, 23 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/posts/post_sandman/</guid>
+      <description>Neil Gaiman and his collaborators have produced some of the most purely creative work.
+Creativity is hard.
+Brian Eno
+Creativity lives at the edge of chaos
+No I don&amp;rsquo;t mean Gaiman&amp;rsquo;s hair.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on Aleph-Zero-Heros</title>
+    <link>http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/categories/hugo/</link>
+    <description>Recent content in Hugo on Aleph-Zero-Heros</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 18 Feb 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/categories/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Incredible Hugo</title>
+      <link>http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/posts/post_hugo_1/</link>
+      <pubDate>Mon, 18 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heros/posts/post_hugo_1/</guid>
+      <description>Literate Programming and Live Documents I think one of the ideas that will have the largest, long-term impact of science in general, and data-science in particular is the extension of literate programming to live documents.
+Literate programming is a radical idea put forward by Knuth that computer program shouldn&amp;rsquo;t just be commented. They should be a readable document that contains code.
+That doesn&amp;rsquo;t initially sound radical, but it is. Programmers still, despite decades of education, usually document code as an afterthought.</description>
+    </item>
+    
+  </channel>
+</rss>

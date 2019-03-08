@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Timelines on Aleph-Zero-Heroes</title>
+    <link>http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/categories/timelines/</link>
+    <description>Recent content in Timelines on Aleph-Zero-Heroes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 08 Mar 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/categories/timelines/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>MCU Timeline Part I</title>
+      <link>http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/posts/post_mcu_timeline1/</link>
+      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/posts/post_mcu_timeline1/</guid>
+      <description>I talked about the Marvel Cinematic Universe (MCU) and why it&amp;rsquo;s interesting in a previous post. Have a read if you want to get started on this. Today I want to talk about a way of visualising the relationships between the characters and the movies in a timeline (shown above).
+Visualising the MCU How do we visualise something as complex as the MCU? Well, there are a few other folks who&amp;rsquo;ve had a go:</description>
+    </item>
+    
+  </channel>
+</rss>

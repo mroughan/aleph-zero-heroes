@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Julia on Aleph-Zero-Heroes</title>
+    <link>http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/tags/julia/</link>
+    <description>Recent content in Julia on Aleph-Zero-Heroes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 25 Feb 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/tags/julia/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Julia (Part I): Web APIs</title>
+      <link>http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/posts/post_julia1/</link>
+      <pubDate>Mon, 25 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/posts/post_julia1/</guid>
+      <description>Julia for Data Science Data science has a major component that is computational. You can&amp;rsquo;t do very much with just a pen and paper. Luckily there are some great programming languages available. The best known these days is Python I guess, with R a close runner up (it&amp;rsquo;s a favourite of the stats community). There are a dozen others.
+The up-and-coming new kid on the block is Julia. She doesn&amp;rsquo;t have as much history.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,11 @@
+{{ $.Scratch.Set "number" (.Get 0 | int)  }}
+
+<sup>
+<a href="#fn{{ $.Scratch.Get "number" | safeURL }}"
+   id="ref{{ $.Scratch.Get "number" | safeURL }}">
+  {{ $.Scratch.Get "number" }}
+</a>
+</sup>
+
+
+

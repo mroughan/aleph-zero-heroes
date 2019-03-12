@@ -2,74 +2,74 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Aleph-Zero-Heroes</title>
-    <link>http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on Aleph-Zero-Heroes</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sun, 10 Feb 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>About</title>
-      <link>http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/tags/about/</link>
+      <link>/tags/about/</link>
       <pubDate>Sun, 10 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/tags/about/</guid>
+      <guid>/tags/about/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Julia</title>
-      <link>http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/tags/julia/</link>
-      <pubDate>Mon, 25 Feb 2019 00:00:00 +0000</pubDate>
+      <link>/tags/julia/</link>
+      <pubDate>Tue, 12 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/tags/julia/</guid>
+      <guid>/tags/julia/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Marvel</title>
-      <link>http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/tags/marvel/</link>
+      <link>/tags/marvel/</link>
       <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/tags/marvel/</guid>
+      <guid>/tags/marvel/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Mcu</title>
-      <link>http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/tags/mcu/</link>
+      <link>/tags/mcu/</link>
       <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/tags/mcu/</guid>
+      <guid>/tags/mcu/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Narrative Chart</title>
-      <link>http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/tags/narrative-chart/</link>
+      <link>/tags/narrative-chart/</link>
       <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/tags/narrative-chart/</guid>
+      <guid>/tags/narrative-chart/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Networks</title>
-      <link>http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/tags/networks/</link>
+      <link>/tags/networks/</link>
       <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/tags/networks/</guid>
+      <guid>/tags/networks/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Timelines</title>
-      <link>http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/tags/timelines/</link>
+      <link>/tags/timelines/</link>
       <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/tags/timelines/</guid>
+      <guid>/tags/timelines/</guid>
       <description></description>
     </item>
     

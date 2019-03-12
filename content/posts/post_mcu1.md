@@ -9,8 +9,8 @@ scientist) care about the Marvel Cinematic Universe?"
 categories: ["movies"]
 tags: ["Marvel", "MCU"]
 # featuredImage: "img/spider_girl_landscape_incredible.jpg" 
-cover: "http://i.annihil.us/u/prod/marvel/i/mg/a/10/528d369de3e4f/landscape_incredible.jpg" 
-featuredImage: "http://i.annihil.us/u/prod/marvel/i/mg/a/10/528d369de3e4f/landscape_incredible.jpg" 
+cover: "https://i.annihil.us/u/prod/marvel/i/mg/a/10/528d369de3e4f/landscape_incredible.jpg" 
+featuredImage: "https://i.annihil.us/u/prod/marvel/i/mg/a/10/528d369de3e4f/landscape_incredible.jpg" 
 featuredImageDescription: ": Spider-Girl, provided by Marvel ©"
 draft: false
 ---

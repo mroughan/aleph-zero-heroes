@@ -3,18 +3,14 @@ title: "Julia (Part II): Data Structures for Data Science"
 author:
   name: "Matt Roughan"
   desc: " "
-date: 2019-02-28
+date: 2019-03-12
 description: "Julia dictionaries, data frames and how to read CSV data files into these data structures."
 categories: ["Julia"]
 tags: ["Julia"]
-# cover: "/img/4886461-secret-wars-sw2.jpg" 
 cover: "/img/julia_logo.svg" 
 featuredImage: "/img/julia_logo.svg" 
-featuredImage: "/img/julia_logo.svg" 
 featuredImageDescription: ", <a href=\"https://julialang.org/v2/img/logo.svg\">the Julia programming language.</a>"
-# featuredImage: "/img/4886461-secret-wars-sw2.jpg" 
-# featuredImageDescription: ": <a href=\"https://comicvine.gamespot.com/julia-carpenter/4005-16197/\">Julia Carpenter, Spider-Woman</a>"
-draft: true 
+draft: false 
 ---
 
 # Intro
@@ -23,13 +19,13 @@ I mentioned in my [last post](/posts/post_julia1/) on
 [Julia](https://julialang.org/) that dictionaries are incredibly
 useful data structures for data science. I thought that warranted a
 little more discussion. And it leads to another data structure that we
-use a lot: Data Frames, so I wanted to talk about both here.
+use a lot: Data Frames. They're the topic for today.
 
 # Dictionaries
 
-A *dictionary* (in computer programming) is much like am English
+A *dictionary* (in computer programming) is much like an English
 dictionary. It takes a set of objects (the *keys*) and maps them to
-something else (the *values*). Iin an English dictionary the
+something else (the *values*). In an English dictionary the
 object/keys are *words* and they are mapped to values called
 *definitions*, but in programming the objects could be any type of
 data.
@@ -37,9 +33,9 @@ data.
 Dictionaries are also called
 [*associative arrays*](https://en.wikipedia.org/wiki/Associative_array)
 because we can conceptualise them as a generalisation of a standard
-array. In a standard array the *indexes* a integers (usually starting
-at either 0 or 1). In a dictionary, we can think of the indexes as
-being anything we like. So a dictionary *associates* the key/index
+array. In a standard array the *indexes* are contiguous integers
+usually starting at either 0 or 1. In a dictionary, the indexes can be
+almost anything we like. The dictionary *associates* the key/index
 with the value.
 
 In Perl, dictionaries are called *hashes* because a common underlying
@@ -47,12 +43,17 @@ data structure used to implement many dictionaries is a *hash table*
 but this terminology is confusing. The term hash get's used for way
 too many thing already. And this isn't the only way to implement a dictionary. 
 
-Julia has a data type called a
-[Dict](https://en.wikibooks.org/wiki/Introducing_Julia/Dictionaries_and_sets). Critical
-things to know are
+In Julia a dictionary is called a <a
+href="https://en.wikibooks.org/wiki/Introducing_Julia/Dictionaries_and_sets" target="_blank">Dict</a>. They're
+a core part of the language, so you don't need to include any special
+packages to use them. Critical things to know include:
 
-+ That the keys and values of a Dict can be almost anything but keys have
-  to have an associated hash function so if you create a new data type, you may need to define this.
++ The keys and values of a Dict can be almost anything but keys have
+  to have an associated hash function so if you create a new data
+  type, you may need to define this. My strategy has been to define
+  hash functions recursively in terms of hashes that already
+  exist. Hash functions are useful enough that I will do a post on
+  these at some point.
   
 + If we restrict the types of the entries we can make the dictionary
   much more efficient, so it usually better to have some control, not
@@ -62,76 +63,107 @@ things to know are
   dictionary, but that has an associated computational cost to keeping
   things in order).
 
-The operations we need to learn for a dictionary are
+### Operations and functions
 
-+ Creation of a new dictionary:
+The operations we need to learn for a dictionary are given below. 
+
++ **Creation** of a new dictionary. Julia's uses constructor functions
+  to create new variables, the standard syntax being the name of the
+  datatype ```Dict``` following by the input arguments in round
+  braces. Types specified in curly braces before the input arguments
+  provide extra information so that a more specific constructor can be
+  used to construct a more efficient variable.
 
 ```julia
-julia> D = Dict{String, Int}() # call the constructor to create an empty dictionary
+julia> D = Dict{String, Int}()                # create an empty dictionary
 julia> D = Dict("a" => 1, "b" => 2, "c" => 3) # start the dictionary with some pairs
-julia> dict = Dict(string(i) => sind(i) for i = 0:5:360)
+julia> dict = Dict(string(i) => sind(i) for i = 0:5:360) # comprehension-like syntax
 ```
 
-+ Addition of a `(key,value)` pair:
++ **Addition** of a `(key,value)` pair.  Julia uses square braces for
+   indexing into arrays (associative or otherwise) so this notation is
+   pretty consistent. Unlike Matlab you can't just add a new element
+   to a standard array, but you can to an associative array
+   (a Dict). This is deliberate -- to understand why, you should learn
+   about the underlying implementations.
 
 ```julia
-julia> D["d"] = 59 
+julia> D["d"] = 59     # assign the value 59 to the key "d"
+```
+ 
+
++ **Removal** of a `(key,value)` pair uses the ```delete!```
+  function. The exclamation mark in the name is a Julia idiom to
+  indicate that the function operates on the input variable in place. 
+
+```julia
+julia> delete!(D, "d") # remove the key "d" from Dict D
 ```
 
-+ Removal of a `(key,value)` pair:
++ **Lookup** the `value` associated with a `key`. There are a few
+  approaches to find the value or test if it exists. I doubt I am
+  listing them all below, but it's enough to get going. 
 
 ```julia
-julia> delete!(D, "d")
-```
-
-+ Lookup the `value` associated with a `key`: 
-
-```julia
-julia> D["a"]
+julia> D["a"]         # get the value associated with key "a"
 julia> haskey(D, "a") # check if the key "a" is in the dictionary
 julia> get(D, "a", 0) # look up key "a", with fallback value of 0 it if is absent
 ```
 
-+ Update of the value associated with a key. Often programming
-  languages combine the update and insertion operations, as does Julia.
++ **Update** of the value associated with a key. Often programming
+  languages combine the update and insertion operations, as does
+  Julia, for instance, we can update the value corresponding to key
+  "d" using ```D["d"] = 60```.
 
 Other useful functions are
 
-+ `keys` and `values` which return an iterator over their respective
-  element (use `collect` to get an array from the iterator).
++ `keys` and `values` which return  iterators over the keys and values
+  respectively. Use `collect` to get an array from the iterator, or iterate
+  over it using a for loop.
 
 + Set operations such as `union`, `setdiff` and `intersection` should
-  also work, but return an array of pairs, not a dictionary. They have
-  to because the keys in the two dictionaries might not have a unique
-  set of keys, and the non-unique keys might be associated to
-  different values.
+  also work, but return an array of Pairs, not a dictionary. They have
+  to because the keys in the two dictionaries might not be unique, and
+  the non-unique keys might be associated to different values.
   
-+ `map` and `filter` can also be used, though I think that is a whole other post.   
++ `map` and `filter` can also be used, though I think that is a whole
+  other post because these functions are not just about dictionaries. 
+
+### Sorting
 
 Dictionaries are not sorted, so one snippet of code I find often
-useful is to print the dictionary elements in some order. It's not too
-hard if you want to print them in the order of the keys, but printing
-them in order of the values (assuming these have an ordering) is
-slightly more complicated. You do it easily enough with a loop, but I
-like the following.
+useful is to obtain dictionary elements in some order, in this case in
+the reverse order of the values of `D`.
 
 ```julia
 julia> sort(collect(D), by = tuple -> last(tuple), rev=true)
 ```
 
+The last argument says to sort in reverse order, and isn't needed.
+The `by` argument is specifying a function that is being used to
+output a sortable index (presuming that the values are such). The
+`collect` function converts the dictionary into an array of
+pairs/tuples<sup><a href="#fn1" id="ref1">1</a></sup>, which is then
+sorted based on the last elements of those tuples. The output is also
+as an array of Pairs. 
+
+
+### An Example
+
 Before we move on, I wanted to give a real example of how I use
 dictionaries here. I mentioned [earlier](/posts/post_mcu_timeline1/)
 that I constructed an [aliases file](/csv/alias_list.csv). It is a CSV
 file with two columns, one of canonical character names, and the other
-a list of aliases.  Here's the first few entries:
+a list of aliases.  Here's the first few entries, and you can click on
+the table to get the whole file.
 
 {{% csv_table src="static/csv/alias_list.csv"  maxLines="7" colStyle="text-align:left" %}} 
 
 Converting the cast lists from IMDb requires us to read the aliases
-in, and generate a
-[dictionary](https://en.wikibooks.org/wiki/Introducing_Julia/Dictionaries_and_sets)
-with a mapping from each alias to the unique name we are going to use
-for each character. 
+and generate a dictionary containing a mapping from each alias to the
+unique name we are going to use for each character. That is we create
+a dictionary called `Aliases` that has character aliases as keys, and
+the canonical character name as the value.
 
 ```julia
 using DataFrames
@@ -152,33 +184,50 @@ end
 The dictionary I want is returned as `Aliases` but there are other
 useful pieces in this function:
 
-+ `'aliases` is a DataFrame with two columns, the first is a
-  list of character names, and the second contains a list of
-  comma-separated lists of aliases. We'll talk more about these in just a second. 
++ The CSV file is read into `aliases`, which is a `DataFrame` with two
+  columns: the first is a list of character names, and the second
+  contains a list of comma-separated lists of aliases. We'll talk more
+  about Data Frames in just a second.
 
 + The `strip` function removes leading and trailing spaces from a
-  string -- usually a good idea for this type of thing.
+  string -- usually a good idea for this type of thing. I use this
+  function a lot in text processing, and there are `lstrip` and
+  `rstrip` variants that act on only one end of the string.
 
 + I convert all the aliases to lowercase, so I don't need equivalent
   lower case versions.
 
 + The `split` function splits a string according to some delimiter, in
-  this case a comma, and returns a vector. 
+  this case a comma, and returns a vector. This is another function I
+  use again and again.
 
-
+Julia now has great on-line help for common functions. You can access
+it by typing a `?` and then the name of the function.
 
 # Data Frames 
 
 I just mentioned Data Frames, so I had better explain myself. 
 
 Dictionaries are a built-in data type in Julia. They map a key to a
-value. What is the value is a column of data? If all of the columns of
-data are the same length, then we have a table. An increasingly common
-way to store such tables is in a Data Frame. In one sense they are
-really just advanced tables. Think of each column as a *variable* and
-the rows as *observations* of those variables.
+value. In some sense they are one-dimensional. 
 
-But Data Frames are a little cleverer than a simple 2D array of data.
+Many sets of data are a 2D table. They have a set of columns each
+corresponding to a *variable* and each row is a set of *observations*
+of those variables. So we might, by default store these in a 2D array
+of numbers. But wouldn't it be great if the columns were named after
+the variable they represent. 
+
+Data Frames are exactly that, and they use dictionaries to do it. A
+Data Frame is (simplistically) just a dictionary whose keys are the
+variables, and whose columns are the values associated with each. But
+Data Frames are a little bit more than this: the columns are all the
+same length, so they need to incorporate the idea of missing data, and
+there are many operators defined on top of the standard dictionary
+operators. 
+
+The upshot is that in one sense Data Frames are really just advanced
+tables, but Data Frames are a little cleverer than a simple 2D array
+of data.
 
 + They can contain different types of data in different columns.
 
@@ -201,7 +250,7 @@ But Data Frames are a little cleverer than a simple 2D array of data.
 Julia has a package called, naturally enough `DataFrames`, and in
 conjunction with a few other bits and pieces (in particular the `CSV`
 package) it's very powerful. So here's a few steps to using it. BTW, I
-assume you guys can read the docs and install a package. Sound fair?
+assume you lot can read the docs and install a package. Sound fair?
 
 Included below is a simple set of code I've been using to learn how to use Data
 Frames in
@@ -334,5 +383,18 @@ learn more about these paths, the next time we come back to them.
 
 
 
+---
 
+Footnotes:
 
+  1. {{<raw>}}<div id="fn1" class="footnote">
+
+  Tuples and pairs are not the same thing in Julia. A Pair
+  is not even a subtype of Tuple.  See <a
+  href="https://discourse.julialang.org/t/pair-a-b-vs-tuple-a-b/942"
+  target="_blank">`Pair{A,B}` vs. `Tuple{A,B}`</a> for more
+  discussion. However, in this example we can act on
+  them in the same way.
+  
+  <a href="#ref1" title="Jump back to footnote 1 in the text.">↩</a></div>
+  {{</raw>}}

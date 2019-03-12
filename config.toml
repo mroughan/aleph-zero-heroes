@@ -20,7 +20,7 @@ pygmentsUseClasses = true
 # pygmentsStyle = "perldoc" # https://help.farbox.com/pygments.html
 # pygmentsStyle = "vim" # https://help.farbox.com/pygments.html
 # pygmentsStyle = "native" # https://help.farbox.com/pygments.html
-pygmentsOptions = "linenos=inline,linenostart=1"
+# pygmentsOptions = "linenos=inline,linenostart=1"
 
 #Enable Hugo Emoji Conversion
 enableEmoji=true 

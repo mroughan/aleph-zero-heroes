@@ -23,9 +23,11 @@
 				  {{ .Description }}
 				<h3>
 
+				    <a href="{{ .Params.Featuredimage | safeURL }}">
 				    <img class="featured-image" src="{{ .Params.Featuredimage | safeURL }}"
-				       alt="{{ .Params.featuredImageDescription }}">  
-
+				       alt="Featured image: {{ .Params.featuredImageDescription }}">  
+				    </a>
+				    
 				<div class="sub header">
 					<div><span><i class="calendar outline icon"></i>{{ .Date.Format "Jan 2, 2006" }}</span></div>
 					{{ if $.Site.DisqusShortname }}

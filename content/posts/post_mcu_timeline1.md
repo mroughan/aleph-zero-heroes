@@ -4,13 +4,14 @@ author:
   name: "Matt Roughan"
   desc: " "
 date: 2019-03-08
-description: "Building a Timeline for the Marvel Cinematic Universe: paths, graphs and automobiles"
+description: "Building a Timeline for the Marvel Cinematic Universe:
+paths, graphs and automobiles (there aren't really any automobiles)"
 categories: ["movies", "timelines"]
 tags: ["Marvel", "MCU", "Timelines", "Networks", "Narrative Chart"]
 cover: "/img/timeline_landscape.png" 
 featuredImage: "/img/timeline_landscape.png" 
-featuredImageDescription: ", my <a href=\"/img/timeline_landscape.png\">MCU Timeline</a>"
-draft: false
+featuredImageDescription: "aleph-zero-heroes MCU Timeline"
+draft: false 
 --- 
 
 I talked about the Marvel Cinematic Universe (MCU) and why it's
@@ -18,6 +19,9 @@ interesting in a [previous post](/posts/post_mcu1/). Have a read if you
 want to get started on this. Today I want to talk about a way of
 visualising the relationships between the characters and the movies in
 a *timeline* (shown above). 
+
+And as a minor note, I just saw *Captain Marvel*, which is brilliant,
+but required a few last minute alterations to the timeline. 
 
 # Visualising the MCU
 
@@ -142,10 +146,11 @@ Beyond this the chart has a few other objectives:
 Ideally, charts like this are laid out by a clever computer program,
 but the programmer in this case was only just clever enough to do it
 manually. There are tools to draw these (see [links](#links) below),
-but graph visualisation with as many constraints as I added isn't easy
-at all. Set it up with so many goals and you almost certainly end up
-with an [NP-hard](https://en.wikipedia.org/wiki/NP-hardness) problem,
-which is likely insoluble in any reasonable amount of time.
+but graph visualisation with as many constraints as I added (I'm also
+trying to reduce the number of edge crossings) isn't easy at all. Set
+it up with so many goals and you almost certainly end up with an
+[NP-hard](https://en.wikipedia.org/wiki/NP-hardness) problem, which is
+likely insoluble in any reasonable amount of time.
 
 I do have some code/data that goes into this.  This
 [CSV file](/csv/movie_sequence.csv) gives the information I compiled
@@ -324,7 +329,10 @@ Footnotes:
     help show the sequence so, for instance, we base the timing of
     Captain America on the modern part of the film (which although it
     is a short part of the movie is the important part from the point
-    of view of the sequence).
+    of view of the sequence). Likewise Captain Marvel's timing is
+    based on the only contemporary sequence, which is only a very
+    brief part of the movie, though we do make reference to the
+    earlier component.
 	
 	  <a href="#ref2" title="Jump back to footnote 2 in the text.">↩</a></div> 
 	  {{</raw>}}

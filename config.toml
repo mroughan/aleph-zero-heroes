@@ -56,7 +56,7 @@ enableEmoji=true
 		
 	[params.background]
 		# colorBG = true
-		bgImage = "img/cyanotype_bg_tile.png"
+		bgImage = "/img/cyanotype_bg_tile.png"
 
 	#Tags settings
 	[params.tags]

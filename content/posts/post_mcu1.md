@@ -11,7 +11,7 @@ tags: ["Marvel", "MCU"]
 # featuredImage: "img/spider_girl_landscape_incredible.jpg" 
 cover: "https://i.annihil.us/u/prod/marvel/i/mg/a/10/528d369de3e4f/landscape_incredible.jpg" 
 featuredImage: "https://i.annihil.us/u/prod/marvel/i/mg/a/10/528d369de3e4f/landscape_incredible.jpg" 
-featuredImageDescription: ": Spider-Girl, provided by Marvel ©"
+featuredImageDescription: "Spider-Girl, copyright Marvel ©"
 draft: false
 ---
 

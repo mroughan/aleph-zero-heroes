@@ -4,7 +4,7 @@ author:
   name: "Matt Roughan"
   desc: " " 
 date: 2019-02-25
-description: "Getting data into Julia from the web"
+description: "Getting data into Julia from the web."
 categories: ["Julia"]
 tags: ["Julia"]
 # cover: "https://julialang.org/v2/img/logo.svg" 

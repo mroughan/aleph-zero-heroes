@@ -25,6 +25,10 @@ pygmentsUseClasses = true
 #Enable Hugo Emoji Conversion
 enableEmoji=true 
 
+
+[blackfriday]
+	hrefTargetBlank = true
+
 [params]
 	#Favicon for site
 	favicon = "/img/defaultFav.ico"

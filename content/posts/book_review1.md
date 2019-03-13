@@ -5,7 +5,7 @@ author:
   desc: " "
 date: 2019-03-12
 description: "The Best Book on Data Visualisation is not on
-        Data Visualisation"
+        Data Visualisation."
 categories: ["movies"]
 tags: ["Marvel", "MCU"]
 cover: "/img/understanding_comics.jpg" 
@@ -16,7 +16,44 @@ draft: true
 
 # Intro
 
- https://en.wikipedia.org/wiki/Understanding_Comics
+I thought an occasional book review might not go astray. This is the
+first one.
+
+Unlike many book reviewers, I am not particularly interested in
+reviewing the latest, greatest books. And I don't plan to review
+comics or graphic novels as such. I just plan to review media that I
+find for the first time. 
+
+My most recent addition to my library was of
+[*Understanding Comics: The Invisible Art*](https://en.wikipedia.org/wiki/Understanding_Comics),
+by Scott McCloud. I read it because it was about comics, but that is
+not why I am reviewing it. I am reviewing it because it is a deeper
+book than even its author knows. I think it is a book about *data
+visualisation*. It's the best book on data visualisation.
+
+That might be a challenging statement, but I have read a little on the
+topic. I have a couple of Tufte's famous books. I've glanced at Tukey,
+and I have *How to Lie with Statistics* by my bedside (that isn't as
+ringing en endorsement as you might think -- I have half a thousand
+books cluttering up the bedroom). I plan to read more --
+recommendations are welcome. But then there is this book that isn't
+even, ostensibly, about visualisation.
+
+Why then, would I recommend it? To explain that I want to quickly
+summarise the book.
+
+# Summary
+
+
+
+
+
+# What is it that is important
+
+
+ 
+ 
+ 
  
 #  Summary
  

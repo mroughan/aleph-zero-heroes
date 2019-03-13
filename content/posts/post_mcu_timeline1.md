@@ -5,7 +5,7 @@ author:
   desc: " "
 date: 2019-03-08
 description: "Building a Timeline for the Marvel Cinematic Universe:
-paths, graphs and automobiles (there aren't really any automobiles)"
+paths, graphs and automobiles (there aren't really any automobiles)."
 categories: ["movies", "timelines"]
 tags: ["Marvel", "MCU", "Timelines", "Networks", "Narrative Chart"]
 cover: "/img/timeline_landscape.png" 
@@ -14,14 +14,19 @@ featuredImageDescription: "aleph-zero-heroes MCU Timeline"
 draft: false 
 --- 
 
+# Intro
+
 I talked about the Marvel Cinematic Universe (MCU) and why it's
 interesting in a [previous post](/posts/post_mcu1/). Have a read if you
 want to get started on this. Today I want to talk about a way of
 visualising the relationships between the characters and the movies in
 a *timeline* (shown above). 
 
-And as a minor note, I just saw *Captain Marvel*, which is brilliant,
-but required a few last minute alterations to the timeline. 
+I've been working on this for a while, so it's possible you saw a
+previous version. My aim was to get this out on the release of
+*Captain Marvel*, and I thought I had it down. Then I saw the movie,
+which is brilliant, but required a few last minute alterations to the
+timeline, so slight delay here to get the final version up.
 
 # Visualising the MCU
 
@@ -46,7 +51,7 @@ very important element of any narrative, but is sometimes overlooked
 in network views of the data. So, inspired by the map of Napolean's
 Russian campaign by
 [Minard](https://en.wikipedia.org/wiki/Charles_Joseph_Minard) (Tufte
-called Minard's figure "one of the best statistical graphics ever",
+called Minard's figure "one of the best statistical graphics ever" in
 *Beautiful Evidence*).
 
 {{< figure src="/img/Minard.png"  
@@ -89,7 +94,7 @@ There's a lot I want to say about this timeline. First  some footnotes
 {{< footnote_marker 7 >}}.
 Go and read them before you get upset about mistakes. I'm not saying
 there aren't any mistakes, just that I some things that look like
-mistakes aren't.
+mistakes are deliberate choices.
 
 There are plenty of people doing timelines for the MCU, ranging from
 [Marvel's own](https://www.mpaa.org/2018/11/the-official-timeline-of-all-the-marvel-movies/)
@@ -121,11 +126,10 @@ Beyond this the chart has a few other objectives:
   set<sup><a href="#fn2" id="ref2">2</a></sup>, though I had to take
   liberties in a few places to make it all fit. I tried to make my
   timeline consistent with as many of the timelines above as I can,
-  but they aren't all consistent either. Where possible I give
-  precedence to Marvel's official timeline, and for detailed placement
-  take advice from
-  [Collider](http://collider.com/mcu-timeline-explained/), which has
-  the lots of detail, and is at least internally consistent. I'm
+  but they disagree in places. Where possible I give precedence to
+  Marvel's official timeline, and for detailed placement take advice
+  from [Collider](http://collider.com/mcu-timeline-explained/), which
+  has the lots of detail, and is at least internally consistent. I'm
   suspicious that I should move *Infinity War* into 2018, to be
   consistent with Collider, but for the moment let's stay with the
   official Marvel version where possible.
@@ -323,16 +327,19 @@ Footnotes:
     The locations are intended to help place the movies in
     time. However, many of the movies cover multiple times: *Doctor
     Strange* takes place over approximately a 1 year period, and
-    *Captain America: The First Avenger* is set predominantly in the
-    1940s. Additionally many of the movies have flashbacks, and some
-    have flash forwards. The positions in the picture are chosen to
-    help show the sequence so, for instance, we base the timing of
-    Captain America on the modern part of the film (which although it
-    is a short part of the movie is the important part from the point
-    of view of the sequence). Likewise Captain Marvel's timing is
-    based on the only contemporary sequence, which is only a very
-    brief part of the movie, though we do make reference to the
-    earlier component.
+    *Captain America: The First Avenger* takes place over some time
+    during WWII. The choice of location in such cases is somewhat
+    arbitrary. 
+  
+	Additionally many of the movies have flashbacks, and some have
+    flash forwards. The positions in the picture are chosen to help
+    show the sequence of movies so we base the timing of each movie on
+    its context within that sequence. That results in some (perhaps)
+    unexpected locations. *Captain America* has only short sequences
+    set in 2012, but it is these we use to place the movie, though we
+    do make reference to the earlier component.  Likewise Captain
+    Marvel's timing is based on the only contemporary sequence, which
+    is only a very brief part of the movie.
 	
 	  <a href="#ref2" title="Jump back to footnote 2 in the text.">↩</a></div> 
 	  {{</raw>}}

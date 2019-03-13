@@ -13,7 +13,7 @@
 {{ if .Get "src"}}
    {{- $src := .Get "src" -}}
    {{ if (fileExists $src) -}}
-<a href="{{ replace $src "static/" "" | absURL}}">
+<a href="{{ replace $src "static/" "/" | absURL}}">
 <div align=center>   
 <table class="table">
   {{ $sep := "," }}

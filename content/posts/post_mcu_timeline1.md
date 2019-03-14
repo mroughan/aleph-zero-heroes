@@ -1,10 +1,10 @@
 ---
-title: "MCU Timeline Part I"
+title: "MCU Timeline (Part I)"
 author:
   name: "Matt Roughan"
   desc: " "
 date: 2019-03-06
-lastmod: 2019-03-14 18:05:13
+lastmod: 2019-03-14 18:13:25
 description: "Building a Timeline for the Marvel Cinematic Universe:
 paths, graphs and automobiles (there aren't really any automobiles)."
 categories: ["movies", "timelines"]
@@ -33,7 +33,8 @@ interesting in a [previous post](/posts/post_mcu1/). Have a read if you
 want to get started on this. Today I want to talk about a way of
 visualising the relationships between the characters and the movies in
 a *timeline* (shown above). It's just a starting point -- I plan  few
-follow up posts. 
+follow up posts. At the least, it's a way you can track your favourite
+character, and plan a movie marathon to watch all of their activities.
 
 I've been working on this for a while, so it's possible you saw a
 previous version. My aim was to get this out on the release of

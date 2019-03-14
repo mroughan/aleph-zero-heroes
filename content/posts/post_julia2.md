@@ -3,7 +3,8 @@ title: "Julia (Part II): Data Structures for Data Science"
 author:
   name: "Matt Roughan"
   desc: " "
-date: 2019-03-12
+date: 2019-03-12 
+lastmod: 2019-03-14
 description: "Julia dictionaries, data frames and how to read CSV data files into these data structures."
 categories: ["Julia"]
 tags: ["Julia"]
@@ -11,11 +12,11 @@ cover: "/img/julia_logo.svg"
 featuredImage: "/img/julia_logo.svg" 
 featuredImageDescription: ", <a href=\"https://julialang.org/v2/img/logo.svg\">the Julia programming language.</a>"
 draft: false 
----
-
+---  
+ 
 <div style="color: red">Spoilers Warning</div>
-
-# Intro
+   
+# Intro   
 
 I mentioned in my [last post](/posts/post_julia1/) on
 [Julia](https://julialang.org/) that dictionaries are incredibly

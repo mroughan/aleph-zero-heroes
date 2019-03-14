@@ -14,6 +14,8 @@ featuredImageDescription: "aleph-zero-heroes MCU Timeline"
 draft: false 
 --- 
 
+<div style="color: red">Spoilers Warning</div>
+
 # Intro
 
 I talked about the Marvel Cinematic Universe (MCU) and why it's
@@ -127,7 +129,7 @@ timeline. Each coloured line shows the path of one character (or
 sometimes a small group). 
 
 Beyond this the chart has a few other objectives:
-
+ 
 + Horizontal location is indicative of the time at which the movie was
   set<sup><a href="#fn2" id="ref2">2</a></sup>, though I had to take
   liberties in a few places to make it all fit. I tried to make my
@@ -191,7 +193,7 @@ multiple variants used. To keep track of these I have a little file
 [full of aliases](../../csv/alias_list.csv). Here's the first few
 entries:
 
-{{% csv_table src="static/csv/alias_list.csv"  maxLines="7" colStyle="text-align:left" %}} 
+{{% csv_table src="static/csv/alias_list.csv" link="https://github.com/mroughan/AlephZeroHeroesData/blob/master/MarvelCinematicUniverse/alias_list.csv" maxLines="7" colStyle="text-align:left" %}} 
 
 The list doesn't include all named characters (yet), but has most that
 appear in more than one movie. 
@@ -234,13 +236,14 @@ when we are dealing with real data, often there are exceptions that
 need a semi-manual fix like this.
 
 After all this, we have a list of movies that each character
-participates in, and from these, we use the sequence listed
-[here](/posts/post_mcu1/) to put the movies in sequence for each
-character, and then we have a path for each.  The first few are listed
-below, and the file is [here](/csv/cast_path.csv).
+participates in, and from these, we use the sequence listed above, or
+[here](https://github.com/mroughan/AlephZeroHeroesData/blob/master/MarvelCinematicUniverse/movie_sequence.csv)
+to put the movies in sequence for each character, and then we have a
+path for each.  The first few are listed below, and the file is
+[here](https://github.com/mroughan/AlephZeroHeroesData/blob/master/MarvelCinematicUniverse/cast_path.csv).
 
-{{% csv_table src="static/csv/cast_path.csv"  maxLines="7" colStyle="text-align:left;" %}} 
- 
+{{% csv_table src="/static/csv/cast_path.csv" link="https://github.com/mroughan/AlephZeroHeroesData/blob/master/MarvelCinematicUniverse/cast_path.csv" maxLines="7" colStyle="text-align:left;" %}} 
+  
 The "codes" column is a mapping of the movies to the codes I gave in
 the sequence listing of the movies. It's a key to allow sorting of the
 movies in sequential order, but the strings formed by listing the

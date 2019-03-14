@@ -13,7 +13,14 @@
 {{ if .Get "src"}}
    {{- $src := .Get "src" -}}
    {{ if (fileExists $src) -}}
-<a href="{{ replace $src "static/" "/" | absURL}}">
+
+{{ if .Get "link"}}
+   {{ $.Scratch.Set "link" (.Get "link")  }}
+{{ else }}
+   {{ $.Scratch.Set "link" ( replace $src "static/" "" ) }}
+{{ end }}
+  
+<a href="{{ $.Scratch.Get "link" | absURL}}">
 <div align=center>   
 <table class="table">
   {{ $sep := "," }}
@@ -35,6 +42,8 @@
 </table>
 </div>
 </a>
+   {{ else }}
+      Could not get {{ $src }}
    {{- end }}
 {{ else }}
    no parameter SRC

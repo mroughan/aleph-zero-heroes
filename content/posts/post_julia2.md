@@ -13,6 +13,8 @@ featuredImageDescription: ", <a href=\"https://julialang.org/v2/img/logo.svg\">t
 draft: false 
 ---
 
+<div style="color: red">Spoilers Warning</div>
+
 # Intro
 
 I mentioned in my [last post](/posts/post_julia1/) on

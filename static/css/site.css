@@ -9,6 +9,29 @@
      src: url('../fonts/DroidSerif-Italic.ttf') format('truetype');
 }
 
+/* PRINT ONLY rules follow */
+@media print {
+
+    marquee {
+	-moz-binding: none;
+    }
+    body{
+	margin: 0 !important;
+	color: #f00 !important;
+	background-color: #fff !important;
+    }
+    .ui.secondary.segment {
+	background-color: #ffffffff; /* background color of posts */
+    }
+
+    overflow: visible !important;
+    display: block !important;
+    article {
+	column-width: 10em;
+	column-gap: 3em;
+    }
+    color: #f00 !important;
+}
 
 
 /* /\*Widescreen views*\/ */
@@ -132,8 +155,9 @@
 }
 /*Site settings*/
 body, body.pushable {
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+    background-attachment: scroll;
+  /* background-repeat: no-repeat; */
+  /* background-attachment: fixed; */
   /* background-size: cover !important; */
 }
 
@@ -290,7 +314,7 @@ li:not('.toc') {
 
 .ui.secondary.segment {
   /* background-color: #ececece8; */
-    background-color: #fffffff0; /* background color of posts */
+    background-color: #fffffff2; /* background color of posts */
     padding: auto 1.5em 0 1.5em;
 }
 
@@ -331,12 +355,12 @@ ul > li {
 .post-title {
     align:center;
     text-align:center;
-    color: black;
+    color: red;
     margin-top: 1.2rem;
     margin-bottom: 1.2rem;
     font-family: 'Megrim', bold; 
-    font-size:3em;    
-    text-transform: uppercase ;
+    font-size: 3em;    
+    text-transform: uppercase;
 }
 .title {
     align:center;
@@ -398,6 +422,7 @@ table{
     border-spacing:0;
     margin:1.5em 0;
     font-size:0.8em;
+    font-weight:normal;
 }
 td,th{
     padding:.0em 0.2em;
@@ -407,7 +432,8 @@ td,th{
 th{
     font-family:'LatoLatinWebBlack';
     font-size:100%;
-    font-weight:normal}
+    font-weight:normal;
+}
 
 tr:hover {background-color: #f5f5f5;}
 /* tr:nth-child(even) */
@@ -525,26 +551,25 @@ p > img:not(.emoji), li > img {
 }
 /*Syntax Highlighting*/
 .post-content pre {
-  background: #ffffff70;
-  background-color: #ffffff70;
+  background-color: #0fffff70;
   border: 1px solid #8a8a8a6b;
   border-radius: 5px;
   overflow-x: auto;
 }
 .highlight {
-    border-radius: 5px;
+    border-radius: 10px;
     margin-left: 1rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
-    margin-top: 1rem;
-    border: 1px solid #8a8a8a6b;
+    margin-top: 0rem;
+    /* border: 1px solid #8a8a8a6b; */ 
 }
-
+/* highlight box of code */
 .highlight pre {
-  background: initial;
-  padding: initial;
+  background: #f3f5f3;
+  padding: 0.5em;
   border: initial;
-  border-radius: initial;
+  border-radius: 10px;
 }
 
 .highlight > div {

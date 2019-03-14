@@ -15,6 +15,8 @@ featuredImageDescription: "Spider-Girl, copyright Marvel ©"
 draft: false
 ---
 
+<div style="color: red">Spoilers Warning</div>
+
 # Intro
  
 This is a blog about data science and superheroes.  I think there is

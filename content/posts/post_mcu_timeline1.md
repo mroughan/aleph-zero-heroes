@@ -112,8 +112,14 @@ had for breakfast today. Here are links to a quite a few:
 
 However, despite the title, I am not just doing another timeline. In
 XKCD terms it's a *narrative chart* and I think of it as a *flow
-diagram*, and there are other names as well (see [links](#links) at the end of
-this), but timeline is easier to explain I think?
+diagram*, and there are other names as well (see [links](#links) at
+the end of this), but *story timeline* makes sense here. If we define
+a story as a sequence of events, and a narrative as how it is told,
+then I am trying to get at the story not the narrative. The pieces
+here are drawn in the order they happen (to my best ability) not the
+order they are shown (for instance the second Guardians movie appeared
+out of order compared to when it is set). So a (story) timeline seems
+the right term. 
 
 The goal of my timeline is to track each of the heroes through the
 movies they participate in. So we can see each character's personal

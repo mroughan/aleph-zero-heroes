@@ -4,7 +4,7 @@ author:
   name: "Matt Roughan"
   desc: " "
 date: 2019-03-08
-lastmod: 2019-03-14 17:43:28
+lastmod: 2019-03-14 18:02:59
 description: "Building a Timeline for the Marvel Cinematic Universe:
 paths, graphs and automobiles (there aren't really any automobiles)."
 categories: ["movies", "timelines"]
@@ -19,11 +19,21 @@ draft: false
 
 # Intro
 
-I talked about the Marvel Cinematic Universe (MCU) and why it's
+The Marvel Cinematic Universe (MCU) has grown to the point where it is
+the
+[most successful movie franchise ever](http://mentalfloss.com/article/70920/10-highest-grossing-movie-franchises-all-time). Stories,
+legends, myths, and fictions form a key part of the human experience,
+and stories with this scale and reach are almost unprecedented. So
+digging into the mathematical structure of the collaborative universe
+is something I plan to do for a while. In this post we examine the
+structure of the MCU timeline (see above).
+
+I talked some more about the Marvel Cinematic Universe (MCU) and why it's
 interesting in a [previous post](/posts/post_mcu1/). Have a read if you
 want to get started on this. Today I want to talk about a way of
 visualising the relationships between the characters and the movies in
-a *timeline* (shown above). 
+a *timeline* (shown above). It's just a starting point -- I plan  few
+follow up posts. 
 
 I've been working on this for a while, so it's possible you saw a
 previous version. My aim was to get this out on the release of

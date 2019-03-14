@@ -3,8 +3,8 @@ title: "MCU Timeline Part I"
 author:
   name: "Matt Roughan"
   desc: " "
-date: 2019-03-08
-lastmod: 2019-03-14 18:02:59
+date: 2019-03-06
+lastmod: 2019-03-14 18:05:13
 description: "Building a Timeline for the Marvel Cinematic Universe:
 paths, graphs and automobiles (there aren't really any automobiles)."
 categories: ["movies", "timelines"]

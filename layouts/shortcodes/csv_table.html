@@ -20,7 +20,7 @@
    {{ $.Scratch.Set "link" ( replace $src "static/" "" ) }}
 {{ end }}
   
-<a href="{{ $.Scratch.Get "link" | absURL}}">
+<a href="{{ $.Scratch.Get "link" | absURL}}" target="_blank">
 <div align=center>   
 <table class="table">
   {{ $sep := "," }}

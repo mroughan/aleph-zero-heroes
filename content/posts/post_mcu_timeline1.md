@@ -167,7 +167,8 @@ likely insoluble in any reasonable amount of time.
 I do have some code/data that goes into this.  This
 [CSV file](/csv/movie_sequence.csv) gives the information I compiled
 (by hand) from the existing timelines, and the table from my
-[last post](/posts/post_mcu1/). The data is also shown below:
+[last post](/posts/post_mcu1/). The data is also shown below and you
+can get the CSV file [here](https://github.com/mroughan/AlephZeroHeroesData/blob/master/MarvelCinematicUniverse/movie_sequence.csv).
 
 {{% movie_sequence src="static/csv/movie_sequence.csv" %}}
     

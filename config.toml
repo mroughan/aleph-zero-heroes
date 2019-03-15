@@ -7,7 +7,7 @@ paginate = 6
 enableRobotsTXT = true
 # disqusShortname = "dream-plus"
 canonifyurls = true # fix them all relative to the base for deplyment
-googleAnalytics = "UA-96845987-1"
+googleAnalytics = "UA-96845987-2"
 dateFormat = "02 Jan 2006, 15:04"
 
 #Skip building these files

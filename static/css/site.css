@@ -156,9 +156,11 @@
 /*Site settings*/
 body, body.pushable {
     background-attachment: scroll;
-  /* background-repeat: no-repeat; */
-  /* background-attachment: fixed; */
-  /* background-size: cover !important; */
+    /* background-repeat: no-repeat; */
+    /* background-attachment: fixed; */
+    /* background-size: cover !important; */
+    overflow-y: scroll; /* has to be scroll, not auto */
+    -webkit-overflow-scrolling: touch;
 }
 
 .anchor {
@@ -288,6 +290,7 @@ li:not('.toc') {
   height: 100vh;
   width: 100vw;
   overflow-x: hidden;
+  overflow-y: auto !important;
 }
 
 .pusher.dimmed {

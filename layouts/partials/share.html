@@ -29,7 +29,8 @@
 			'width=626,height=436'); return false;">
 		<button class="ui facebook button"><i class="facebook icon"></i>Share</button>
 	</div>
-	<div class="twitter none flexbox" onclick="window.open('https://twitter.com/intent/tweet?text=Read &quot;{{ .LinkTitle }} {{ with .Site.Social.twitter }}&quot; by @{{ . }}{{ end }} {{ .Permalink }}','_self')">
+	<div class="twitter none flexbox"
+	     onclick="window.open('https://twitter.com/intent/tweet?text=Read&quot;{{ .LinkTitle }} {{ with .Site.Social.twitter }}&quot; by @{{ . }}{{ end }} at {{ $.Site.Params.url }} {{ .Permalink }}','_self')">
 		<button class="ui twitter button"><i class="twitter icon"></i>Tweet</button>
 	</div>
 </section>

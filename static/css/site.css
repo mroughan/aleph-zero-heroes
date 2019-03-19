@@ -159,7 +159,7 @@ body, body.pushable {
     /* background-repeat: no-repeat; */
     /* background-attachment: fixed; */
     /* background-size: cover !important; */
-    /* overflow-y: scroll; /\* has to be scroll, not auto *\/ */
+    /* overflow-y: scroll; /\* has to be scroll, not auto  bu this took away my scroll bars altogether!!! *\/ */
     -webkit-overflow-scrolling: touch; /* https://css-tricks.com/snippets/css/momentum-scrolling-on-ios-overflow-elements/ */
 }
 

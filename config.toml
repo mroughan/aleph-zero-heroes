@@ -74,6 +74,7 @@ enableEmoji=true
 [social]
 	# email = "matthew.roughan@adelaide.edu.au"
 	github = "mroughan/AlephZeroHeroesData"
-	# stackoverflow = "9271608/utkarsh-verma"
-	# medium = "UtkarshVerma_"
+	# stackoverflow = ""
+	# medium = ""
 	twitter = "AlephZeroHeroes"
+	

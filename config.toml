@@ -40,6 +40,7 @@ enableEmoji=true
 
 	brand = "-aleph-zero-heroes-" 
 	description = "A blog about the mathematics of large-scale hybrid narratives" 
+	url = "https://aleph-zero-heroes.info"
 
         [params.author]
 		name = "Matt Roughan"

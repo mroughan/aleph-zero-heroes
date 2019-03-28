@@ -1,0 +1,14 @@
+#!/bin/sh
+
+# echo "Updating probability_distrns"
+# /usr/bin/rsync -av \
+# 	--exclude '*~' \
+#     	--delete \
+# 	/home/mroughan/Reports/Probability/Distributions/probability_distrns /home/mroughan/public_html/
+
+echo "Rsync'ing to staff"
+/usr/bin/rsync -av -e ssh \
+        --partial --stats --progress \
+	--exclude '*~' \
+    	--delete \
+	/home/mroughan/Dropbox/www/aleph-zero-heroes/public/ bandicoot:/home/mroughan/public/aleph-zero-heroes/

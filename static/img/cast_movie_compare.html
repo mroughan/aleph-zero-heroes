@@ -1,0 +1,32 @@
+<html>
+<head>
+     <script src="/home/mroughan/.julia/packages/PlotlyJS/CEJyh/assets/plotly-latest.min.js"></script>
+</head>
+<body>
+     <script>
+    gd = (function() {
+  var WIDTH_IN_PERCENT_OF_PARENT = 100;
+  var HEIGHT_IN_PERCENT_OF_PARENT = 100;
+  var gd = Plotly.d3.select('body')
+    .append('div').attr("id", "cc1509b9-4131-47c8-84de-549e6e07ce31")
+    .style({
+      width: WIDTH_IN_PERCENT_OF_PARENT + '%',
+      'margin-left': (100 - WIDTH_IN_PERCENT_OF_PARENT) / 2 + '%',
+      height: HEIGHT_IN_PERCENT_OF_PARENT + 'vh',
+      'margin-top': (100 - HEIGHT_IN_PERCENT_OF_PARENT) / 2 + 'vh'
+    })
+    .node();
+  var plot_json = {"layout":{"width":800,"xaxis":{"titlefont":{"color":"rgb(0, 0, 0)","size":18},"tickfont":{"color":"rgb(0, 0, 0)","size":18},"title":"number of movies"},"bargap":0.15,"legend":{"bordercolor":"rgba(255, 255, 255, 0)","y":1.0,"bgcolor":"rgba(255, 255, 255, 0)","x":1.0},"height":500,"margin":{"l":50,"b":50,"r":50,"t":60},"yaxis":{"titlefont":{"color":"rgb(0, 0, 0)","size":18},"tickfont":{"color":"rgb(0, 0, 0)","size":18},"title":"character rank","autotick":false,"autorange":"reversed"},"barmode":"group","bargroupgap":0.1},"data":[{"marker":{"color":{"color":"orange","opacity":0.5}},"y":[1,2,3,4,5,6,7,8,9,10],"type":"bar","name":"James Bond","opacity":0.7,"text":["James Bond","Moneypenny","M","Q","Felix Leiter","Blofeld","Bill Tanner","General Gogol","Smithers","Mr. White"],"orientation":"h","x":[26,24,24,23,10,8,4,4,3,3]},{"marker":{"color":"green"},"y":[1,2,3,4,5,6,7,8,9,10],"type":"bar","name":"Marvel","opacity":0.7,"text":["Captain America","Iron Man","Nick Fury","Black Widow","Thor","War Machine","Hulk","Vision","The Winter Soldier","Pepper Potts"],"orientation":"h","x":[10,10,10,9,8,8,8,7,7,7]}]};
+  var data = plot_json.data;
+  var layout = plot_json.layout;
+  Plotly.newPlot(gd, data, layout);
+  window.onresize = function() {
+    Plotly.Plots.resize(gd);
+  };
+  return gd;
+})();
+
+ </script>
+
+</body>
+</html>

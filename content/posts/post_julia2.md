@@ -4,9 +4,9 @@ author:
   name: "Matt Roughan"
   desc: " "
 date: 2019-03-12 
-lastmod: 2019-03-14
+lastmod: 2019-03-21 10:01:32
 description: "Julia dictionaries, data frames and how to read CSV data files into these data structures."
-categories: ["Julia"]
+categories: ["Code"]
 tags: ["Julia"]
 cover: "/img/julia_logo.svg" 
 featuredImage: "/img/julia_logo.svg" 

@@ -7,8 +7,11 @@ HUGO="hugo"
 
 
 all: FORCE
-	/snap/hugo/current/bin/hugo 
+	/snap/hugo/current/bin/hugo -b "http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/"
+
+install: FORCE
 	./rsync_www
+
 
 # run every time
 FORCE:

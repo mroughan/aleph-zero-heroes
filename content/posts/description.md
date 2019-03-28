@@ -274,7 +274,7 @@ networks, have a look at the following:
 + <a href="https://iopscience.iop.org/article/10.1209/0295-5075/99/28002" target="_blank">"Universal properties of mythological networks"</a>
   in which the authors compare the networks of characters in a set of
   mythology texts (*Beowulf*, the *Iliad* and the *Táin Bó
-  Cuailnge*. Again they find parallels.  These authors have a nice
+  Cuailnge*). Again they find parallels.  These authors have a nice
   <a href="https://yosej.github.io/Ossian_Full_Network/" target="_blank">visualisation</a>
  of one
   of the networks they are dealing with.

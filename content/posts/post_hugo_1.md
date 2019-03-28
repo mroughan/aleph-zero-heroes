@@ -4,8 +4,8 @@ author:
   name: "Matt Roughan"
   desc: " " 
 date: 2019-02-18
-description: "Some notes about using Hugo for a data-science blog: Literate Programming and live Documents"
-categories: ["Hugo"]
+description: "Using Hugo for data-science and reproducible research: literate Programming and live documents"
+categories: ["Code"]
 tags: ["hugo"] 
 cover: "http://i.annihil.us/u/prod/marvel/i/mg/5/a0/538615ca33ab0/landscape_incredible.jpg" 
 featuredImage: "http://i.annihil.us/u/prod/marvel/i/mg/5/a0/538615ca33ab0/landscape_incredible.jpg" 
@@ -13,7 +13,7 @@ featuredImageDescription: ": The Incredible Hulk, provided by Marvel ©"
 draft: true 
 ---
 
-### Literate Programming and Live Documents
+# Literate Programming and Live Documents
 
 I think one of the ideas that will have the largest, long-term impact
 of science in general, and data-science in particular is the extension
@@ -78,7 +78,7 @@ In essence, live documents are the ultimate **hybrid-text** which is
 one of the themes underlying this whole blog, and something I believe
 in deeply. 
 
-### Hugo
+# Hugo
 
 That brings us to [Hugo](https://gohugo.io/), the **static** web page
 generator I am using for this page.
@@ -174,7 +174,7 @@ from Julia scripts (such that they are generated an included into the
 pages at compile time). I haven't quite progressed that far, but I can
 see a few approaches that might work.
 
-### Summary
+# Summary
 
 We all, data scientists, computer scientists, mathematicians and
 statisticians need to be working towards more reproducible
@@ -187,15 +187,19 @@ today I have presented one small piece to help.
 Footnotes:
 
   1. {{<raw>}} <div id="fn1">
+  
 	 BTW, Jupyter supports languages other than just Python, including
 	 a version for Julia!
+	 
       <a href="#ref1" title="Jump back to footnote 1 in the text.">↩</a></div> {{</raw>}}
 
 
   1. {{<raw>}} <div id="fn2">
+  
 	  I make the distinction here between a *living* document, and a
 	  *live* document. The former is, for instance a wiki page, which
 	  is continuously updated and edited. The latter is a document
 	  that could be living, but doesn't have to be. 
+	  
       <a href="#ref2" title="Jump back to footnote 2 in the text.">↩</a></div> {{</raw>}}
 

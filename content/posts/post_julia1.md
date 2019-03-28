@@ -5,7 +5,7 @@ author:
   desc: " " 
 date: 2019-02-25
 description: "Getting data into Julia from the web."
-categories: ["Julia"]
+categories: ["Code"]
 tags: ["Julia"]
 # cover: "https://julialang.org/v2/img/logo.svg" 
 cover: "/img/julia_logo.svg" 

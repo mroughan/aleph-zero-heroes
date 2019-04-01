@@ -3,7 +3,8 @@ title: "The Incredible Hugo"
 author:
   name: "Matt Roughan"
   desc: " " 
-date: 2019-02-18
+date: 2019-04-01
+lastmod: 2019-04-01 18:13:29
 description: "Using Hugo for data-science and reproducible research: literate Programming and live documents"
 categories: ["Code"]
 tags: ["hugo"] 

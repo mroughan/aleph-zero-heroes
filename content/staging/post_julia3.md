@@ -4,7 +4,7 @@ author:
   name: "Matt Roughan and Jono Tuke"
   desc: " " 
 date: 2019-03-12
-lastmod: 2019-03-21 10:27:39
+lastmod: 2019-04-01 13:19:29
 description: ""
 categories: ["Code"]
 tags: ["Julia", "R"]
@@ -37,6 +37,12 @@ topic of this blog is can it do some of the core R tasks in a way that
 is easy for a statistician to get going, and worth doing from the
 point of view of performance (Julia's main selling point).  
 
+The other comparison we will consider here is against Matlab's
+`glmfit` package. Julia seems in many ways to be modelled on Matlab,
+but with many improvements, so this is another natural comparison. 
+
+
+
 # GLM
 
 The strength of a language these days is not its core, it's the
@@ -53,8 +59,9 @@ how do we do it
 
 
 
-   
-   GLM package 
+Matlab   {\tt glmfit}
+ 
+	R GLM package 
    
 
 # The tests
@@ -67,6 +74,12 @@ how do we do it
 
 
 (3) Performance: big data set 
+
+
+
+
+# Do a GLM  on the Elo data, to do logit prediction, and hence test ratings
+
 
 
 

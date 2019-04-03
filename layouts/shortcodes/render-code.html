@@ -1,0 +1,7 @@
+<!-- from --
+  -- --
+  --https://it.knightnet.org.uk/kb/hugo/hugo-snippets/#shortcode-to-render-a-code-example-in-a-pagepost --
+  -- -->
+{{ $file := .Get "file" | readFile }}
+{{ $lang := .Get "language" }}
+{{ (print "```" $lang "\n" $file "\n```") | markdownify }}

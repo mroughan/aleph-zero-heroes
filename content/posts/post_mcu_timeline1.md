@@ -4,12 +4,12 @@ author:
   name: "Matt Roughan"
   desc: " "
 date: 2019-03-06
-lastmod: 2019-03-14 18:27:35
+lastmod: 2019-04-03 18:33:45
 description: "Building a Timeline for the Marvel Cinematic Universe:
 paths, graphs and automobiles (there aren't really any automobiles)."
 categories: ["movies", "timelines"]
 tags: ["Marvel", "MCU", "Timelines", "Networks", "Narrative Chart"]
-cover: "/img/timeline_landscape.png" 
+cover: "/img/timeline_landscape_thumb.png" 
 featuredImage: "/img/timeline_landscape.png" 
 featuredImageDescription: "aleph-zero-heroes MCU Timeline"
 draft: false 

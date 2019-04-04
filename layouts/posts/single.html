@@ -23,8 +23,8 @@
 				  {{ .Description }}
 				<h3>
 
-				    <a href="{{ .Params.Featuredimage | safeURL }}">
-				    <img class="featured-image" src="{{ .Params.Featuredimage | safeURL }}"
+				    <a href="{{ .Params.Featuredimage | absURL}}">
+				    <img class="featured-image" src="{{ .Params.Featuredimage | absURL }}"
 				       alt="Featured image: {{ .Params.featuredImageDescription }}">  
 				    </a>
 				    

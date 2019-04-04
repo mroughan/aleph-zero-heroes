@@ -4,12 +4,12 @@ author:
   name: "Matt Roughan"
   desc: " "
 date: 2019-03-12 
-lastmod: 2019-03-21 10:01:32
+lastmod: 2019-04-04 13:25:29
 description: "Julia dictionaries, data frames and how to read CSV data files into these data structures."
 categories: ["Code"]
 tags: ["Julia"]
-cover: "/img/julia_logo.svg" 
-featuredImage: "/img/julia_logo.svg" 
+cover: "img/julia_logo.svg" 
+featuredImage: "img/julia_logo.svg" 
 featuredImageDescription: ", <a href=\"https://julialang.org/v2/img/logo.svg\">the Julia programming language.</a>"
 draft: false 
 ---  

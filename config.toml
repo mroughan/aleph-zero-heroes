@@ -1,12 +1,10 @@
-baseURL = ""
-# baseURL = "https://aleph-zero-heroes.netlify.com"
-# baseURL = "http://bandicoot.maths.adelaide.edu.au/public/aleph-zero-heroes/"
+baseURL = "https://aleph-zero-heroes.netlify.com"
 title = "Aleph-Zero-Heroes"
 theme = "dream-plus"
 paginate = 8
 enableRobotsTXT = true
 # disqusShortname = "dream-plus"
-canonifyurls = true # fix them all relative to the base for deplyment
+canonifyURLs = true
 googleAnalytics = "UA-96845987-2"
 dateFormat = "02 Jan 2006, 15:04"
 
@@ -31,7 +29,7 @@ enableEmoji=true
 
 [params]
 	#Favicon for site
-	favicon = "/img/defaultFav.ico"
+	favicon = "img/defaultFav.ico"
 
 	#Set whether you're hosting "cards" or "post"
 	contentType = "posts"
@@ -45,7 +43,7 @@ enableEmoji=true
         [params.author]
 		name = "Matt Roughan"
 		description = "Something should go here but it doesn't seem to get printed anywhere"
-		avatar = "/img/aleph0.svg"
+		avatar = "img/aleph0.svg"
 		motto = "A blog about the mathematics of large-scale hybrid narratives"
  
 	[params.features]
@@ -57,11 +55,11 @@ enableEmoji=true
 		shareCard = true 
 		#Use custom CSS
 		# customCSS = ["https://cdn.rawgit.com/UtkarshVerma/hugo-dream-plus/ae11561d/exampleSite/static/css/highlight.css"]
-		customCSS = ["/css/syntax.css"]
+		customCSS = ["css/syntax.css"]
 		
 	[params.background]
 		# colorBG = true
-		bgImage = "/img/cyanotype_bg_tile.png"
+		bgImage = "img/cyanotype_bg_tile.png"
 
 	#Tags settings
 	[params.tags]

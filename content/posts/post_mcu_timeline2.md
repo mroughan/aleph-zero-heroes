@@ -3,13 +3,13 @@ title: "MCU Timeline Part II"
 author:
   name: "Matt Roughan"
   desc: " "
-date: 2019-04-01
-lastmod: 2019-04-01 18:40:41
+date: 2019-04-04
+lastmod: 2019-04-04 14:14:15
 description: "The Marvel Cinematic Universe Timeline: Revisited"
 categories: ["movies", "timelines"]
 tags: ["Marvel", "MCU", "Timelines", "Networks"]
-cover: "/img/marvel_graph.dot.svg"
-featuredImage: "/img/marvel_graph.dot.svg"
+cover: "img/marvel_graph.dot.svg"
+featuredImage: "img/marvel_graph.dot.svg"
 featuredImageDescription: ", my MCU Timeline"
 draft: true
 ---

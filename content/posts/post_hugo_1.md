@@ -4,7 +4,7 @@ author:
   name: "Matt Roughan"
   desc: " " 
 date: 2019-04-03
-lastmod: 2019-04-03 12:37:31
+lastmod: 2019-04-04 14:14:55
 description: "Literate programming and live documents: using Hugo for reproducible research."
 categories: ["Code"]
 tags: ["hugo"] 
@@ -26,7 +26,7 @@ put forward by Knuth that a computer program shouldn't just be
 commented. They should be a readable document that contains code.
 
 That doesn't initially sound radical, but it is. Programmers still,
-despite decades of education, usually document code as an
+despite decades of education, usually document code as an 
 afterthought. Documentation is, however, crucial for good code. It
 makes it easier to debug, to use and reuse and to maintain the
 code. Adding (often trite, ignorable) comments after the fact does not

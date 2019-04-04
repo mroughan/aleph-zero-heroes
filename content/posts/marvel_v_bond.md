@@ -4,15 +4,15 @@ author:
   name: "Matt Roughan"
   desc: " " 
 date: 2019-03-28
-lastmod: 2019-04-01 18:17:32
+lastmod: 2019-04-04 13:24:50
 description: "Going beyond the qualities of individual
               movies to see how the structure of a franchise influences its success; OR
               power-laws in movies."
 categories: ["Movies"]
 tags: ["MCU", "Bond", "Julia"]
 # cover: "https://julialang.org/v2/img/logo.svg" 
-cover: "/img/lego_cap_v_bond.png" 
-featuredImage: "/img/lego_cap_v_bond.png" 
+cover: "img/lego_cap_v_bond.png" 
+featuredImage: "img/lego_cap_v_bond.png" 
 featuredImageDescription: ", <a href=\"https://julialang.org/v2/img/logo.svg\">the Julia programming language.</a>"
 draft: false 
 ---

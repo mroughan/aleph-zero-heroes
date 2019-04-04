@@ -6,7 +6,7 @@
 #     	--delete \
 # 	/home/mroughan/Reports/Probability/Distributions/probability_distrns /home/mroughan/public_html/
 
-echo "Rsync'ing to staff"
+echo "Rsync'ing to bandicoot"
 /usr/bin/rsync -av -e ssh \
         --partial --stats --progress \
 	--exclude '*~' \

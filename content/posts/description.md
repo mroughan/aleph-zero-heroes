@@ -7,8 +7,8 @@ date: 2019-02-10
 description: "In this blog I plan to explore using data science on large-scale hybrid narratives, in particular narratives about superheroes."
 categories: ["About"]  
 tags: ["about"]
-cover: "/img/about.svg.png" 
-featuredImage: "/img/about.svg.png"
+cover: "img/about.svg.png" 
+featuredImage: "img/about.svg.png"
 featuredImageDescription: ": Aleph is Unicode: 2135" 
 draft: false
 ---

@@ -8,8 +8,8 @@ description: "Getting data into Julia from the web."
 categories: ["Code"]
 tags: ["Julia"]
 # cover: "https://julialang.org/v2/img/logo.svg" 
-cover: "/img/julia_logo.svg" 
-featuredImage: "/img/julia_logo.svg" 
+cover: "img/julia_logo.svg" 
+featuredImage: "img/julia_logo.svg" 
 featuredImageDescription: ", <a href=\"https://julialang.org/v2/img/logo.svg\">the Julia programming language.</a>"
 draft: false 
 ---

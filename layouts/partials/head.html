@@ -6,25 +6,32 @@
 	{{/*Page Author & Description*/}}
 	{{ $authorName := .Params.author.name | default $.Site.Params.author.name }}
 	{{ $description := .Params.description | default (.Summary | plainify) }}
+	{{/*Site Author & Description*/}}
+	<!-- <meta name="author" content="{{ $.Site.Params.author.name }}" /> -->
+	<!-- <meta name="description" content="{{ $.Site.Params.description }}" /> -->
 	<meta name="author" content="{{ $authorName }}" />
 	<meta name="description" content="{{ $description }}" />
 	<meta property="og:title" content="{{ .Title }}" />
-	<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}" />
+	<meta property="og:description" content="{{ $description }}" />
 	<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
-	<meta property="og:url" content="{{ .Permalink }}" />
+	<meta property="og:article:published_time" content="{{ .Date.Format "2006-02-01" }}">
+	<meta property="og:url" content="{{ .Permalink | absURL }}" />
 	<meta property="og:image" content="{{  .Params.cover | absURL }}" />
 	<meta property="og:site_name" content="{{ .Site.Params.brand }}" />
+	<meta name="twitter:creator" content="@{{ .Site.Social.twitter }}" />
+	<meta name="twitter:card" content="summary_image" />
+	<meta name="twitter:url" content="{{ .Permalink | absURL }}" />
+	<meta name="twitter:title" content="{{ .Title }}" />
+	<meta name="twitter:description" content="{{ $description }}" />
+	<meta name="twitter:image:src" content="{{  .Params.cover | absURL }}" />
 {{ else }}
-	{{/*Site Author & Description*/}}
-	<meta name="author" content="{{ $.Site.Params.author.name }}" />
-	<meta name="description" content="{{ $.Site.Params.description }}" />
 {{ end }}
 
 {{/*Site generator*/}}
-{{ .Hugo.Generator }}
+{{ .Hugo.Generator }} 
 
 {{/*Favicon*/}}
-<link rel="shortcut icon" href="{{ if $.Site.Params.favicon }}{{ $.Site.Params.favicon }}{{- else }}/img/defaultFav.ico{{ end }}">
+<link rel="shortcut icon" href="{{ if $.Site.Params.favicon }}{{ $.Site.Params.favicon | absURL }}{{- else }}/img/defaultFav.ico{{ end }}">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">

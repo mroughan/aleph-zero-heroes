@@ -20,7 +20,7 @@
 
 <div class="blog-card none flexbox">
 	{{/*Card*/}}
-	<img class="image" src="{{ $cover }}"></img>
+	<img class="image" src="{{ $cover | absURL }}"></img>
         <a href={{ .Permalink }}>
 	  <div class="title-content twemoji">
 	    <h3>{{ .Title }}</h3>

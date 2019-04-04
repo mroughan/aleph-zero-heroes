@@ -11,7 +11,7 @@
 	{{ if $avatarFlag }}
 	<a href="/"><img class="avatar" src="/img/avatar{{ $authorAvatar }}.svg"></a>
 	{{ else }}
-	<a href="/"><img class="avatar" src="{{ $authorAvatar }}"></a>
+	<a href="/"><img class="avatar" src="{{ $authorAvatar | absURL }}"></a>
 	{{ end }}
 </div>
 <div class="info grow flexbox">

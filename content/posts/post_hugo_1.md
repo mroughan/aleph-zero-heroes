@@ -4,7 +4,7 @@ author:
   name: "Matt Roughan"
   desc: " " 
 date: 2019-04-05
-lastmod: 2019-04-05 15:39:54
+lastmod: 2019-04-05 15:42:03
 description: "Literate programming, documenting data and using Hugo for reproducible research."
 categories: ["Code"]
 tags: ["hugo"] 
@@ -54,7 +54,7 @@ reproducibility is the corner-stone of good science, e.g.:
 
 To do reproducibility well, we need to think about publications a little
 differently. I think it's expressed well  in the following quote from
-[Buckheit and Donoho](www-stat.stanford.edu/~wavelab/Wavelab_850/wavelab.pdf):
+[Buckheit and Donoho](http://www-stat.stanford.edu/~wavelab/Wavelab_850/wavelab.pdf):
 
 > An article about computational science in a scientific publication
 >   is not the scholarship itself, it is merely advertising of the

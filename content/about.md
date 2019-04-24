@@ -3,7 +3,7 @@
 **This is a blog about (mathematical) data science of large-scale hybrid
 narratives and superheros in particular.**
 
-The title of the blog comes from a, perhaps obscure, piece of
+The title of the blog comes from a perhaps obscure piece of
 mathematics: [aleph zero](https://en.wikipedia.org/wiki/Aleph_number) is
 (mathematically speaking) the cardinality of the set of natural
 numbers, which is a pretty mathsy way of saying "infinity". So the
@@ -18,8 +18,8 @@ simple examples of old-school hybrids
  + picture books and graphic novels
  + choose your own adventure books, which combine games with prose
 
-and so on, or the modern mash-ups that the web has made so easy to
-augmented reality systems. 
+and so on, or the modern mash-ups that the web has made it so easy to
+create augmented reality systems. 
 
 But technology today has allowed artists and writers to build much
 larger joint constructs, and that is what I am interested in here.

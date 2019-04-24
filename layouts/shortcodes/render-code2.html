@@ -10,4 +10,4 @@
    {{ $.Scratch.Set "startLine" 1 }}
 {{ end }}
 
-{{ (print "```" $lang "\n"  $file "\n```") | markdownify }}
+{{ (print "```" $lang "\n" (print (after ($.Scratch.Get "startLine") (split $file "\n") )) "\n```") | markdownify }}

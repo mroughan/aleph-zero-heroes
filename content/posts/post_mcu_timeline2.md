@@ -3,8 +3,8 @@ title: "MCU Timeline Part II"
 author:
   name: "Matt Roughan"
   desc: " "
-date: 2019-04-04
-lastmod: 2019-04-04 14:14:15
+date: 2019-04-06
+lastmod: 2019-04-11 15:56:50
 description: "The Marvel Cinematic Universe Timeline: Revisited"
 categories: ["movies", "timelines"]
 tags: ["Marvel", "MCU", "Timelines", "Networks"]
@@ -41,7 +41,7 @@ connected by paths. Here it is:
 <div style="width:90%;text-align:center;margin-left:auto;margin-right:auto;display:block;" >
 <a href="../../img/marvel_graph.dot.svg">
 <img src="img/marvel_graph.dot.svg" alt="MCU sequence graph" >
- </a>
+ </a> 
  </div>
 
 BTW, although I'm doing most of this in Julia, I did this picture

@@ -32,7 +32,7 @@ episode (S3E16). Famous examples are
 + J. Jonah Jameson, Jr.,
 + Peter Parker,
 + Bruce Banner<sup><a href="#fn2" id="ref2">2</a></sup>, and
-+ Steven Strange.
++ Steven Strange, Sorcerer Supreme.
 
 and the list goes on. Some fans have collected lists of such names at a few places.
 

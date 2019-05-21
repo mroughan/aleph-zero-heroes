@@ -280,11 +280,12 @@ artist in their own right or visa versa, they don't have to be as
 original and fluent in the others' skill set. 
 
 In fact, many comics have more detailed specialisations: often the art
-is broken into pencil sketches, then inks, and then colourised. This
-is partially a production-line mentality (comics have sometimes been
-produced in a less-than-glorious manner) but partially it reflects
-that even relatively small details such as the choice of colours can
-be a fine art just by itself.
+is broken into pencil sketches, then inks, and then colourised. Often
+there is a specialist doing the lettering, and maybe a different
+artist for the covers. This is partially a production-line mentality
+(comics have sometimes been produced in a less-than-glorious manner)
+but partially it reflects that even relatively small details such as
+the choice of colours can be a fine art just by itself.
 
 So how is a lecturer, who is neither specialist writer, nor artist
 meant to do all this? The answer is that, more and more, I expect

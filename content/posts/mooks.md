@@ -3,8 +3,8 @@ title: "Gadzooks! Mooks!"
 author:
   name: "Matt Roughan"
   desc: " "
-date: 2019-06-10
-lastmod: 2019-06-14 10:24:05
+date: 2019-06-16
+lastmod: 2019-06-16 10:24:05
 description: "A homily to the Unknown Soldier/Scientist/Guard/Guy on the Street"
 categories: ["movies"]
 tags: ["Marvel", "MCU", "Conflict"]
@@ -12,7 +12,7 @@ cover: "/img/ReadyForBattle-MCUCollective-Endgame.webp"
 featuredImage: "/img/ReadyForBattle-MCUCollective-Endgame.webp" 
 featuredImageDescription: ", <a href=\"https://marvelcinematicuniverse.fandom.com/wiki/Battle_of_Earth\">Battle of Earth</a>"
 dropCap: false
-draft: true
+draft: false
 toc: true
 spoilers: true 
 ---

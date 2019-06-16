@@ -37,7 +37,19 @@
 				</div>
 				<hr>
 				
+				{{ if and $.Params.spoilers .TableOfContents }}
+					<div class="spoiler">
+						SPOILER WARNING
+					</div>
+				{{ end }}
+				
 				{{ if and $.Site.Params.features.toc .TableOfContents }}
+					<div class="toc">
+						{{ .TableOfContents }}
+					</div>
+				{{ end }}
+				
+				{{ if and $.Params.toc .TableOfContents }}
 					<div class="toc">
 						{{ .TableOfContents }}
 					</div>

@@ -197,6 +197,15 @@ li:not('.toc') {
   line-height: 1.4285em;
 }
 
+.spoiler {
+    font-size: 1.4em;    
+    color: black;
+    background-color: red;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
 .row.box {
   position: relative;
   display: -webkit-box;
@@ -400,7 +409,7 @@ ul > li {
   font-size: 1.1rem;
   line-height: 1rem;
   background-color: #ffffff70;
-  border: 1px solid #8a8a8a6b;
+  # border: 1px solid #8a8a8a6b;
   border-radius: 5px;
   margin-bottom: 10px;
   overflow-x: auto;

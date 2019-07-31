@@ -4,12 +4,12 @@ author:
   name: "Matt Roughan"
   desc: " "
 date: 2019-07-26
-lastmod: 2019-07-26 12:40:14
+lastmod: 2019-08-01 08:52:01
 description: "Using the most surprising theorem in mathematics to calculate the land area of Terry Pratchett's Discworld"
 categories: ["books"]
 tags: ["Terry Pratchett", "Julia"]
 cover: "img/discworld_small_wide.png" 
-featuredImage: "img/discworld.svg" 
+featuredImage: "img/discworld_small.svg" 
 featuredImageDescription: ", <a href=\"https://github.com/mroughan/AlephZeroHeroesData/blob/master/Pratchett/discworld.svg\">Map of the Discworld</a>"
 dropCap: false
 draft: false 

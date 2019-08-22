@@ -4,7 +4,7 @@ author:
   name: "Matt Roughan"
   desc: " "
 date: 2019-08-22
-lastmod: 2019-08-22 12:55:27
+lastmod: 2019-08-22 12:56:54
 description: "Arrow’s Impossibility Theorem; Borda counts; the Condorcet paradox and
 a Meta-list of the Top-10 Batman Graphic Novels ever."
 categories: ["comics"]

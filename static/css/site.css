@@ -180,6 +180,7 @@ h2 {
 h3 {
     font-size: 1.0em;
 }
+.katex { font-size: 1.1em; }/* https://katex.org/docs/font.html */
 
 h1:hover .anchor,
 h2:hover .anchor,

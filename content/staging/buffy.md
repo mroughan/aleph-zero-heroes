@@ -120,3 +120,10 @@ overall compression ration as a function of interval width
 
 
 
+
+
+
+++++++++++ use cast count and alpha, beta and gamma diversity to
+classify long- from episodic plots by looking at consistency in casts
+between episdodes
+   Buffy v Jessica Jones 

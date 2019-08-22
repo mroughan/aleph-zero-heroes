@@ -1,0 +1,6 @@
+Candidate,Ranking,Borda Points,Dowdall Points,My Points (alpha=0.5)
+Alice,1,4,1,1
+Bob,2,3,1/2,0.707
+Catherine,3,2,1/3,0.577
+David,4,1,1/4,0.5
+Eleanor,unranked,0,0,0

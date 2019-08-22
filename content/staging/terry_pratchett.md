@@ -41,3 +41,11 @@ An SI discworld
 
 https://wiki.lspace.org/mediawiki/Narrativium
 
+
+
+
+center of mass of discworld
+   -- assumes land is fairly flat (which it isn't really)  (could scan image of height to get contours, Kriging, ...) 
+   -- and sea is uniform depth (which it isn't really)
+
+

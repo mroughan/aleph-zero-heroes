@@ -11,4 +11,4 @@ echo "Rsync'ing to bandicoot"
         --partial --stats --progress \
 	--exclude '*~' \
     	--delete \
-	/home/mroughan/Dropbox/www/aleph-zero-heroes/public/ bandicoot:/home/mroughan/public/aleph-zero-heroes/
+	/home/mroughan/Dropbox/www/aleph-zero-heroes/public/ bandicoot:/home/mroughan/public/AZH/

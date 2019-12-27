@@ -23,6 +23,7 @@ pygmentsUseClasses = true
 #Enable Hugo Emoji Conversion
 enableEmoji=true 
 
+footnoteReturnLinkContents = "↩"
 
 [blackfriday]
 	hrefTargetBlank = true

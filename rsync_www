@@ -7,8 +7,13 @@
 # 	/home/mroughan/Reports/Probability/Distributions/probability_distrns /home/mroughan/public_html/
 
 echo "Rsync'ing to bandicoot"
+# /usr/bin/rsync -av -e ssh \
+#        --partial --stats --progress \
+#	--exclude '*~' \
+#    	--delete \
+# /home/mroughan/Dropbox/www/aleph-zero-heroes/public/ bandicoot:/home/mroughan/public/AZH/
 /usr/bin/rsync -av -e ssh \
         --partial --stats --progress \
 	--exclude '*~' \
     	--delete \
-	/home/mroughan/Dropbox/www/aleph-zero-heroes/public/ bandicoot:/home/mroughan/public/AZH/
+	public/ bandicoot:/home/mroughan/public/AZH/

@@ -456,8 +456,8 @@ a{
     color:#2266ee
 }
 sup {
-    font-family:'LatoLatinWebHeavy';
-    font-size: 90%;
+    font-family:'LatoLatinWeb';
+    font-size: 80%;
 }
 
 .post-subtitle {
@@ -475,7 +475,14 @@ sup {
 }
 
 .post-content blockquote {
-  background: #f9f9f9;
+  background: #f9f9f0;
+  border-left: 8px solid #ccc;
+  padding: 0.4em 0.8em;
+  margin: 0.5em 0 0.5em 0;
+}
+
+.blockquote {
+  background: #f9f9f0;
   border-left: 8px solid #ccc;
   padding: 0.4em 0.8em;
   margin: 0.5em 0 0.5em 0;

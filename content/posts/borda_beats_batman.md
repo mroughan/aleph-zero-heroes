@@ -4,7 +4,7 @@ author:
   name: "Matt Roughan"
   desc: " "
 date: 2019-08-22
-lastmod: 2019-08-22 12:56:54
+lastmod: 2020-01-07 17:30:27
 description: "Arrow’s Impossibility Theorem; Borda counts; the Condorcet paradox and
 a Meta-list of the Top-10 Batman Graphic Novels ever."
 categories: ["comics"]
@@ -55,7 +55,7 @@ appeared on someone's top-N list at some time. It's kind of crazy that
 there is so much variation in people's choices, and yet we can still
 find patterns.
 
-The techniques that are used in compiling a meta-list are interesting
+The techniques that are used in compiling a meta-list are interesting 
 because they touch on a strange paradox that lies at the conjunction
 of Mathematics and the theory of Elections. It's usually discussed
 under the name *Arrow's Impossibility Theorem* after its creator.

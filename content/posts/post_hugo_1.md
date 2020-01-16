@@ -4,12 +4,12 @@ author:
   name: "Matt Roughan"
   desc: " " 
 date: 2019-04-05
-lastmod: 2019-04-05 15:42:03
+lastmod: 2020-01-16 18:56:20
 description: "Literate programming, documenting data and using Hugo for reproducible research."
 categories: ["Code"]
 tags: ["hugo"] 
-cover: "http://i.annihil.us/u/prod/marvel/i/mg/5/a0/538615ca33ab0/landscape_incredible.jpg" 
-featuredImage: "http://i.annihil.us/u/prod/marvel/i/mg/5/a0/538615ca33ab0/landscape_incredible.jpg" 
+cover: "https://i.annihil.us/u/prod/marvel/i/mg/5/a0/538615ca33ab0/landscape_incredible.jpg" 
+featuredImage: "https://i.annihil.us/u/prod/marvel/i/mg/5/a0/538615ca33ab0/landscape_incredible.jpg" 
 featuredImageDescription: ": The Incredible Hulk, provided by Marvel ©"
 draft: false 
 ---

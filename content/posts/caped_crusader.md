@@ -401,13 +401,13 @@ The data is also in the [GitHub](https://github.com/mroughan/AlephZeroHeroesData
  
 **Footnotes**
 
+ 
+[1]: At the moment you can get a free [soft copy](https://www.amazon.com/Detective-Comics-1937-27-1937-2011-ebook/dp/B00LMOV0F2/ref=sr_1_3?keywords=bill+finger&qid=1578022574&sr=8-3) of Detective Comics #27, which has the first appearance of Batman in it.
 
-[^1]: At the moment you can get a free [soft copy](https://www.amazon.com/Detective-Comics-1937-27-1937-2011-ebook/dp/B00LMOV0F2/ref=sr_1_3?keywords=bill+finger&qid=1578022574&sr=8-3) of Detective Comics #27, which has the first appearance of Batman in it.
+[2]: Where a collected volume consists of a core set of issues, plus some associated side issues, I tend to focus on only the core issues, though the division isn't always obvious.
 
-[^2]: Where a collected volume consists of a core set of issues, plus some associated side issues, I tend to focus on only the core issues, though the division isn't always obvious.
+[3]: Note that artists might appear singly, or in a team (which I am treating separately). 
 
-[^3]: Note that artists might appear singly, or in a team (which I am treating separately). 
+[4]: I am adding the total rating (without any weighting) for each stage a creator is involved in.
 
-[^4]: I am adding the total rating (without any weighting) for each stage a creator is involved in.
-
-[^5]: Richard Starkings does have a (short) [wiki page](https://en.wikipedia.org/wiki/Richard_Starkings) and his list of [credits](https://web.archive.org/web/20191106060737/http://comicbookdb.com/creator.php?ID=74) is truly impressive, including several Eisner awards for Best Letterer. There is also a [blog site](http://www.balloontales.com/) with some interesting materials. He should be better known.
+[5]: Richard Starkings does have a (short) [wiki page](https://en.wikipedia.org/wiki/Richard_Starkings) and his list of [credits](https://web.archive.org/web/20191106060737/http://comicbookdb.com/creator.php?ID=74) is truly impressive, including several Eisner awards for Best Letterer. There is also a [blog site](http://www.balloontales.com/) with some interesting materials. He should be better known.

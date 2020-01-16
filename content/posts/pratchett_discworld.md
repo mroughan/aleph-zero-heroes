@@ -307,7 +307,7 @@ xml = xml_dict(s) # parse the string, and put the results in a dictionary
 ```
 
 The code gets the data into a generic Dictionary (see this
-[post](http://localhost:1313/posts/post_julia2/) for more detail), but
+[post](/posts/post_julia2/) for more detail), but
 you still need to interpret the information you have just slurped
 in. This is not the place for a long discussion of SVG formats, and I
 won't share my code just yet (it is not very robust or

@@ -3,8 +3,8 @@ title: "Sharp Data Science"
 author:
   name: "Matt Roughan"
   desc: " "
-date: 2020-01-10
-lastmod: 2020-01-16 19:05:53
+date: 2020-01-16
+lastmod: 2020-01-17 09:58:26
 description: "The Sharp Pocket Computer, and the art of programming in small spaces. Plus Gamma rays are not Gamma functions, but putting Gamma in front of a word makes it sound cooler."
 categories: ["code"]
 tags: ["Sharp", "Julia", "BASIC"]
@@ -313,6 +313,20 @@ Oh, and 1982 was the best year ever :)
 
 Oh, and sorry if my koan on short programs was too long.
 
+# Postscript
+
+I only just (Jan 17) came across
+[this post](https://thehighergeometer.wordpress.com/2019/11/27/terry-taos-first-paper-perfect-numbers/)
+which has [Terry Tao](https://terrytao.wordpress.com/)'s first paper "Perfect Numbers" (1983). Terry (a Field's
+Medalist and winner of  the
+[inaugural Riemann prize](https://www.rism.it/index.php/news/riemann-prize-2019)
+and fellow South Australian),
+wrote this paper when he was 8! The paper is primarily a BASIC program
+that calculates perfect numbers (a perfect number is one whose factors add up to
+itself). I don't know if it was implemented on a pocket computer but
+it is small enough that it could have been.
+
+
 # Acknowledgements
 
 Thanks go out to Sylvia and Jono for editing this one.
@@ -350,6 +364,7 @@ Floating point weirdness
 
 + http://www.rskey.org/~mwsebastian/miscprj/results.htm
 + https://randomascii.wordpress.com/2012/02/25/comparing-floating-point-numbers-2012-edition/
+
 
 ---
  

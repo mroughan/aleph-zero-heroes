@@ -7,13 +7,13 @@ The title of the blog comes from a perhaps obscure piece of
 mathematics: [aleph zero](https://en.wikipedia.org/wiki/Aleph_number) is
 (mathematically speaking) the cardinality of the set of natural
 numbers, which is a pretty mathsy way of saying "infinity". So the
-name, aleph-zero-heros, loosely translates as *infinity*. And the blog
-is going to be focused on superhero narratives, hence the title ---
-read it as **infinite heros**.
+name, aleph-zero-heros, loosely translates as *infinite heroes*. 
 
-A hybrid narrative (to me) is a story (fiction or non-fiction) that
-involves multiple forms of media. We can get an idea by considering
-simple examples of old-school hybrids
+The blog is going to be focused on superhero narratives, hence the
+title, but it is broader than just that. We're going to look at
+large-scale hybrid narratives.  A hybrid narrative (to me) is a story
+(fiction or non-fiction) that involves multiple forms of media. We can
+get an idea by considering simple examples of old-school hybrids
 
  + picture books and graphic novels
  + choose your own adventure books, which combine games with prose

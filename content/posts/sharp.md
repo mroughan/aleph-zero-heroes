@@ -4,7 +4,7 @@ author:
   name: "Matt Roughan"
   desc: " "
 date: 2020-01-10
-lastmod: 2020-01-16 18:46:07
+lastmod: 2020-01-16 19:05:53
 description: "The Sharp Pocket Computer, and the art of programming in small spaces. Plus Gamma rays are not Gamma functions, but putting Gamma in front of a word makes it sound cooler."
 categories: ["code"]
 tags: ["Sharp", "Julia", "BASIC"]
@@ -12,7 +12,7 @@ cover: "img/sharp_1500_2_small.png"
 featuredImage: "img/sharp_1500_2.png" 
 featuredImageDescription: "Sharp PC-1500"
 dropCap: false
-draft: true
+draft: false
 toc: true
 spoilers: false 
 ---

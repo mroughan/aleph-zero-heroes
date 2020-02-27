@@ -21,13 +21,21 @@ Susan Sontag quote this in reference to photography.
 
 
 
-Many people paint recreationally. Photography is praticed by almost
+
+
+I like Neil Gaiman's writing a lot. Reading it is like putting on a warm pair of wooly socks on a winter's evening. A warm pair of haunted socks. 
+
+
+
+
+
+Many people paint recreationally. Photography is practiced by almost
 everyone with a phone. Music is taught to every second
 grade-schooler. And almost everyone I ever knew was forced to write,
 creatively (perhaps).
 
 We have, in the West (and elsewhere) digested the idea that Art is not
-just teh pursuit of the gifted and driven. It is part of every persons
+just the pursuit of the gifted and driven. It is part of every persons
 cultural and social kit bag.
 
 But who draws comics? The marginalised "geeks" of our world. Why is that?

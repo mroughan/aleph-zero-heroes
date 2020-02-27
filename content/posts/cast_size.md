@@ -4,7 +4,7 @@ author:
   name: "Matt Roughan, Lewis Mitchell and Tobin South"
   desc: " "
 date: 2020-02-27
-lastmod: 2020-02-27 11:42:20
+lastmod: 2020-02-27 11:47:31
 description: "Ecological modelling of effective cast sizes for the
 Marvel Cinematic Universe using Shannon entropy."
 categories: ["movies"]
@@ -13,7 +13,7 @@ cover: "img/IMG_1003_sm_sm_sm.png"
 featuredImage: "img/IMG_1003_sm_sm.png"
 featuredImageDescription: ", Avengers assemble (mostly) in Lego"
 dropCap: false
-draft: true
+draft: false
 toc: true
 spoilers: false 
 ---

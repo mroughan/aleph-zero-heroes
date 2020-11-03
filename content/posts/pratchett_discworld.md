@@ -10,7 +10,7 @@ categories: ["books"]
 tags: ["Terry Pratchett", "Julia"]
 cover: "img/discworld_small_wide.png" 
 featuredImage: "img/discworld_small.svg" 
-featuredImageDescription: ", <a href=\"https://github.com/mroughan/AlephZeroHeroesData/blob/master/Pratchett/discworld.svg\">Map of the Discworld</a>"
+featuredImageDescription: ", <a href=\"https://github.com/mroughan/AlephZeroHeroesData/blob/master/Pratchett/Map/discworld.svg\">Map of the Discworld</a>"
 dropCap: false
 draft: false 
 toc: true
@@ -323,7 +323,7 @@ them to get the files.
 
 <div>
 <div style="display: inline-block;">
-{{% csv_table src="/static/csv/discworld_supercontinent.csv" link="https://github.com/mroughan/AlephZeroHeroesData/blob/master/Pratchett/discworld_supercontinent.csv" maxLines="6" colStyle="text-align:right;" %}} 
+{{% csv_table src="/static/csv/discworld_supercontinent.csv" link="https://github.com/mroughan/AlephZeroHeroesData/blob/master/Pratchett/Map/discworld_supercontinent.csv" maxLines="6" colStyle="text-align:right;" %}} 
 </div>
 <div style="display: inline-block;">
 <img src="/img/discworld_super.svg" alt="super-continent" height=175>
@@ -334,7 +334,7 @@ them to get the files.
 
 <div>
 <div style="display: inline-block;">
-{{% csv_table src="/static/csv/discworld_xxxx.csv" link="https://github.com/mroughan/AlephZeroHeroesData/blob/master/Pratchett/discworld_xxxx.csv" maxLines="6" colStyle="text-align:right;" %}} 
+{{% csv_table src="/static/csv/discworld_xxxx.csv" link="https://github.com/mroughan/AlephZeroHeroesData/blob/master/Pratchett/Map/discworld_xxxx.csv" maxLines="6" colStyle="text-align:right;" %}} 
 </div>
 <div style="display: inline-block;">
 <img src="/img/discworld_xxxx.svg" alt="Fourecks" height=175>
@@ -374,7 +374,7 @@ the total for the super-continent.
 # The results
 
 <div class="ui large right floated image">
-{{% csv_table src="/static/csv/discworld_calc.csv" link="https://github.com/mroughan/AlephZeroHeroesData/blob/master/Pratchett/discworld_calc.csv" colStyle="text-align:right;" %}} 
+{{% csv_table src="/static/csv/discworld_calc.csv" link="https://github.com/mroughan/AlephZeroHeroesData/blob/master/Pratchett/Map/discworld_calc.csv" colStyle="text-align:right;" %}} 
 </div>
 
 First up, all units are in miles (or square miles) as this was the
@@ -457,7 +457,7 @@ there writing books, so I'll try to fool myself for a little longer.
 
 # Acknowledgements
 
-Just a quite thanks for the people who have been helping me edit these
+Just a quiet thanks for the people who have been helping me edit these
 blogs, notably my wife and Giang Nguyen. 
 
 ---

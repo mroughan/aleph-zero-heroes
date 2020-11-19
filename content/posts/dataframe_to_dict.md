@@ -12,7 +12,7 @@ cover: "img/julia_logo.svg"
 featuredImage: "img/julia_logo.svg" 
 featuredImageDescription: ", <a href=\"https://julialang.org/v2/img/logo.svg\">the Julia programming language.</a>"
 dropCap: false
-draft: true
+draft: false
 toc: true
 spoilers: false 
 ---

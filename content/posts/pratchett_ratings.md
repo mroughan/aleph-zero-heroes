@@ -3,7 +3,7 @@ title: "Rating the Discworld Books"
 author:
   name: "Matt Roughan"
   desc: " "
-date: 2020-11-30
+date: 2020-11-29
 lastmod: 2020-11-30
 description: "The best and worst of the Discworld novels and the problems with 5 star ratings systems"
 categories: ["books"]

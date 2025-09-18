@@ -30,7 +30,7 @@ simple examples of old-school hybrids
  + choose your own adventure books, which combine games with prose
 
 and so on, or the modern mash-ups that the web has made so easy to
-augmented reality systems. 
+augmented reality systems.    
  
 People concerned with hybrid media, stories and narratives often focus
 on the avante guard, or the outre aspects of the field.  I am

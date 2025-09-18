@@ -8,7 +8,7 @@ HUGO="hugo"
 
 all: FORCE
 #	/snap/hugo/current/bin/hugo --cleanDestinationDir --buildFuture --buildDrafts -b "http://bandicoot.maths.adelaide.edu.au/public/AZH/"
-	/usr/local/bin/hugo --cleanDestinationDir --buildFuture --buildDrafts -b "http://bandicoot.maths.adelaide.edu.au/public/AZH/"
+	/usr/bin/hugo --cleanDestinationDir --buildFuture --buildDrafts -b "http://bandicoot.maths.adelaide.edu.au/public/AZH/"
 
 install: all
 	./rsync_www

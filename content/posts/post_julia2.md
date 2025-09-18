@@ -287,13 +287,12 @@ documentation for many more examples and
 
 The most important thing to grasp is that the data types of the
 columns are unions of a standard type, and `Missing`. And each column
-is (in some sense) a separate array (each of the same length). So, we
+is (in some sense) a separate array (each of the same length). So, 
 a column of integers might be of type
 ```julia
 	Array{Union{Missing, Int64},1}
 ```
-
-That is, and 1-D array of elements of type `Union{Missing,
+That is, a 1-D array of elements of type `Union{Missing,
 Int64}`. This is important, as it sometimes means we are a bit clumsy
 working on these. Julia has many functions defined, for instance, for
 integers, but they won't work out of the box on a Union because Julia
